@@ -2,7 +2,7 @@
  * JavaScript, Swift code from Ecore models with embedded OCL (http://www.crossecore.org/).
  * The original Eclipse Modeling Framework is available at https://www.eclipse.org/modeling/emf/.
  *
- * contributor: Simon Schwichtenberg
+ * contributor: Simon Schwichtenberg, Peter Digas
  */
 
 
@@ -26,6 +26,12 @@ import {EStructuralFeature} from "./EStructuralFeature";
 import {AbstractCollection} from "./AbstractCollection";
 import {EDataType} from "./EDataType";
 import {EDataTypeImpl} from "./EDataTypeImpl";
+import { ParserOptions } from "@babel/core";
+import { features } from "process";
+import { BasicEObjectImpl } from "./BasicEObjectImpl";
+import { OrderedSet } from "./OrderedSet";
+import { EAttribute } from "./EAttribute";
+import { EList } from "./EList";
 
 
 interface EObjectRegistry{
@@ -54,28 +60,156 @@ export class XmiResource{
     private resolveJobs:Array<ResolveJob> = []; //TODO define type
     private eobjectRegistry:EObjectRegistry;
 
-    constructor(epackage:EPackage, efactory:EFactory, domParser:DOMParser){
+    constructor(epackage:EPackage, efactory:EFactory){
         this.factory = efactory;
         this.epackage = epackage;
 
-        this.domParser = domParser;
+        this.domParser = new DOMParser();
 
         this.resolveJobs = [];
         this.eobjectRegistry = {};
     }
 
+    // für BA erstellt
+    // HOW TO USE: übergebe alle relevanten EObjects als Array in die Funktion save -> wird zu einem XMI String serialisiert
+    public save = (eobjects: Array<EObject>):string =>{
+
+        let result = '<?xml version="1.0" encoding="ASCII"?>\n<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:';
+        result += this.epackage.name + '=' + '\"' + this.epackage.nsURI + '\">'
+        
+        for (let eobject of eobjects) {
+            result += this.process_eobject(eobject);
+        }
+
+        result += '\n</xmi:XMI>';
+
+        return result;
+    }
+
+    // für BA erstellt
+    private process_eobject = (eobject:EObject):string =>{
+        let eclass = eobject.eClass();
+        let result = '\n  <' + this.epackage.name + ':' + eclass.name + ' xmi:id=\"' + (eobject as BasicEObjectImpl)._uuid + '\"';
+
+        // nur gültige Attribute und Referenzen serialisieren
+        let attributes = this.validEAllAttributes(eobject, eclass.eAllAttributes);
+        let references = this.validEAllReferences(eobject, eclass.eAllReferences);
+
+        for (let attribute of attributes) {
+            result += ' ' + attribute.name + '=\"' + eobject.eGet(attribute) + '\"';
+        }
+
+        let ref_empty = references.isEmpty();
+        if (!ref_empty) {
+            let crossrefs = new Array<EReference>();
+            let containments = new Array<EReference>();
+
+            for (let reference of references) {
+                if (reference.containment) {
+                    containments.push(reference);
+                } else {
+                    crossrefs.push(reference);
+                }
+            }
+
+            for(let cf of crossrefs) {
+                if (cf != null) {
+                    result += ' ' + cf.name + '=\"' + (eobject.eGet(cf) as BasicEObjectImpl)._uuid + '\"';
+                }
+            }
+
+            if (containments.length == 0) {
+                ref_empty = true;
+            } else {
+                result += '>';
+            }
+            for (let ct of containments) {
+                result += this.resolveContainments(eobject, ct, 2, {});
+            }
+        }
+        result += ref_empty?'/>':('\n  </' + this.epackage.name + ':' + eclass.name + '>');
+
+        return result;
+    }
+
+    // für BA erstellt
+    private resolveContainments = (eobj:EObject, reference:EReference, rec_depth, parents:EObjectRegistry):string =>{
+        let result = '';
+        parents[(eobj as BasicEObjectImpl)._uuid] = eobj;
+
+        let eobjects = eobj.eGet(reference) as Array<EObject>;
+        for (let eobject of eobjects) {
+
+            // prüfen, ob eine zyklische Containment Beziehung vorliegt
+            if (parents[(eobject as BasicEObjectImpl)._uuid] != null) {
+                console.error("ERROR: CYCLIC CONTAINMENT DEPENDENCY DETECTED!");
+                return;
+            }
+            let eclass = eobject.eClass();
+            let attributes = eclass.eAllAttributes;
+            let references = eclass.eAllReferences;
+    
+            let tabs = '  '.repeat(rec_depth);
+            result += '\n' + tabs + '<' + reference.name + ' xmi:id=\"' + (eobject as BasicEObjectImpl)._uuid + '\"';
+    
+            for (let attribute of attributes) {
+                result += ' ' + attribute.name + '=\"' + eobject.eGet(attribute) + '\"';
+            }
+
+            let ref_empty = eobject.eClass().eAllReferences.isEmpty();
+            if (!ref_empty) {
+                // übernehme erst die Referenzen, die keine Containments sind, in den aktuellen Tag
+                for (let ref of references) {
+                    if (!ref.containment) {
+                        result += ' ' + ref.name + '=\"' + (eobject.eGet(ref) as BasicEObjectImpl)._uuid + '\"';
+                    }
+                }
+                result += '>';
+
+                // für jedes Containment, rufe rekursiv die Funktion auf
+                for (let ref of references) {
+                    if (ref.containment) {
+                        result += this.resolveContainments(eobject, ref, rec_depth + 1, parents);
+                    }
+                }
+            }
+            result += ref_empty?'/>':('\n' + tabs + '</' + eclass.name + '>');
+        }
+
+        return result;
+    }
 
 
 
-    public load = (xml:string):EObject =>{
 
+    // modifiziert für BA
+    // HOW TO USE: übergebe eine XMI und erhalte alle darin enthaltenen EObjects als Array zurück
+    public load = (xml:string):Array<EObject> =>{
+        xml = xml.replace('<?xml version="1.0" encoding="ASCII"?>', ''); // beim parsen störenden Teil der XMI entfernen
         let parser = this.domParser;
         let xmlDoc = parser.parseFromString(xml,"text/xml");
+        var eobjects = new Array<EObject>();
+        
+        for (let i = 0; xmlDoc.childNodes[0].childNodes[i] != null; i++) {
+            if (xmlDoc.childNodes[0].childNodes[i].nodeName == '#text') {
+                continue;
+            } else {
+                let eobj:EObject;
+                this.rootnode(xmlDoc.childNodes[0].childNodes[i] as Element);
+                eobjects.push(this.root);
+            }
+        }
 
-        this.rootnode(xmlDoc.childNodes[0] as Element);
+        // lateResolve aus der for Schleife entfernt, damit es nur einmal am Schluss ausgeführt wird und die verbleibenden Referenzen hinzufügt
+        // damit haben auch Verschiebungen der Reihenfolge in der XMI keine Auswirkungen mehr
+        this.lateResolve();
 
-        return this.root;
+        // this.recAllEObjectsCheck(eobjects);
+        eobjects = this.checkAllBidirectionalReferences(eobjects);
+
+        return eobjects;
     }
+
 
     public rootnode = (node:Element) => {
 
@@ -92,11 +226,12 @@ export class XmiResource{
 
             this.addEStructuralFeatures(this.root, node)
 
-            this.lateResolve();
+            // this.lateResolve();
         }
 
 
     }
+
 
     protected resolveEList = (specification:string)=>{
 
@@ -123,6 +258,7 @@ export class XmiResource{
 
     }
 
+    // modifiziert für BA
     protected resolveEObject = (specification:string) => {
         if(specification===null){
             return null;
@@ -161,6 +297,17 @@ export class XmiResource{
 
           return this.resolveRecurr(queue, EcorePackageImpl.eINSTANCE);
 
+        } else {
+            // gebe registriertes Objekt für die UUID zurück
+            let eobj_from_registry = this.eobjectRegistry[specification];
+
+            if (eobj_from_registry == null) {
+                // wird bei lateResolve eine Referenz nicht aufgelöst, wird eine Fehlermeldung ausgegeben
+                console.error("ERROR: REFERENCE " + specification +  " CANNOT BE RESOLVED!");
+                return;
+            }
+
+            return this.eobjectRegistry[specification];
         }
     }
 
@@ -193,6 +340,7 @@ export class XmiResource{
 
     }
 
+    // modifiziert für BA
     public addEStructuralFeatures = (eobject:EObject, node:Element)=>{
 
 
@@ -205,6 +353,19 @@ export class XmiResource{
 
 
             let name = attribute.name;
+            let value = attribute.value;
+
+            if (name == 'xmi:id') {
+                (eobject as BasicEObjectImpl)._uuid = value;
+                // UUID-Object Paar registrieren, damit später die Referenzen aufgelöst werden können.
+                // falls es mehrere Objekte mit derselben UUID gibt, gebe eine Fehlermeldung aus.
+                if (this.eobjectRegistry[value] != null) {
+                    console.error("ERROR: THE SAME UUID IS USED FOR DIFFERENT OBJECTS!");
+                    return;
+                }
+                this.eobjectRegistry[value] = eobject;
+                continue;
+            }
 
 
             let estructuralfeature = eobject.eClass().getEStructuralFeature(name);
@@ -331,20 +492,12 @@ export class XmiResource{
             else if(estructuralfeature instanceof EReferenceImpl){
 
                 if(estructuralfeature.many){
-
-
-
-
-
                     this.resolve(eobject, estructuralfeature,attribute.value);
-
-
                 }
                 else{
-
                     this.resolve(eobject, estructuralfeature, attribute.value);
-
                 }
+
             }
 
 
@@ -431,10 +584,9 @@ export class XmiResource{
         if(this.eobjectRegistry[value]!==undefined){
 
             if(estructuralfeature.many){
-
+                
                 //TODO eGet is call by reference
-                let items = eobject.eGet(estructuralfeature) as AbstractCollection<EObject>;
-                items.add(this.eobjectRegistry[value]);
+                (eobject.eGet(estructuralfeature) as AbstractCollection<EObject>).add(this.eobjectRegistry[value]);
 
             }
             else{
@@ -467,7 +619,6 @@ export class XmiResource{
             var feature = job.eStructuralFeature;
             var path = job.value;
 
-
             if (!feature.many)
             {
                 eobject.eSet(feature, this.resolveEObject(path));
@@ -481,7 +632,75 @@ export class XmiResource{
         }
     }
 
+    // für BA erstellt
+    private checkAllBidirectionalReferences = (eobjects:Array<EObject>):Array<EObject> => {
+        for (let eobject of eobjects) {
+            let eclass = eobject.eClass();
+            let references = eclass.eAllReferences;
+            for (let ref of references) {
+                // bidirektionale Referenzen auf Korrektheit prüfen
+                if (ref.eOpposite != null) {
+                    if ((eobject.eGet(ref.eOpposite) as BasicEObjectImpl)._uuid != (eobject.eGet(eobject) as BasicEObjectImpl)._uuid) {
+                        console.error("ERROR: BIDIRECTIONAL RELATIONSHIP INCORRECT!");
+                        return;
+                    }
+                }
+            }
+        }
+        return eobjects;
+    }
+
+    // von JsonResource übernommen
+    private validEAllReferences = (eobject:EObject, features:OrderedSet<EReference>) : OrderedSet<EReference> => {
+
+        var result = new OrderedSet<EReference>();
+
+        for(let feature of features){
+
+
+            if(!feature.transient && !feature.derived){
+
+                if(eobject.eGet(feature) != null){
+
+                    if(feature.many && !(eobject.eGet(feature) as OrderedSet<any>).isEmpty()){
+                        result.add(feature);
+                    }
+                    else if(!feature.many){
+                        result.add(feature);
+                    }
+                }
+            }
+        }
+
+
+        return result;
+    }
+
+    // von JsonResource übernommen
+    private validEAllAttributes = (eobject:EObject, features:OrderedSet<EAttribute>) : OrderedSet<EAttribute> => {
+
+        var result = new OrderedSet<EAttribute>();
+
+        for(let feature of features){
+
+
+            if(!feature.transient && !feature.derived){
+
+                if(eobject.eGet(feature) != null){
+
+                    if(feature.many && !(eobject.eGet(feature) as OrderedSet<any>).isEmpty()){
+                        result.add(feature);
+                    }
+                    else if(!feature.many){
+                        result.add(feature);
+                    }
+                }
+            }
+        }
+
+
+        return result;
+    }
+
 
 }
-
-
