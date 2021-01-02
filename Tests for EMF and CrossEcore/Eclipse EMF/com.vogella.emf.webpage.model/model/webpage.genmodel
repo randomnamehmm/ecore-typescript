@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/com.vogella.emf.webpage.model/src-gen" creationIcons="false"
+    editDirectory="/com.vogella.emf.webpage.model.edit/src-gen" editorDirectory="/com.vogella.emf.webpage.model.editor/src-gen"
+    modelPluginID="com.vogella.emf.webpage.model" modelName="Webpage" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>webpage.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Webpage" basePackage="com.vogella.emf.webpage.model" disposableProviderFactory="true"
+      ecorePackage="webpage.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="webpage.ecore#//ArticleType">
+      <genEnumLiterals ecoreEnumLiteral="webpage.ecore#//ArticleType/REVIEW"/>
+      <genEnumLiterals ecoreEnumLiteral="webpage.ecore#//ArticleType/STUDY"/>
+    </genEnums>
+    <genClasses ecoreClass="webpage.ecore#//Website">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute webpage.ecore#//Website/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute webpage.ecore#//Website/title"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute webpage.ecore#//Website/description"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference webpage.ecore#//Website/categories"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference webpage.ecore#//Website/pictures"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute webpage.ecore#//Website/number"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute webpage.ecore#//Website/links"/>
+    </genClasses>
+    <genClasses ecoreClass="webpage.ecore#//Category">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute webpage.ecore#//Category/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference webpage.ecore#//Category/articles"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute webpage.ecore#//Category/number"/>
+    </genClasses>
+    <genClasses ecoreClass="webpage.ecore#//Article">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute webpage.ecore#//Article/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference webpage.ecore#//Article/chapters"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference webpage.ecore#//Article/authors"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference webpage.ecore#//Article/picture"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute webpage.ecore#//Article/articletype"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference webpage.ecore#//Article/related"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference webpage.ecore#//Article/sources"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute webpage.ecore#//Article/flags"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute webpage.ecore#//Article/number"/>
+    </genClasses>
+    <genClasses ecoreClass="webpage.ecore#//Person">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute webpage.ecore#//Person/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference webpage.ecore#//Person/articles"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute webpage.ecore#//Person/surname"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute webpage.ecore#//Person/age"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute webpage.ecore#//Person/access_key"/>
+    </genClasses>
+    <genClasses ecoreClass="webpage.ecore#//Student">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute webpage.ecore#//Student/matrikelnr"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute webpage.ecore#//Student/grades"/>
+    </genClasses>
+    <genClasses ecoreClass="webpage.ecore#//Chapter">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute webpage.ecore#//Chapter/title"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute webpage.ecore#//Chapter/subSection"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute webpage.ecore#//Chapter/letters"/>
+    </genClasses>
+    <genClasses ecoreClass="webpage.ecore#//Picture">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute webpage.ecore#//Picture/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute webpage.ecore#//Picture/information"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute webpage.ecore#//Picture/number"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute webpage.ecore#//Picture/hash"/>
+    </genClasses>
+    <genClasses ecoreClass="webpage.ecore#//Source">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute webpage.ecore#//Source/title"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute webpage.ecore#//Source/url"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute webpage.ecore#//Source/page_no"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute webpage.ecore#//Source/authors"/>
+    </genClasses>
+    <genClasses ecoreClass="webpage.ecore#//AnimatedPicture">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute webpage.ecore#//AnimatedPicture/repeat"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

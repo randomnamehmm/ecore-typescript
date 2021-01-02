@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:webpage="http://www.xmibypeterfollowingthetutoria.ls/webpage">
+    <webpage:Website xmi:id="1eb328f8-5143-4d02-a0c8-96389f6739a9" name="website2" title="website title2" description="website description2" number="2.0">
+        <links>www.facebook.de</links>
+        <categories xmi:id="cd5907a5-1b49-436a-8b3c-c2eeea53da91" name="category2" number="2">
+            <articles xmi:id="d08a0fb3-4aae-4802-a6d0-34cb9cbac6d4" name="article3" authors="0d83f79f-8e60-425b-d968-34a47037bf52" picture="dae39646-597e-48f0-f757-fcf2a0270319" related="cf70f1d1-99c2-441b-8912-7b9069db69b8" sources="2db2de81-02ff-4a04-ec5f-4538eff79ccf">
+                <chapters xmi:id="48df0567-9bf3-4596-c5c7-4019279accdf" subSection="false">
+                    <title>Title3</title>
+                    <letters>121</letters>
+                </chapters>
+            </articles>
+        </categories>
+        <pictures xmi:id="dae39646-597e-48f0-f757-fcf2a0270319" name="picture3" number="3">
+            <information>119</information>
+        </pictures>
+    </webpage:Website>
+    <webpage:Person xmi:id="8a146ffd-593d-4803-bdba-8a2ef73957dc" surname="Nachname" age="28" articles="52899287-5f52-47f4-94b0-1a58707d7727">
+        <name>Erster Vorname</name>
+        <name>Zweiter Vorname</name>
+        <access_key>97</access_key>
+        <access_key>101</access_key>
+        <access_key>115</access_key>
+    </webpage:Person>
+    <webpage:Website xmi:id="c1bafeee-96bc-4592-9e99-a88f0a72746f" name="website" title="website title" description="website description" number="1.0">
+        <links>www.google.de</links>
+        <links>www.kit.edu</links>
+        <categories xmi:id="a7d9becc-a82b-4e60-a6b2-3dd89c3a3ab7" name="category" number="1">
+            <articles xmi:id="52899287-5f52-47f4-94b0-1a58707d7727" name="article" articletype="STUDY" number="1.0" authors="8a146ffd-593d-4803-bdba-8a2ef73957dc 0d83f79f-8e60-425b-d968-34a47037bf52" picture="fc571deb-3aaa-4f25-c83e-47d3c4ea432f" related="cf70f1d1-99c2-441b-8912-7b9069db69b8" sources="0765806f-128a-4c6e-ad1e-d435f53aa4af">
+                <flags>true</flags>
+                <flags>false</flags>
+                <chapters xmi:id="98821141-17cd-4e6d-f0d2-2b3730c719f3" subSection="false">
+                    <title>Title</title>
+                    <title>Subtitle</title>
+                    <letters>108</letters>
+                    <letters>101</letters>
+                    <letters>116</letters>
+                </chapters>
+            </articles>
+            <articles xmi:id="cf70f1d1-99c2-441b-8912-7b9069db69b8" name="article2" number="2.0" authors="0d83f79f-8e60-425b-d968-34a47037bf52" picture="fc63232b-702f-4b0a-9c1f-fd9b6ca74bf4" related="52899287-5f52-47f4-94b0-1a58707d7727" sources="2db2de81-02ff-4a04-ec5f-4538eff79ccf 4b9cd976-722d-4fae-e6ab-93b93304ebcc">
+                <flags>true</flags>
+                <chapters xmi:id="45ba745c-b2d2-4f0e-ede3-eb9e9f739031" subSection="false">
+                    <title>Title2</title>
+                    <title>Subtitle2</title>
+                    <letters>119</letters>
+                    <letters>111</letters>
+                    <letters>114</letters>
+                    <letters>100</letters>
+                </chapters>
+            </articles>
+        </categories>
+        <pictures xmi:id="fc571deb-3aaa-4f25-c83e-47d3c4ea432f" name="picture" number="1">
+            <information>97</information>
+            <information>98</information>
+            <information>99</information>
+            <hash>true</hash>
+            <hash>false</hash>
+        </pictures>
+        <pictures xmi:id="fc63232b-702f-4b0a-9c1f-fd9b6ca74bf4" name="picture2" number="2">
+            <information>120</information>
+            <information>121</information>
+            <information>122</information>
+            <hash>true</hash>
+        </pictures>
+    </webpage:Website>
+    <webpage:Student xmi:id="0d83f79f-8e60-425b-d968-34a47037bf52" matrikelnr="1780794" surname="Digas" age="24" articles="52899287-5f52-47f4-94b0-1a58707d7727 cf70f1d1-99c2-441b-8912-7b9069db69b8 d08a0fb3-4aae-4802-a6d0-34cb9cbac6d4">
+        <grades>2</grades>
+        <grades>2.3</grades>
+        <grades>2.7</grades>
+        <name>Peter</name>
+        <name>Christos</name>
+        <access_key>116</access_key>
+        <access_key>102</access_key>
+    </webpage:Student>
+    <webpage:Source xmi:id="0765806f-128a-4c6e-ad1e-d435f53aa4af" title="source" url="source url">
+        <page_no>1</page_no>
+        <page_no>2</page_no>
+        <authors>This was once</authors>
+        <authors>revealed to me</authors>
+        <authors>in a dream</authors>
+    </webpage:Source>
+    <webpage:Source xmi:id="2db2de81-02ff-4a04-ec5f-4538eff79ccf" title="source2" url="source url2">
+        <page_no>3</page_no>
+        <authors>I was there</authors>
+        <authors>3000 years ago</authors>
+    </webpage:Source>
+    <webpage:Source xmi:id="4b9cd976-722d-4fae-e6ab-93b93304ebcc" title="source3" url="source url3">
+        <page_no>7</page_no>
+        <authors>Dude trust me</authors>
+    </webpage:Source>
+</xmi:XMI>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:webpage="http://www.xmibypeterfollowingthetutoria.ls/webpage">
+  <webpage:Website xmi:id="_NnUR8DQdEeuIrKb3NleqKQ" name="website2" title="website title2" description="website description2" number="2.0">
+    <categories xmi:id="_NnU5ADQdEeuIrKb3NleqKQ" name="category2" number="2">
+      <articles xmi:id="_NnU5ATQdEeuIrKb3NleqKQ" name="article3" authors="_NnU5DTQdEeuIrKb3NleqKQ" picture="_NnU5AzQdEeuIrKb3NleqKQ" related="_NnU5CTQdEeuIrKb3NleqKQ" sources="_NnU5DzQdEeuIrKb3NleqKQ">
+        <chapters xmi:id="_NnU5AjQdEeuIrKb3NleqKQ">
+          <title>Title3</title>
+          <letters>121</letters>
+        </chapters>
+      </articles>
+    </categories>
+    <pictures xmi:id="_NnU5AzQdEeuIrKb3NleqKQ" name="picture3" number="3">
+      <information>119</information>
+    </pictures>
+    <links>www.facebook.de</links>
+  </webpage:Website>
+  <webpage:Person xmi:id="_NnU5BDQdEeuIrKb3NleqKQ" articles="_NnU5BzQdEeuIrKb3NleqKQ" surname="Nachname" age="28">
+    <name>Erster Vorname</name>
+    <name>Zweiter Vorname</name>
+    <access_key>97</access_key>
+    <access_key>101</access_key>
+    <access_key>115</access_key>
+  </webpage:Person>
+  <webpage:Website xmi:id="_NnU5BTQdEeuIrKb3NleqKQ" name="website" title="website title" description="website description" number="1.0">
+    <categories xmi:id="_NnU5BjQdEeuIrKb3NleqKQ" name="category" number="1">
+      <articles xmi:id="_NnU5BzQdEeuIrKb3NleqKQ" name="article" authors="_NnU5BDQdEeuIrKb3NleqKQ _NnU5DTQdEeuIrKb3NleqKQ" picture="_NnU5CzQdEeuIrKb3NleqKQ" articletype="STUDY" related="_NnU5CTQdEeuIrKb3NleqKQ" sources="_NnU5DjQdEeuIrKb3NleqKQ" number="1.0">
+        <chapters xmi:id="_NnU5CDQdEeuIrKb3NleqKQ">
+          <title>Title</title>
+          <title>Subtitle</title>
+          <letters>108</letters>
+          <letters>101</letters>
+          <letters>116</letters>
+        </chapters>
+        <flags>true</flags>
+        <flags>false</flags>
+      </articles>
+      <articles xmi:id="_NnU5CTQdEeuIrKb3NleqKQ" name="article2" authors="_NnU5DTQdEeuIrKb3NleqKQ" picture="_NnU5DDQdEeuIrKb3NleqKQ" related="_NnU5BzQdEeuIrKb3NleqKQ" sources="_NnU5DzQdEeuIrKb3NleqKQ _NnU5EDQdEeuIrKb3NleqKQ" number="2.0">
+        <chapters xmi:id="_NnU5CjQdEeuIrKb3NleqKQ">
+          <title>Title2</title>
+          <title>Subtitle2</title>
+          <letters>119</letters>
+          <letters>111</letters>
+          <letters>114</letters>
+          <letters>100</letters>
+        </chapters>
+        <flags>true</flags>
+      </articles>
+    </categories>
+    <pictures xmi:id="_NnU5CzQdEeuIrKb3NleqKQ" name="picture" number="1">
+      <information>97</information>
+      <information>98</information>
+      <information>99</information>
+      <hash>true</hash>
+      <hash>false</hash>
+    </pictures>
+    <pictures xmi:id="_NnU5DDQdEeuIrKb3NleqKQ" name="picture2" number="2">
+      <information>120</information>
+      <information>121</information>
+      <information>122</information>
+      <hash>true</hash>
+    </pictures>
+    <links>www.google.de</links>
+    <links>www.kit.edu</links>
+  </webpage:Website>
+  <webpage:Student xmi:id="_NnU5DTQdEeuIrKb3NleqKQ" articles="_NnU5BzQdEeuIrKb3NleqKQ _NnU5CTQdEeuIrKb3NleqKQ _NnU5ATQdEeuIrKb3NleqKQ" surname="Digas" age="24" matrikelnr="1780794">
+    <name>Peter</name>
+    <name>Christos</name>
+    <access_key>116</access_key>
+    <access_key>102</access_key>
+    <grades>2.0</grades>
+    <grades>2.3</grades>
+    <grades>2.7</grades>
+  </webpage:Student>
+  <webpage:Source xmi:id="_NnU5DjQdEeuIrKb3NleqKQ" title="source" url="source url">
+    <page_no>1</page_no>
+    <page_no>2</page_no>
+    <authors>This was once</authors>
+    <authors>revealed to me</authors>
+    <authors>in a dream</authors>
+  </webpage:Source>
+  <webpage:Source xmi:id="_NnU5DzQdEeuIrKb3NleqKQ" title="source2" url="source url2">
+    <page_no>3</page_no>
+    <authors>I was there</authors>
+    <authors>3000 years ago</authors>
+  </webpage:Source>
+  <webpage:Source xmi:id="_NnU5EDQdEeuIrKb3NleqKQ" title="source3" url="source url3">
+    <page_no>7</page_no>
+    <authors>Dude trust me</authors>
+  </webpage:Source>
+</xmi:XMI>

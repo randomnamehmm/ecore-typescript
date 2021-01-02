@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:webpage="http://www.xmibypeterfollowingthetutoria.ls/webpage">
+  <webpage:Article xmi:id="_c06pEDaEEeuZNaf4QRGOSg" authors="_c06pEjaEEeuZNaf4QRGOSg" picture="_c06pETaEEeuZNaf4QRGOSg" related="_c06pEDaEEeuZNaf4QRGOSg"/>
+  <webpage:Picture xmi:id="_c06pETaEEeuZNaf4QRGOSg"/>
+  <webpage:Person xmi:id="_c06pEjaEEeuZNaf4QRGOSg" articles="_c06pEDaEEeuZNaf4QRGOSg"/>
+</xmi:XMI>

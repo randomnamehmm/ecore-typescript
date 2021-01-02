@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:webpage="http://www.xmibypeterfollowingthetutoria.ls/webpage" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.xmibypeterfollowingthetutoria.ls/webpage">
+  <xsd:import namespace="http://www.omg.org/XMI" schemaLocation="XMI.xsd"/>
+  <xsd:complexType name="Web">
+    <xsd:annotation>
+      <xsd:documentation>This class represents a complete web representation.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:choice maxOccurs="unbounded" minOccurs="0">
+      <xsd:element name="pages" type="webpage:Website"/>
+      <xsd:element ref="xmi:Extension"/>
+    </xsd:choice>
+    <xsd:attribute ref="xmi:id"/>
+    <xsd:attributeGroup ref="xmi:ObjectAttribs"/>
+    <xsd:attribute name="name" type="xsd:string"/>
+    <xsd:attribute name="title" type="xsd:string"/>
+    <xsd:attribute name="description" type="xsd:string"/>
+    <xsd:attribute name="keywords" type="xsd:string"/>
+  </xsd:complexType>
+  <xsd:element name="Web" type="webpage:Web">
+    <xsd:annotation>
+      <xsd:documentation>This class represents a complete web representation.</xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:complexType name="Website">
+    <xsd:choice maxOccurs="unbounded" minOccurs="0">
+      <xsd:element name="category" type="webpage:Category"/>
+      <xsd:element ref="xmi:Extension"/>
+    </xsd:choice>
+    <xsd:attribute ref="xmi:id"/>
+    <xsd:attributeGroup ref="xmi:ObjectAttribs"/>
+    <xsd:attribute name="name" type="xsd:string"/>
+    <xsd:attribute name="title" type="xsd:string"/>
+    <xsd:attribute name="description" type="xsd:string"/>
+  </xsd:complexType>
+  <xsd:element name="Website" type="webpage:Website"/>
+  <xsd:complexType name="Category">
+    <xsd:choice maxOccurs="unbounded" minOccurs="0">
+      <xsd:element name="article" type="webpage:Article"/>
+      <xsd:element ref="xmi:Extension"/>
+    </xsd:choice>
+    <xsd:attribute ref="xmi:id"/>
+    <xsd:attributeGroup ref="xmi:ObjectAttribs"/>
+    <xsd:attribute name="name" type="xsd:string"/>
+  </xsd:complexType>
+  <xsd:element name="Category" type="webpage:Category"/>
+  <xsd:complexType name="Article">
+    <xsd:choice maxOccurs="unbounded" minOccurs="0">
+      <xsd:element ref="xmi:Extension"/>
+    </xsd:choice>
+    <xsd:attribute ref="xmi:id"/>
+    <xsd:attributeGroup ref="xmi:ObjectAttribs"/>
+    <xsd:attribute name="name" type="xsd:string"/>
+  </xsd:complexType>
+  <xsd:element name="Article" type="webpage:Article"/>
+  <xsd:complexType name="Test">
+    <xsd:choice maxOccurs="unbounded" minOccurs="0">
+      <xsd:element name="web" type="webpage:Web"/>
+      <xsd:element ref="xmi:Extension"/>
+    </xsd:choice>
+    <xsd:attribute ref="xmi:id"/>
+    <xsd:attributeGroup ref="xmi:ObjectAttribs"/>
+    <xsd:attribute name="Test" type="xsd:boolean"/>
+    <xsd:attribute name="web" type="xsd:string"/>
+  </xsd:complexType>
+  <xsd:element name="Test" type="webpage:Test"/>
+</xsd:schema>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:webpage="http://www.xmibypeterfollowingthetutoria.ls/webpage">
+  <webpage:Website xmi:id="_c1JSkDaEEeuZNaf4QRGOSg" number="NaN">
+    <pictures xmi:id="_c1JSkTaEEeuZNaf4QRGOSg"/>
+  </webpage:Website>
+  <webpage:Website xmi:id="_c1JSkjaEEeuZNaf4QRGOSg" number="-Infinity">
+    <pictures xmi:id="_c1JSkzaEEeuZNaf4QRGOSg"/>
+  </webpage:Website>
+  <webpage:Website xmi:id="_c1JSlDaEEeuZNaf4QRGOSg" number="Infinity">
+    <pictures xmi:id="_c1JSlTaEEeuZNaf4QRGOSg"/>
+  </webpage:Website>
+</xmi:XMI>
