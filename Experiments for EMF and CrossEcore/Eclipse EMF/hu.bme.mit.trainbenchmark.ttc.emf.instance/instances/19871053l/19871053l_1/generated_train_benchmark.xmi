@@ -1,0 +1,1520 @@
+<?xml version="1.0" encoding="ASCII"?>
+<hu.bme.mit.trainbenchmark:RailwayContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:hu.bme.mit.trainbenchmark="http://www.semanticweb.org/ontologies/2015/ttc/trainbenchmark" xmi:id="_sal70EMZEeuYLKJd8tcSjg">
+  <semaphores xmi:type="hu.bme.mit.trainbenchmark:Semaphore" xmi:id="_sbXX4EMZEeuYLKJd8tcSjg" id="1" signal="GO"/>
+  <semaphores xmi:type="hu.bme.mit.trainbenchmark:Semaphore" xmi:id="_sbX-8EMZEeuYLKJd8tcSjg" id="2" signal="GO"/>
+  <semaphores xmi:type="hu.bme.mit.trainbenchmark:Semaphore" xmi:id="_sbkMMEMZEeuYLKJd8tcSjg" id="406" signal="GO"/>
+  <semaphores xmi:type="hu.bme.mit.trainbenchmark:Semaphore" xmi:id="_sbn2rUMZEeuYLKJd8tcSjg" id="672" signal="GO"/>
+  <semaphores xmi:type="hu.bme.mit.trainbenchmark:Semaphore" xmi:id="_sbqS3EMZEeuYLKJd8tcSjg" id="880" signal="GO"/>
+  <routes xmi:type="hu.bme.mit.trainbenchmark:Route" xmi:id="_sbYmAEMZEeuYLKJd8tcSjg" id="3" entry="_sbXX4EMZEeuYLKJd8tcSjg" exit="_sbX-8EMZEeuYLKJd8tcSjg">
+    <follows xmi:type="hu.bme.mit.trainbenchmark:SwitchPosition" xmi:id="_sbbCQEMZEeuYLKJd8tcSjg" id="47" switch="_sbabNUMZEeuYLKJd8tcSjg" position="RIGHT"/>
+    <follows xmi:type="hu.bme.mit.trainbenchmark:SwitchPosition" xmi:id="_sbbpXUMZEeuYLKJd8tcSjg" id="73" switch="_sbbpXEMZEeuYLKJd8tcSjg"/>
+    <follows xmi:type="hu.bme.mit.trainbenchmark:SwitchPosition" xmi:id="_sbbpZUMZEeuYLKJd8tcSjg" id="81" switch="_sbbpZEMZEeuYLKJd8tcSjg" position="RIGHT"/>
+    <follows xmi:type="hu.bme.mit.trainbenchmark:SwitchPosition" xmi:id="_sbcQbkMZEeuYLKJd8tcSjg" id="107" switch="_sbcQbUMZEeuYLKJd8tcSjg" position="LEFT"/>
+    <follows xmi:type="hu.bme.mit.trainbenchmark:SwitchPosition" xmi:id="_sbc3gkMZEeuYLKJd8tcSjg" id="139" switch="_sbc3gUMZEeuYLKJd8tcSjg" position="LEFT"/>
+    <follows xmi:type="hu.bme.mit.trainbenchmark:SwitchPosition" xmi:id="_sbeFkUMZEeuYLKJd8tcSjg" id="177" switch="_sbeFkEMZEeuYLKJd8tcSjg" position="LEFT"/>
+    <follows xmi:type="hu.bme.mit.trainbenchmark:SwitchPosition" xmi:id="_sbeFmUMZEeuYLKJd8tcSjg" id="185" switch="_sbeFmEMZEeuYLKJd8tcSjg" position="RIGHT"/>
+    <follows xmi:type="hu.bme.mit.trainbenchmark:SwitchPosition" xmi:id="_sbfTu0MZEeuYLKJd8tcSjg" id="235" switch="_sbfTukMZEeuYLKJd8tcSjg"/>
+    <follows xmi:type="hu.bme.mit.trainbenchmark:SwitchPosition" xmi:id="_sbf60kMZEeuYLKJd8tcSjg" id="267" switch="_sbf60UMZEeuYLKJd8tcSjg"/>
+    <follows xmi:type="hu.bme.mit.trainbenchmark:SwitchPosition" xmi:id="_sbgh1kMZEeuYLKJd8tcSjg" id="281" switch="_sbgh1UMZEeuYLKJd8tcSjg" position="LEFT"/>
+    <follows xmi:type="hu.bme.mit.trainbenchmark:SwitchPosition" xmi:id="_sbhI50MZEeuYLKJd8tcSjg" id="307" switch="_sbhI5kMZEeuYLKJd8tcSjg" position="RIGHT"/>
+    <follows xmi:type="hu.bme.mit.trainbenchmark:SwitchPosition" xmi:id="_sbhJAUMZEeuYLKJd8tcSjg" id="333" switch="_sbhJAEMZEeuYLKJd8tcSjg" position="LEFT"/>
+    <follows xmi:type="hu.bme.mit.trainbenchmark:SwitchPosition" xmi:id="_sbi-EEMZEeuYLKJd8tcSjg" id="383" switch="_sbiXDEMZEeuYLKJd8tcSjg" position="LEFT"/>
+    <follows xmi:type="hu.bme.mit.trainbenchmark:SwitchPosition" xmi:id="_sbi-GEMZEeuYLKJd8tcSjg" id="391" switch="_sbi-F0MZEeuYLKJd8tcSjg" position="RIGHT"/>
+    <follows xmi:type="hu.bme.mit.trainbenchmark:SwitchPosition" xmi:id="_sbi-JkMZEeuYLKJd8tcSjg" id="405" switch="_sbi-JUMZEeuYLKJd8tcSjg" position="STRAIGHT"/>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbZNEEMZEeuYLKJd8tcSjg" id="5">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbZNEUMZEeuYLKJd8tcSjg" id="6" connectsTo="_sbZNEkMZEeuYLKJd8tcSjg" length="358"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbZNEkMZEeuYLKJd8tcSjg" id="7" connectsTo="_sbZ0IEMZEeuYLKJd8tcSjg" length="461"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbZ0IEMZEeuYLKJd8tcSjg" id="8" connectsTo="_sbZ0IUMZEeuYLKJd8tcSjg" length="879"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbZ0IUMZEeuYLKJd8tcSjg" id="9" connectsTo="_sbZ0IkMZEeuYLKJd8tcSjg" length="829"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbZ0IkMZEeuYLKJd8tcSjg" id="10" connectsTo="_sbZ0JEMZEeuYLKJd8tcSjg" length="732"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbZ0I0MZEeuYLKJd8tcSjg" id="11">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbZ0JEMZEeuYLKJd8tcSjg" id="12" connectsTo="_sbZ0JUMZEeuYLKJd8tcSjg" length="376"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbZ0JUMZEeuYLKJd8tcSjg" id="13" connectsTo="_sbZ0JkMZEeuYLKJd8tcSjg" length="505"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbZ0JkMZEeuYLKJd8tcSjg" id="14" connectsTo="_sbZ0J0MZEeuYLKJd8tcSjg" length="294"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbZ0J0MZEeuYLKJd8tcSjg" id="15" connectsTo="_sbZ0KEMZEeuYLKJd8tcSjg" length="306"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbZ0KEMZEeuYLKJd8tcSjg" id="16" connectsTo="_sbZ0KkMZEeuYLKJd8tcSjg" length="597"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbZ0KUMZEeuYLKJd8tcSjg" id="17">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbZ0KkMZEeuYLKJd8tcSjg" id="18" connectsTo="_sbZ0K0MZEeuYLKJd8tcSjg" length="813"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbZ0K0MZEeuYLKJd8tcSjg" id="19" connectsTo="_sbZ0LEMZEeuYLKJd8tcSjg" length="831"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbZ0LEMZEeuYLKJd8tcSjg" id="20" connectsTo="_sbZ0LUMZEeuYLKJd8tcSjg" length="127"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbZ0LUMZEeuYLKJd8tcSjg" id="21" connectsTo="_sbZ0LkMZEeuYLKJd8tcSjg" length="974"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbZ0LkMZEeuYLKJd8tcSjg" id="22" connectsTo="_sbZ0MEMZEeuYLKJd8tcSjg" length="324"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbZ0L0MZEeuYLKJd8tcSjg" id="23">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbZ0MEMZEeuYLKJd8tcSjg" id="24" connectsTo="_sbZ0MUMZEeuYLKJd8tcSjg" length="645"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbZ0MUMZEeuYLKJd8tcSjg" id="25" connectsTo="_sbZ0MkMZEeuYLKJd8tcSjg" length="517"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbZ0MkMZEeuYLKJd8tcSjg" id="26" connectsTo="_sbZ0M0MZEeuYLKJd8tcSjg" length="641"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbZ0M0MZEeuYLKJd8tcSjg" id="27" connectsTo="_sbZ0NEMZEeuYLKJd8tcSjg" length="639"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbZ0NEMZEeuYLKJd8tcSjg" id="28" connectsTo="_sbZ0NkMZEeuYLKJd8tcSjg" length="852"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbZ0NUMZEeuYLKJd8tcSjg" id="29">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbZ0NkMZEeuYLKJd8tcSjg" id="30" connectsTo="_sbZ0N0MZEeuYLKJd8tcSjg" length="472"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbZ0N0MZEeuYLKJd8tcSjg" id="31" connectsTo="_sbZ0OEMZEeuYLKJd8tcSjg" length="679"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbZ0OEMZEeuYLKJd8tcSjg" id="32" connectsTo="_sbZ0OUMZEeuYLKJd8tcSjg" length="745"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbZ0OUMZEeuYLKJd8tcSjg" id="33" connectsTo="_sbZ0OkMZEeuYLKJd8tcSjg" length="711"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbZ0OkMZEeuYLKJd8tcSjg" id="34" connectsTo="_sbZ0PEMZEeuYLKJd8tcSjg" length="733"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbZ0O0MZEeuYLKJd8tcSjg" id="35">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbZ0PEMZEeuYLKJd8tcSjg" id="36" connectsTo="_sbZ0PUMZEeuYLKJd8tcSjg" length="655"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbZ0PUMZEeuYLKJd8tcSjg" id="37" connectsTo="_sbZ0PkMZEeuYLKJd8tcSjg" length="988"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbZ0PkMZEeuYLKJd8tcSjg" id="38" connectsTo="_sbZ0P0MZEeuYLKJd8tcSjg" length="483"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbZ0P0MZEeuYLKJd8tcSjg" id="39" connectsTo="_sbZ0QEMZEeuYLKJd8tcSjg" length="636"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbZ0QEMZEeuYLKJd8tcSjg" id="40" connectsTo="_sbabMEMZEeuYLKJd8tcSjg" length="849"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbZ0QUMZEeuYLKJd8tcSjg" id="41">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbabMEMZEeuYLKJd8tcSjg" id="42" connectsTo="_sbabMUMZEeuYLKJd8tcSjg" length="429"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbabMUMZEeuYLKJd8tcSjg" id="43" connectsTo="_sbabMkMZEeuYLKJd8tcSjg" length="892"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbabMkMZEeuYLKJd8tcSjg" id="44" connectsTo="_sbabM0MZEeuYLKJd8tcSjg" length="149"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbabM0MZEeuYLKJd8tcSjg" id="45" connectsTo="_sbabNEMZEeuYLKJd8tcSjg" length="209"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbabNEMZEeuYLKJd8tcSjg" id="46" connectsTo="_sbbpXEMZEeuYLKJd8tcSjg" length="721"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Switch" xmi:id="_sbabNUMZEeuYLKJd8tcSjg" id="4" connectsTo="_sbZNEUMZEeuYLKJd8tcSjg" currentPosition="RIGHT" positions="_sbbCQEMZEeuYLKJd8tcSjg"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbbCQUMZEeuYLKJd8tcSjg" id="49">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbbCQkMZEeuYLKJd8tcSjg" id="50" connectsTo="_sbbCQ0MZEeuYLKJd8tcSjg" length="560"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbbCQ0MZEeuYLKJd8tcSjg" id="51" connectsTo="_sbbCREMZEeuYLKJd8tcSjg" length="190"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbbCREMZEeuYLKJd8tcSjg" id="52" connectsTo="_sbbCRUMZEeuYLKJd8tcSjg" length="764"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbbCRUMZEeuYLKJd8tcSjg" id="53" connectsTo="_sbbCRkMZEeuYLKJd8tcSjg" length="872"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbbCRkMZEeuYLKJd8tcSjg" id="54" connectsTo="_sbbCSEMZEeuYLKJd8tcSjg" length="515"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbbCR0MZEeuYLKJd8tcSjg" id="55">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbbCSEMZEeuYLKJd8tcSjg" id="56" connectsTo="_sbbCSUMZEeuYLKJd8tcSjg" length="288"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbbCSUMZEeuYLKJd8tcSjg" id="57" connectsTo="_sbbCSkMZEeuYLKJd8tcSjg" length="852"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbbCSkMZEeuYLKJd8tcSjg" id="58" connectsTo="_sbbCS0MZEeuYLKJd8tcSjg" length="933"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbbCS0MZEeuYLKJd8tcSjg" id="59" connectsTo="_sbbCTEMZEeuYLKJd8tcSjg" length="692"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbbCTEMZEeuYLKJd8tcSjg" id="60" connectsTo="_sbbpUUMZEeuYLKJd8tcSjg" length="590"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbbpUEMZEeuYLKJd8tcSjg" id="61">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbbpUUMZEeuYLKJd8tcSjg" id="62" connectsTo="_sbbpUkMZEeuYLKJd8tcSjg" length="494"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbbpUkMZEeuYLKJd8tcSjg" id="63" connectsTo="_sbbpU0MZEeuYLKJd8tcSjg" length="273"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbbpU0MZEeuYLKJd8tcSjg" id="64" connectsTo="_sbbpVEMZEeuYLKJd8tcSjg" length="137"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbbpVEMZEeuYLKJd8tcSjg" id="65" connectsTo="_sbbpVUMZEeuYLKJd8tcSjg" length="137"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbbpVUMZEeuYLKJd8tcSjg" id="66" connectsTo="_sbbpV0MZEeuYLKJd8tcSjg" length="53"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbbpVkMZEeuYLKJd8tcSjg" id="67">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbbpV0MZEeuYLKJd8tcSjg" id="68" connectsTo="_sbbpWEMZEeuYLKJd8tcSjg" length="220"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbbpWEMZEeuYLKJd8tcSjg" id="69" connectsTo="_sbbpWUMZEeuYLKJd8tcSjg" length="929"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbbpWUMZEeuYLKJd8tcSjg" id="70" connectsTo="_sbbpWkMZEeuYLKJd8tcSjg" length="152"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbbpWkMZEeuYLKJd8tcSjg" id="71" connectsTo="_sbbpW0MZEeuYLKJd8tcSjg" length="886"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbbpW0MZEeuYLKJd8tcSjg" id="72" connectsTo="_sbbpZEMZEeuYLKJd8tcSjg" length="23"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Switch" xmi:id="_sbbpXEMZEeuYLKJd8tcSjg" id="48" connectsTo="_sbbCQkMZEeuYLKJd8tcSjg" positions="_sbbpXUMZEeuYLKJd8tcSjg"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbbpXkMZEeuYLKJd8tcSjg" id="75">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbbpX0MZEeuYLKJd8tcSjg" id="76" connectsTo="_sbbpYEMZEeuYLKJd8tcSjg" length="375"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbbpYEMZEeuYLKJd8tcSjg" id="77" connectsTo="_sbbpYUMZEeuYLKJd8tcSjg" length="942"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbbpYUMZEeuYLKJd8tcSjg" id="78" connectsTo="_sbbpYkMZEeuYLKJd8tcSjg" length="18"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbbpYkMZEeuYLKJd8tcSjg" id="79" connectsTo="_sbbpY0MZEeuYLKJd8tcSjg" length="488"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbbpY0MZEeuYLKJd8tcSjg" id="80" connectsTo="_sbcQbUMZEeuYLKJd8tcSjg" length="559"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Switch" xmi:id="_sbbpZEMZEeuYLKJd8tcSjg" id="74" connectsTo="_sbbpX0MZEeuYLKJd8tcSjg" currentPosition="RIGHT" positions="_sbbpZUMZEeuYLKJd8tcSjg"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbbpZkMZEeuYLKJd8tcSjg" id="83">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbbpZ0MZEeuYLKJd8tcSjg" id="84" connectsTo="_sbbpaEMZEeuYLKJd8tcSjg" length="111"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbbpaEMZEeuYLKJd8tcSjg" id="85" connectsTo="_sbbpaUMZEeuYLKJd8tcSjg" length="757"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbbpaUMZEeuYLKJd8tcSjg" id="86" connectsTo="_sbbpakMZEeuYLKJd8tcSjg" length="711"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbbpakMZEeuYLKJd8tcSjg" id="87" connectsTo="_sbbpa0MZEeuYLKJd8tcSjg" length="740"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbbpa0MZEeuYLKJd8tcSjg" id="88" connectsTo="_sbbpbUMZEeuYLKJd8tcSjg" length="242"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbbpbEMZEeuYLKJd8tcSjg" id="89">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbbpbUMZEeuYLKJd8tcSjg" id="90" connectsTo="_sbbpbkMZEeuYLKJd8tcSjg" length="456"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbbpbkMZEeuYLKJd8tcSjg" id="91" connectsTo="_sbbpb0MZEeuYLKJd8tcSjg" length="434"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbbpb0MZEeuYLKJd8tcSjg" id="92" connectsTo="_sbbpcEMZEeuYLKJd8tcSjg" length="613"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbbpcEMZEeuYLKJd8tcSjg" id="93" connectsTo="_sbcQYEMZEeuYLKJd8tcSjg" length="801"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbcQYEMZEeuYLKJd8tcSjg" id="94" connectsTo="_sbcQYkMZEeuYLKJd8tcSjg" length="386"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbcQYUMZEeuYLKJd8tcSjg" id="95">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbcQYkMZEeuYLKJd8tcSjg" id="96" connectsTo="_sbcQY0MZEeuYLKJd8tcSjg" length="608"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbcQY0MZEeuYLKJd8tcSjg" id="97" connectsTo="_sbcQZEMZEeuYLKJd8tcSjg" length="829"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbcQZEMZEeuYLKJd8tcSjg" id="98" connectsTo="_sbcQZUMZEeuYLKJd8tcSjg" length="619"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbcQZUMZEeuYLKJd8tcSjg" id="99" connectsTo="_sbcQZkMZEeuYLKJd8tcSjg" length="620"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbcQZkMZEeuYLKJd8tcSjg" id="100" connectsTo="_sbcQaEMZEeuYLKJd8tcSjg" length="181"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbcQZ0MZEeuYLKJd8tcSjg" id="101">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbcQaEMZEeuYLKJd8tcSjg" id="102" connectsTo="_sbcQaUMZEeuYLKJd8tcSjg" length="329"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbcQaUMZEeuYLKJd8tcSjg" id="103" connectsTo="_sbcQakMZEeuYLKJd8tcSjg" length="703"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbcQakMZEeuYLKJd8tcSjg" id="104" connectsTo="_sbcQa0MZEeuYLKJd8tcSjg" length="763"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbcQa0MZEeuYLKJd8tcSjg" id="105" connectsTo="_sbcQbEMZEeuYLKJd8tcSjg" length="890"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbcQbEMZEeuYLKJd8tcSjg" id="106" connectsTo="_sbc3gUMZEeuYLKJd8tcSjg" length="736"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Switch" xmi:id="_sbcQbUMZEeuYLKJd8tcSjg" id="82" connectsTo="_sbbpZ0MZEeuYLKJd8tcSjg" currentPosition="LEFT" positions="_sbcQbkMZEeuYLKJd8tcSjg"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbcQb0MZEeuYLKJd8tcSjg" id="109">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbcQcEMZEeuYLKJd8tcSjg" id="110" connectsTo="_sbcQcUMZEeuYLKJd8tcSjg" length="366"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbcQcUMZEeuYLKJd8tcSjg" id="111" connectsTo="_sbcQckMZEeuYLKJd8tcSjg" length="638"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbcQckMZEeuYLKJd8tcSjg" id="112" connectsTo="_sbcQc0MZEeuYLKJd8tcSjg" length="102"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbcQc0MZEeuYLKJd8tcSjg" id="113" connectsTo="_sbcQdEMZEeuYLKJd8tcSjg" length="517"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbcQdEMZEeuYLKJd8tcSjg" id="114" connectsTo="_sbcQdkMZEeuYLKJd8tcSjg" length="785"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbcQdUMZEeuYLKJd8tcSjg" id="115">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbcQdkMZEeuYLKJd8tcSjg" id="116" connectsTo="_sbcQd0MZEeuYLKJd8tcSjg" length="570"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbcQd0MZEeuYLKJd8tcSjg" id="117" connectsTo="_sbcQeEMZEeuYLKJd8tcSjg" length="949"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbcQeEMZEeuYLKJd8tcSjg" id="118" connectsTo="_sbcQeUMZEeuYLKJd8tcSjg" length="158"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbcQeUMZEeuYLKJd8tcSjg" id="119" connectsTo="_sbcQekMZEeuYLKJd8tcSjg" length="697"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbcQekMZEeuYLKJd8tcSjg" id="120" connectsTo="_sbc3cEMZEeuYLKJd8tcSjg" length="225"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbcQe0MZEeuYLKJd8tcSjg" id="121">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbc3cEMZEeuYLKJd8tcSjg" id="122" connectsTo="_sbc3cUMZEeuYLKJd8tcSjg" length="342"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbc3cUMZEeuYLKJd8tcSjg" id="123" connectsTo="_sbc3ckMZEeuYLKJd8tcSjg" length="986"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbc3ckMZEeuYLKJd8tcSjg" id="124" connectsTo="_sbc3c0MZEeuYLKJd8tcSjg" length="798"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbc3c0MZEeuYLKJd8tcSjg" id="125" connectsTo="_sbc3dEMZEeuYLKJd8tcSjg" length="480"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbc3dEMZEeuYLKJd8tcSjg" id="126" connectsTo="_sbc3dkMZEeuYLKJd8tcSjg" length="214"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbc3dUMZEeuYLKJd8tcSjg" id="127">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbc3dkMZEeuYLKJd8tcSjg" id="128" connectsTo="_sbc3d0MZEeuYLKJd8tcSjg" length="118"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbc3d0MZEeuYLKJd8tcSjg" id="129" connectsTo="_sbc3eEMZEeuYLKJd8tcSjg" length="533"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbc3eEMZEeuYLKJd8tcSjg" id="130" connectsTo="_sbc3eUMZEeuYLKJd8tcSjg" length="510"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbc3eUMZEeuYLKJd8tcSjg" id="131" connectsTo="_sbc3ekMZEeuYLKJd8tcSjg" length="298"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbc3ekMZEeuYLKJd8tcSjg" id="132" connectsTo="_sbc3fEMZEeuYLKJd8tcSjg" length="372"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbc3e0MZEeuYLKJd8tcSjg" id="133">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbc3fEMZEeuYLKJd8tcSjg" id="134" connectsTo="_sbc3fUMZEeuYLKJd8tcSjg" length="740"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbc3fUMZEeuYLKJd8tcSjg" id="135" connectsTo="_sbc3fkMZEeuYLKJd8tcSjg" length="897"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbc3fkMZEeuYLKJd8tcSjg" id="136" connectsTo="_sbc3f0MZEeuYLKJd8tcSjg" length="685"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbc3f0MZEeuYLKJd8tcSjg" id="137" connectsTo="_sbc3gEMZEeuYLKJd8tcSjg" length="630"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbc3gEMZEeuYLKJd8tcSjg" id="138" connectsTo="_sbeFkEMZEeuYLKJd8tcSjg" length="809"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Switch" xmi:id="_sbc3gUMZEeuYLKJd8tcSjg" id="108" connectsTo="_sbcQcEMZEeuYLKJd8tcSjg" currentPosition="LEFT" positions="_sbc3gkMZEeuYLKJd8tcSjg"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbc3g0MZEeuYLKJd8tcSjg" id="141">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbc3hEMZEeuYLKJd8tcSjg" id="142" connectsTo="_sbc3hUMZEeuYLKJd8tcSjg" length="963"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbc3hUMZEeuYLKJd8tcSjg" id="143" connectsTo="_sbc3hkMZEeuYLKJd8tcSjg" length="802"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbc3hkMZEeuYLKJd8tcSjg" id="144" connectsTo="_sbc3h0MZEeuYLKJd8tcSjg" length="402"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbc3h0MZEeuYLKJd8tcSjg" id="145" connectsTo="_sbc3iEMZEeuYLKJd8tcSjg" length="337"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbc3iEMZEeuYLKJd8tcSjg" id="146" connectsTo="_sbc3ikMZEeuYLKJd8tcSjg" length="59"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbc3iUMZEeuYLKJd8tcSjg" id="147">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbc3ikMZEeuYLKJd8tcSjg" id="148" connectsTo="_sbc3i0MZEeuYLKJd8tcSjg" length="836"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbc3i0MZEeuYLKJd8tcSjg" id="149" connectsTo="_sbc3jEMZEeuYLKJd8tcSjg" length="579"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbc3jEMZEeuYLKJd8tcSjg" id="150" connectsTo="_sbc3jUMZEeuYLKJd8tcSjg" length="218"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbc3jUMZEeuYLKJd8tcSjg" id="151" connectsTo="_sbc3jkMZEeuYLKJd8tcSjg" length="191"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbc3jkMZEeuYLKJd8tcSjg" id="152" connectsTo="_sbc3kEMZEeuYLKJd8tcSjg" length="610"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbc3j0MZEeuYLKJd8tcSjg" id="153">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbc3kEMZEeuYLKJd8tcSjg" id="154" connectsTo="_sbc3kUMZEeuYLKJd8tcSjg" length="333"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbc3kUMZEeuYLKJd8tcSjg" id="155" connectsTo="_sbc3kkMZEeuYLKJd8tcSjg" length="923"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbc3kkMZEeuYLKJd8tcSjg" id="156" connectsTo="_sbdegEMZEeuYLKJd8tcSjg" length="627"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbdegEMZEeuYLKJd8tcSjg" id="157" connectsTo="_sbdegUMZEeuYLKJd8tcSjg" length="699"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbdegUMZEeuYLKJd8tcSjg" id="158" connectsTo="_sbdeg0MZEeuYLKJd8tcSjg" length="11"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbdegkMZEeuYLKJd8tcSjg" id="159">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbdeg0MZEeuYLKJd8tcSjg" id="160" connectsTo="_sbdehEMZEeuYLKJd8tcSjg" length="470"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbdehEMZEeuYLKJd8tcSjg" id="161" connectsTo="_sbdehUMZEeuYLKJd8tcSjg" length="343"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbdehUMZEeuYLKJd8tcSjg" id="162" connectsTo="_sbdehkMZEeuYLKJd8tcSjg" length="771"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbdehkMZEeuYLKJd8tcSjg" id="163" connectsTo="_sbdeh0MZEeuYLKJd8tcSjg" length="288"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbdeh0MZEeuYLKJd8tcSjg" id="164" connectsTo="_sbdeiUMZEeuYLKJd8tcSjg" length="964"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbdeiEMZEeuYLKJd8tcSjg" id="165">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbdeiUMZEeuYLKJd8tcSjg" id="166" connectsTo="_sbdeikMZEeuYLKJd8tcSjg" length="167"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbdeikMZEeuYLKJd8tcSjg" id="167" connectsTo="_sbdei0MZEeuYLKJd8tcSjg" length="466"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbdei0MZEeuYLKJd8tcSjg" id="168" connectsTo="_sbdejEMZEeuYLKJd8tcSjg" length="886"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbdejEMZEeuYLKJd8tcSjg" id="169" connectsTo="_sbdejUMZEeuYLKJd8tcSjg" length="248"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbdejUMZEeuYLKJd8tcSjg" id="170" connectsTo="_sbdej0MZEeuYLKJd8tcSjg" length="261"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbdejkMZEeuYLKJd8tcSjg" id="171">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbdej0MZEeuYLKJd8tcSjg" id="172" connectsTo="_sbdekEMZEeuYLKJd8tcSjg" length="852"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbdekEMZEeuYLKJd8tcSjg" id="173" connectsTo="_sbdekUMZEeuYLKJd8tcSjg" length="36"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbdekUMZEeuYLKJd8tcSjg" id="174" connectsTo="_sbdekkMZEeuYLKJd8tcSjg" length="458"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbdekkMZEeuYLKJd8tcSjg" id="175" connectsTo="_sbdek0MZEeuYLKJd8tcSjg" length="918"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbdek0MZEeuYLKJd8tcSjg" id="176" connectsTo="_sbeFmEMZEeuYLKJd8tcSjg" length="345"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Switch" xmi:id="_sbeFkEMZEeuYLKJd8tcSjg" id="140" connectsTo="_sbc3hEMZEeuYLKJd8tcSjg" currentPosition="LEFT" positions="_sbeFkUMZEeuYLKJd8tcSjg"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbeFkkMZEeuYLKJd8tcSjg" id="179">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbeFk0MZEeuYLKJd8tcSjg" id="180" connectsTo="_sbeFlEMZEeuYLKJd8tcSjg" length="901"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbeFlEMZEeuYLKJd8tcSjg" id="181" connectsTo="_sbeFlUMZEeuYLKJd8tcSjg" length="534"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbeFlUMZEeuYLKJd8tcSjg" id="182" connectsTo="_sbeFlkMZEeuYLKJd8tcSjg" length="49"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbeFlkMZEeuYLKJd8tcSjg" id="183" connectsTo="_sbeFl0MZEeuYLKJd8tcSjg" length="369"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbeFl0MZEeuYLKJd8tcSjg" id="184" connectsTo="_sbfTukMZEeuYLKJd8tcSjg" length="94"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Switch" xmi:id="_sbeFmEMZEeuYLKJd8tcSjg" id="178" connectsTo="_sbeFk0MZEeuYLKJd8tcSjg" currentPosition="RIGHT" positions="_sbeFmUMZEeuYLKJd8tcSjg"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbeFmkMZEeuYLKJd8tcSjg" id="187">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbeFm0MZEeuYLKJd8tcSjg" id="188" connectsTo="_sbeFnEMZEeuYLKJd8tcSjg" length="541"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbeFnEMZEeuYLKJd8tcSjg" id="189" connectsTo="_sbeFnUMZEeuYLKJd8tcSjg" length="278"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbeFnUMZEeuYLKJd8tcSjg" id="190" connectsTo="_sbeFnkMZEeuYLKJd8tcSjg" length="70"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbeFnkMZEeuYLKJd8tcSjg" id="191" connectsTo="_sbeFn0MZEeuYLKJd8tcSjg" length="809"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbeFn0MZEeuYLKJd8tcSjg" id="192" connectsTo="_sbeFoUMZEeuYLKJd8tcSjg" length="160"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbeFoEMZEeuYLKJd8tcSjg" id="193">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbeFoUMZEeuYLKJd8tcSjg" id="194" connectsTo="_sbeFokMZEeuYLKJd8tcSjg" length="136"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbeFokMZEeuYLKJd8tcSjg" id="195" connectsTo="_sbeFo0MZEeuYLKJd8tcSjg" length="640"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbeFo0MZEeuYLKJd8tcSjg" id="196" connectsTo="_sbeFpEMZEeuYLKJd8tcSjg" length="267"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbeFpEMZEeuYLKJd8tcSjg" id="197" connectsTo="_sbeFpUMZEeuYLKJd8tcSjg" length="94"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbeFpUMZEeuYLKJd8tcSjg" id="198" connectsTo="_sbesoEMZEeuYLKJd8tcSjg" length="627"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbeFpkMZEeuYLKJd8tcSjg" id="199">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbesoEMZEeuYLKJd8tcSjg" id="200" connectsTo="_sbesoUMZEeuYLKJd8tcSjg" length="644"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbesoUMZEeuYLKJd8tcSjg" id="201" connectsTo="_sbesokMZEeuYLKJd8tcSjg" length="519"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbesokMZEeuYLKJd8tcSjg" id="202" connectsTo="_sbeso0MZEeuYLKJd8tcSjg" length="643"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbeso0MZEeuYLKJd8tcSjg" id="203" connectsTo="_sbespEMZEeuYLKJd8tcSjg" length="207"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbespEMZEeuYLKJd8tcSjg" id="204" connectsTo="_sbespkMZEeuYLKJd8tcSjg" length="157"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbespUMZEeuYLKJd8tcSjg" id="205">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbespkMZEeuYLKJd8tcSjg" id="206" connectsTo="_sbesp0MZEeuYLKJd8tcSjg" length="718"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbesp0MZEeuYLKJd8tcSjg" id="207" connectsTo="_sbesqEMZEeuYLKJd8tcSjg" length="553"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbesqEMZEeuYLKJd8tcSjg" id="208" connectsTo="_sbesqUMZEeuYLKJd8tcSjg" length="536"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbesqUMZEeuYLKJd8tcSjg" id="209" connectsTo="_sbesqkMZEeuYLKJd8tcSjg" length="783"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbesqkMZEeuYLKJd8tcSjg" id="210" connectsTo="_sbesrEMZEeuYLKJd8tcSjg" length="283"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbesq0MZEeuYLKJd8tcSjg" id="211">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbesrEMZEeuYLKJd8tcSjg" id="212" connectsTo="_sbesrUMZEeuYLKJd8tcSjg" length="36"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbesrUMZEeuYLKJd8tcSjg" id="213" connectsTo="_sbesrkMZEeuYLKJd8tcSjg" length="263"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbesrkMZEeuYLKJd8tcSjg" id="214" connectsTo="_sbesr0MZEeuYLKJd8tcSjg" length="970"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbesr0MZEeuYLKJd8tcSjg" id="215" connectsTo="_sbessEMZEeuYLKJd8tcSjg" length="39"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbessEMZEeuYLKJd8tcSjg" id="216" connectsTo="_sbesskMZEeuYLKJd8tcSjg" length="83"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbessUMZEeuYLKJd8tcSjg" id="217">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbesskMZEeuYLKJd8tcSjg" id="218" connectsTo="_sbess0MZEeuYLKJd8tcSjg" length="806"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbess0MZEeuYLKJd8tcSjg" id="219" connectsTo="_sbestEMZEeuYLKJd8tcSjg" length="777"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbestEMZEeuYLKJd8tcSjg" id="220" connectsTo="_sbestUMZEeuYLKJd8tcSjg" length="546"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbestUMZEeuYLKJd8tcSjg" id="221" connectsTo="_sbestkMZEeuYLKJd8tcSjg" length="352"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbestkMZEeuYLKJd8tcSjg" id="222" connectsTo="_sbesuEMZEeuYLKJd8tcSjg" length="742"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbest0MZEeuYLKJd8tcSjg" id="223">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbesuEMZEeuYLKJd8tcSjg" id="224" connectsTo="_sbfTsEMZEeuYLKJd8tcSjg" length="611"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbfTsEMZEeuYLKJd8tcSjg" id="225" connectsTo="_sbfTsUMZEeuYLKJd8tcSjg" length="605"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbfTsUMZEeuYLKJd8tcSjg" id="226" connectsTo="_sbfTskMZEeuYLKJd8tcSjg" length="386"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbfTskMZEeuYLKJd8tcSjg" id="227" connectsTo="_sbfTs0MZEeuYLKJd8tcSjg" length="781"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbfTs0MZEeuYLKJd8tcSjg" id="228" connectsTo="_sbfTtUMZEeuYLKJd8tcSjg" length="83"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbfTtEMZEeuYLKJd8tcSjg" id="229">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbfTtUMZEeuYLKJd8tcSjg" id="230" connectsTo="_sbfTtkMZEeuYLKJd8tcSjg" length="42"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbfTtkMZEeuYLKJd8tcSjg" id="231" connectsTo="_sbfTt0MZEeuYLKJd8tcSjg" length="772"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbfTt0MZEeuYLKJd8tcSjg" id="232" connectsTo="_sbfTuEMZEeuYLKJd8tcSjg" length="817"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbfTuEMZEeuYLKJd8tcSjg" id="233" connectsTo="_sbfTuUMZEeuYLKJd8tcSjg" length="503"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbfTuUMZEeuYLKJd8tcSjg" id="234" connectsTo="_sbf60UMZEeuYLKJd8tcSjg" length="847"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Switch" xmi:id="_sbfTukMZEeuYLKJd8tcSjg" id="186" connectsTo="_sbeFm0MZEeuYLKJd8tcSjg" positions="_sbfTu0MZEeuYLKJd8tcSjg"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbfTvEMZEeuYLKJd8tcSjg" id="237">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbfTvUMZEeuYLKJd8tcSjg" id="238" connectsTo="_sbfTvkMZEeuYLKJd8tcSjg" length="195"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbfTvkMZEeuYLKJd8tcSjg" id="239" connectsTo="_sbfTv0MZEeuYLKJd8tcSjg" length="899"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbfTv0MZEeuYLKJd8tcSjg" id="240" connectsTo="_sbfTwEMZEeuYLKJd8tcSjg" length="373"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbfTwEMZEeuYLKJd8tcSjg" id="241" connectsTo="_sbfTwUMZEeuYLKJd8tcSjg" length="423"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbfTwUMZEeuYLKJd8tcSjg" id="242" connectsTo="_sbfTw0MZEeuYLKJd8tcSjg" length="450"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbfTwkMZEeuYLKJd8tcSjg" id="243">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbfTw0MZEeuYLKJd8tcSjg" id="244" connectsTo="_sbfTxEMZEeuYLKJd8tcSjg" length="291"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbfTxEMZEeuYLKJd8tcSjg" id="245" connectsTo="_sbfTxUMZEeuYLKJd8tcSjg" length="95"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbfTxUMZEeuYLKJd8tcSjg" id="246" connectsTo="_sbfTxkMZEeuYLKJd8tcSjg" length="522"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbfTxkMZEeuYLKJd8tcSjg" id="247" connectsTo="_sbfTx0MZEeuYLKJd8tcSjg" length="984"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbfTx0MZEeuYLKJd8tcSjg" id="248" connectsTo="_sbf6wEMZEeuYLKJd8tcSjg" length="460"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbfTyEMZEeuYLKJd8tcSjg" id="249">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbf6wEMZEeuYLKJd8tcSjg" id="250" connectsTo="_sbf6wUMZEeuYLKJd8tcSjg" length="176"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbf6wUMZEeuYLKJd8tcSjg" id="251" connectsTo="_sbf6wkMZEeuYLKJd8tcSjg" length="759"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbf6wkMZEeuYLKJd8tcSjg" id="252" connectsTo="_sbf6w0MZEeuYLKJd8tcSjg" length="61"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbf6w0MZEeuYLKJd8tcSjg" id="253" connectsTo="_sbf6xEMZEeuYLKJd8tcSjg" length="917"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbf6xEMZEeuYLKJd8tcSjg" id="254" connectsTo="_sbf6xkMZEeuYLKJd8tcSjg" length="569"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbf6xUMZEeuYLKJd8tcSjg" id="255">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbf6xkMZEeuYLKJd8tcSjg" id="256" connectsTo="_sbf6x0MZEeuYLKJd8tcSjg" length="904"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbf6x0MZEeuYLKJd8tcSjg" id="257" connectsTo="_sbf6yEMZEeuYLKJd8tcSjg" length="571"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbf6yEMZEeuYLKJd8tcSjg" id="258" connectsTo="_sbf6yUMZEeuYLKJd8tcSjg" length="787"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbf6yUMZEeuYLKJd8tcSjg" id="259" connectsTo="_sbf6ykMZEeuYLKJd8tcSjg" length="35"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbf6ykMZEeuYLKJd8tcSjg" id="260" connectsTo="_sbf6zEMZEeuYLKJd8tcSjg" length="718"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbf6y0MZEeuYLKJd8tcSjg" id="261">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbf6zEMZEeuYLKJd8tcSjg" id="262" connectsTo="_sbf6zUMZEeuYLKJd8tcSjg" length="514"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbf6zUMZEeuYLKJd8tcSjg" id="263" connectsTo="_sbf6zkMZEeuYLKJd8tcSjg" length="530"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbf6zkMZEeuYLKJd8tcSjg" id="264" connectsTo="_sbf6z0MZEeuYLKJd8tcSjg" length="686"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbf6z0MZEeuYLKJd8tcSjg" id="265" connectsTo="_sbf60EMZEeuYLKJd8tcSjg" length="858"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbf60EMZEeuYLKJd8tcSjg" id="266" connectsTo="_sbgh1UMZEeuYLKJd8tcSjg" length="909"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Switch" xmi:id="_sbf60UMZEeuYLKJd8tcSjg" id="236" connectsTo="_sbfTvUMZEeuYLKJd8tcSjg" positions="_sbf60kMZEeuYLKJd8tcSjg"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbf600MZEeuYLKJd8tcSjg" id="269">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbf61EMZEeuYLKJd8tcSjg" id="270" connectsTo="_sbf61UMZEeuYLKJd8tcSjg" length="214"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbf61UMZEeuYLKJd8tcSjg" id="271" connectsTo="_sbf61kMZEeuYLKJd8tcSjg" length="345"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbf61kMZEeuYLKJd8tcSjg" id="272" connectsTo="_sbf610MZEeuYLKJd8tcSjg" length="922"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbf610MZEeuYLKJd8tcSjg" id="273" connectsTo="_sbf62EMZEeuYLKJd8tcSjg" length="639"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbf62EMZEeuYLKJd8tcSjg" id="274" connectsTo="_sbgh0EMZEeuYLKJd8tcSjg" length="758"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbf62UMZEeuYLKJd8tcSjg" id="275">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbgh0EMZEeuYLKJd8tcSjg" id="276" connectsTo="_sbgh0UMZEeuYLKJd8tcSjg" length="589"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbgh0UMZEeuYLKJd8tcSjg" id="277" connectsTo="_sbgh0kMZEeuYLKJd8tcSjg" length="533"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbgh0kMZEeuYLKJd8tcSjg" id="278" connectsTo="_sbgh00MZEeuYLKJd8tcSjg" length="632"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbgh00MZEeuYLKJd8tcSjg" id="279" connectsTo="_sbgh1EMZEeuYLKJd8tcSjg" length="469"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbgh1EMZEeuYLKJd8tcSjg" id="280" connectsTo="_sbhI5kMZEeuYLKJd8tcSjg" length="576"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Switch" xmi:id="_sbgh1UMZEeuYLKJd8tcSjg" id="268" connectsTo="_sbf61EMZEeuYLKJd8tcSjg" currentPosition="LEFT" positions="_sbgh1kMZEeuYLKJd8tcSjg"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbgh10MZEeuYLKJd8tcSjg" id="283">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbgh2EMZEeuYLKJd8tcSjg" id="284" connectsTo="_sbgh2UMZEeuYLKJd8tcSjg" length="517"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbgh2UMZEeuYLKJd8tcSjg" id="285" connectsTo="_sbgh2kMZEeuYLKJd8tcSjg" length="778"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbgh2kMZEeuYLKJd8tcSjg" id="286" connectsTo="_sbgh20MZEeuYLKJd8tcSjg" length="467"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbgh20MZEeuYLKJd8tcSjg" id="287" connectsTo="_sbgh3EMZEeuYLKJd8tcSjg" length="367"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbgh3EMZEeuYLKJd8tcSjg" id="288" connectsTo="_sbgh3kMZEeuYLKJd8tcSjg" length="522"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbgh3UMZEeuYLKJd8tcSjg" id="289">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbgh3kMZEeuYLKJd8tcSjg" id="290" connectsTo="_sbgh30MZEeuYLKJd8tcSjg" length="972"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbgh30MZEeuYLKJd8tcSjg" id="291" connectsTo="_sbgh4EMZEeuYLKJd8tcSjg" length="349"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbgh4EMZEeuYLKJd8tcSjg" id="292" connectsTo="_sbgh4UMZEeuYLKJd8tcSjg" length="695"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbgh4UMZEeuYLKJd8tcSjg" id="293" connectsTo="_sbgh4kMZEeuYLKJd8tcSjg" length="223"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbgh4kMZEeuYLKJd8tcSjg" id="294" connectsTo="_sbgh5EMZEeuYLKJd8tcSjg" length="163"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbgh40MZEeuYLKJd8tcSjg" id="295">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbgh5EMZEeuYLKJd8tcSjg" id="296" connectsTo="_sbgh5UMZEeuYLKJd8tcSjg" length="282"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbgh5UMZEeuYLKJd8tcSjg" id="297" connectsTo="_sbgh5kMZEeuYLKJd8tcSjg" length="983"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbgh5kMZEeuYLKJd8tcSjg" id="298" connectsTo="_sbgh50MZEeuYLKJd8tcSjg" length="78"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbgh50MZEeuYLKJd8tcSjg" id="299" connectsTo="_sbgh6EMZEeuYLKJd8tcSjg" length="229"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbgh6EMZEeuYLKJd8tcSjg" id="300" connectsTo="_sbhI4UMZEeuYLKJd8tcSjg" length="137"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbhI4EMZEeuYLKJd8tcSjg" id="301">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhI4UMZEeuYLKJd8tcSjg" id="302" connectsTo="_sbhI4kMZEeuYLKJd8tcSjg" length="331"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhI4kMZEeuYLKJd8tcSjg" id="303" connectsTo="_sbhI40MZEeuYLKJd8tcSjg" length="500"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhI40MZEeuYLKJd8tcSjg" id="304" connectsTo="_sbhI5EMZEeuYLKJd8tcSjg" length="683"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhI5EMZEeuYLKJd8tcSjg" id="305" connectsTo="_sbhI5UMZEeuYLKJd8tcSjg" length="633"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhI5UMZEeuYLKJd8tcSjg" id="306" connectsTo="_sbhJAEMZEeuYLKJd8tcSjg" length="456"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Switch" xmi:id="_sbhI5kMZEeuYLKJd8tcSjg" id="282" connectsTo="_sbgh2EMZEeuYLKJd8tcSjg" currentPosition="RIGHT" positions="_sbhI50MZEeuYLKJd8tcSjg"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbhI6EMZEeuYLKJd8tcSjg" id="309">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhI6UMZEeuYLKJd8tcSjg" id="310" connectsTo="_sbhI6kMZEeuYLKJd8tcSjg" length="173"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhI6kMZEeuYLKJd8tcSjg" id="311" connectsTo="_sbhI60MZEeuYLKJd8tcSjg" length="638"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhI60MZEeuYLKJd8tcSjg" id="312" connectsTo="_sbhI7EMZEeuYLKJd8tcSjg" length="792"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhI7EMZEeuYLKJd8tcSjg" id="313" connectsTo="_sbhI7UMZEeuYLKJd8tcSjg" length="65"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhI7UMZEeuYLKJd8tcSjg" id="314" connectsTo="_sbhI70MZEeuYLKJd8tcSjg" length="707"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbhI7kMZEeuYLKJd8tcSjg" id="315">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhI70MZEeuYLKJd8tcSjg" id="316" connectsTo="_sbhI8EMZEeuYLKJd8tcSjg" length="809"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhI8EMZEeuYLKJd8tcSjg" id="317" connectsTo="_sbhI8UMZEeuYLKJd8tcSjg" length="373"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhI8UMZEeuYLKJd8tcSjg" id="318" connectsTo="_sbhI8kMZEeuYLKJd8tcSjg" length="954"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhI8kMZEeuYLKJd8tcSjg" id="319" connectsTo="_sbhI80MZEeuYLKJd8tcSjg" length="554"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhI80MZEeuYLKJd8tcSjg" id="320" connectsTo="_sbhI9UMZEeuYLKJd8tcSjg" length="191"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbhI9EMZEeuYLKJd8tcSjg" id="321">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhI9UMZEeuYLKJd8tcSjg" id="322" connectsTo="_sbhI9kMZEeuYLKJd8tcSjg" length="915"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhI9kMZEeuYLKJd8tcSjg" id="323" connectsTo="_sbhI90MZEeuYLKJd8tcSjg" length="303"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhI90MZEeuYLKJd8tcSjg" id="324" connectsTo="_sbhI-EMZEeuYLKJd8tcSjg" length="977"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhI-EMZEeuYLKJd8tcSjg" id="325" connectsTo="_sbhI-UMZEeuYLKJd8tcSjg" length="730"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhI-UMZEeuYLKJd8tcSjg" id="326" connectsTo="_sbhI-0MZEeuYLKJd8tcSjg" length="312"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbhI-kMZEeuYLKJd8tcSjg" id="327">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhI-0MZEeuYLKJd8tcSjg" id="328" connectsTo="_sbhI_EMZEeuYLKJd8tcSjg" length="741"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhI_EMZEeuYLKJd8tcSjg" id="329" connectsTo="_sbhI_UMZEeuYLKJd8tcSjg" length="569"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhI_UMZEeuYLKJd8tcSjg" id="330" connectsTo="_sbhI_kMZEeuYLKJd8tcSjg" length="881"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhI_kMZEeuYLKJd8tcSjg" id="331" connectsTo="_sbhI_0MZEeuYLKJd8tcSjg" length="193"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhI_0MZEeuYLKJd8tcSjg" id="332" connectsTo="_sbiXDEMZEeuYLKJd8tcSjg" length="620"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Switch" xmi:id="_sbhJAEMZEeuYLKJd8tcSjg" id="308" connectsTo="_sbhI6UMZEeuYLKJd8tcSjg" currentPosition="LEFT" positions="_sbhJAUMZEeuYLKJd8tcSjg"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbhJAkMZEeuYLKJd8tcSjg" id="335">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhJA0MZEeuYLKJd8tcSjg" id="336" connectsTo="_sbhJBEMZEeuYLKJd8tcSjg" length="573"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhJBEMZEeuYLKJd8tcSjg" id="337" connectsTo="_sbhJBUMZEeuYLKJd8tcSjg" length="475"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhJBUMZEeuYLKJd8tcSjg" id="338" connectsTo="_sbhJBkMZEeuYLKJd8tcSjg" length="267"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhJBkMZEeuYLKJd8tcSjg" id="339" connectsTo="_sbhv8EMZEeuYLKJd8tcSjg" length="357"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhv8EMZEeuYLKJd8tcSjg" id="340" connectsTo="_sbhv8kMZEeuYLKJd8tcSjg" length="236"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbhv8UMZEeuYLKJd8tcSjg" id="341">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhv8kMZEeuYLKJd8tcSjg" id="342" connectsTo="_sbhv80MZEeuYLKJd8tcSjg" length="123"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhv80MZEeuYLKJd8tcSjg" id="343" connectsTo="_sbhv9EMZEeuYLKJd8tcSjg" length="772"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhv9EMZEeuYLKJd8tcSjg" id="344" connectsTo="_sbhv9UMZEeuYLKJd8tcSjg" length="769"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhv9UMZEeuYLKJd8tcSjg" id="345" connectsTo="_sbhv9kMZEeuYLKJd8tcSjg" length="929"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhv9kMZEeuYLKJd8tcSjg" id="346" connectsTo="_sbhv-EMZEeuYLKJd8tcSjg" length="882"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbhv90MZEeuYLKJd8tcSjg" id="347">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhv-EMZEeuYLKJd8tcSjg" id="348" connectsTo="_sbhv-UMZEeuYLKJd8tcSjg" length="148"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhv-UMZEeuYLKJd8tcSjg" id="349" connectsTo="_sbhv-kMZEeuYLKJd8tcSjg" length="922"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhv-kMZEeuYLKJd8tcSjg" id="350" connectsTo="_sbhv-0MZEeuYLKJd8tcSjg" length="912"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhv-0MZEeuYLKJd8tcSjg" id="351" connectsTo="_sbhv_EMZEeuYLKJd8tcSjg" length="453"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhv_EMZEeuYLKJd8tcSjg" id="352" connectsTo="_sbhv_kMZEeuYLKJd8tcSjg" length="510"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbhv_UMZEeuYLKJd8tcSjg" id="353">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhv_kMZEeuYLKJd8tcSjg" id="354" connectsTo="_sbhv_0MZEeuYLKJd8tcSjg" length="827"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhv_0MZEeuYLKJd8tcSjg" id="355" connectsTo="_sbhwAEMZEeuYLKJd8tcSjg" length="594"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhwAEMZEeuYLKJd8tcSjg" id="356" connectsTo="_sbhwAUMZEeuYLKJd8tcSjg" length="498"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhwAUMZEeuYLKJd8tcSjg" id="357" connectsTo="_sbhwAkMZEeuYLKJd8tcSjg" length="752"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhwAkMZEeuYLKJd8tcSjg" id="358" connectsTo="_sbhwBEMZEeuYLKJd8tcSjg" length="29"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbhwA0MZEeuYLKJd8tcSjg" id="359">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhwBEMZEeuYLKJd8tcSjg" id="360" connectsTo="_sbhwBUMZEeuYLKJd8tcSjg" length="443"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhwBUMZEeuYLKJd8tcSjg" id="361" connectsTo="_sbhwBkMZEeuYLKJd8tcSjg" length="127"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhwBkMZEeuYLKJd8tcSjg" id="362" connectsTo="_sbhwB0MZEeuYLKJd8tcSjg" length="211"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhwB0MZEeuYLKJd8tcSjg" id="363" connectsTo="_sbhwCEMZEeuYLKJd8tcSjg" length="773"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhwCEMZEeuYLKJd8tcSjg" id="364" connectsTo="_sbhwCkMZEeuYLKJd8tcSjg" length="220"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbhwCUMZEeuYLKJd8tcSjg" id="365">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhwCkMZEeuYLKJd8tcSjg" id="366" connectsTo="_sbhwC0MZEeuYLKJd8tcSjg" length="939"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhwC0MZEeuYLKJd8tcSjg" id="367" connectsTo="_sbhwDEMZEeuYLKJd8tcSjg" length="703"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhwDEMZEeuYLKJd8tcSjg" id="368" connectsTo="_sbhwDUMZEeuYLKJd8tcSjg" length="625"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhwDUMZEeuYLKJd8tcSjg" id="369" connectsTo="_sbhwDkMZEeuYLKJd8tcSjg" length="148"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbhwDkMZEeuYLKJd8tcSjg" id="370" connectsTo="_sbiXAUMZEeuYLKJd8tcSjg" length="691"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbiXAEMZEeuYLKJd8tcSjg" id="371">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbiXAUMZEeuYLKJd8tcSjg" id="372" connectsTo="_sbiXAkMZEeuYLKJd8tcSjg" length="837"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbiXAkMZEeuYLKJd8tcSjg" id="373" connectsTo="_sbiXA0MZEeuYLKJd8tcSjg" length="479"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbiXA0MZEeuYLKJd8tcSjg" id="374" connectsTo="_sbiXBEMZEeuYLKJd8tcSjg" length="297"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbiXBEMZEeuYLKJd8tcSjg" id="375" connectsTo="_sbiXBUMZEeuYLKJd8tcSjg" length="430"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbiXBUMZEeuYLKJd8tcSjg" id="376" connectsTo="_sbiXB0MZEeuYLKJd8tcSjg" length="212"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbiXBkMZEeuYLKJd8tcSjg" id="377">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbiXB0MZEeuYLKJd8tcSjg" id="378" connectsTo="_sbiXCEMZEeuYLKJd8tcSjg" length="52"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbiXCEMZEeuYLKJd8tcSjg" id="379" connectsTo="_sbiXCUMZEeuYLKJd8tcSjg" length="694"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbiXCUMZEeuYLKJd8tcSjg" id="380" connectsTo="_sbiXCkMZEeuYLKJd8tcSjg" length="895"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbiXCkMZEeuYLKJd8tcSjg" id="381" connectsTo="_sbiXC0MZEeuYLKJd8tcSjg" length="140"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbiXC0MZEeuYLKJd8tcSjg" id="382" connectsTo="_sbi-F0MZEeuYLKJd8tcSjg" length="160"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Switch" xmi:id="_sbiXDEMZEeuYLKJd8tcSjg" id="334" connectsTo="_sbhJA0MZEeuYLKJd8tcSjg" currentPosition="LEFT" positions="_sbi-EEMZEeuYLKJd8tcSjg"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbi-EUMZEeuYLKJd8tcSjg" id="385">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbi-EkMZEeuYLKJd8tcSjg" id="386" connectsTo="_sbi-E0MZEeuYLKJd8tcSjg" length="935"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbi-E0MZEeuYLKJd8tcSjg" id="387" connectsTo="_sbi-FEMZEeuYLKJd8tcSjg" length="235"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbi-FEMZEeuYLKJd8tcSjg" id="388" connectsTo="_sbi-FUMZEeuYLKJd8tcSjg" length="326"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbi-FUMZEeuYLKJd8tcSjg" id="389" connectsTo="_sbi-FkMZEeuYLKJd8tcSjg" length="271"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbi-FkMZEeuYLKJd8tcSjg" id="390" connectsTo="_sbi-JUMZEeuYLKJd8tcSjg" length="282"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Switch" xmi:id="_sbi-F0MZEeuYLKJd8tcSjg" id="384" connectsTo="_sbi-EkMZEeuYLKJd8tcSjg" currentPosition="RIGHT" positions="_sbi-GEMZEeuYLKJd8tcSjg"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbi-GUMZEeuYLKJd8tcSjg" id="393">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbi-GkMZEeuYLKJd8tcSjg" id="394" connectsTo="_sbi-G0MZEeuYLKJd8tcSjg" length="110"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbi-G0MZEeuYLKJd8tcSjg" id="395" connectsTo="_sbi-HEMZEeuYLKJd8tcSjg" length="30"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbi-HEMZEeuYLKJd8tcSjg" id="396" connectsTo="_sbi-HUMZEeuYLKJd8tcSjg" length="182"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbi-HUMZEeuYLKJd8tcSjg" id="397" connectsTo="_sbi-HkMZEeuYLKJd8tcSjg" length="217"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbi-HkMZEeuYLKJd8tcSjg" id="398" connectsTo="_sbi-IEMZEeuYLKJd8tcSjg" length="758"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbi-H0MZEeuYLKJd8tcSjg" id="399">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbi-IEMZEeuYLKJd8tcSjg" id="400" connectsTo="_sbi-IUMZEeuYLKJd8tcSjg" length="509"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbi-IUMZEeuYLKJd8tcSjg" id="401" connectsTo="_sbi-IkMZEeuYLKJd8tcSjg" length="196"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbi-IkMZEeuYLKJd8tcSjg" id="402" connectsTo="_sbi-I0MZEeuYLKJd8tcSjg" length="675"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbi-I0MZEeuYLKJd8tcSjg" id="403" connectsTo="_sbi-JEMZEeuYLKJd8tcSjg" length="299"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbi-JEMZEeuYLKJd8tcSjg" id="404" connectsTo="_sbkMOEMZEeuYLKJd8tcSjg" length="824"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Switch" xmi:id="_sbi-JUMZEeuYLKJd8tcSjg" id="392" connectsTo="_sbi-GkMZEeuYLKJd8tcSjg" currentPosition="STRAIGHT" positions="_sbi-JkMZEeuYLKJd8tcSjg"/>
+    </definedBy>
+  </routes>
+  <routes xmi:type="hu.bme.mit.trainbenchmark:Route" xmi:id="_sbkMMUMZEeuYLKJd8tcSjg" id="407" entry="_sbX-8EMZEeuYLKJd8tcSjg" exit="_sbkMMEMZEeuYLKJd8tcSjg">
+    <follows xmi:type="hu.bme.mit.trainbenchmark:SwitchPosition" xmi:id="_sbkMOUMZEeuYLKJd8tcSjg" id="415" switch="_sbkMOEMZEeuYLKJd8tcSjg" position="RIGHT"/>
+    <follows xmi:type="hu.bme.mit.trainbenchmark:SwitchPosition" xmi:id="_sbkzVkMZEeuYLKJd8tcSjg" id="453" switch="_sbkzVUMZEeuYLKJd8tcSjg" position="RIGHT"/>
+    <follows xmi:type="hu.bme.mit.trainbenchmark:SwitchPosition" xmi:id="_sbkzZEMZEeuYLKJd8tcSjg" id="467" switch="_sbkzY0MZEeuYLKJd8tcSjg" position="LEFT"/>
+    <follows xmi:type="hu.bme.mit.trainbenchmark:SwitchPosition" xmi:id="_sblaXEMZEeuYLKJd8tcSjg" id="493" switch="_sblaW0MZEeuYLKJd8tcSjg" position="STRAIGHT"/>
+    <follows xmi:type="hu.bme.mit.trainbenchmark:SwitchPosition" xmi:id="_sblacEMZEeuYLKJd8tcSjg" id="513" switch="_sblab0MZEeuYLKJd8tcSjg"/>
+    <follows xmi:type="hu.bme.mit.trainbenchmark:SwitchPosition" xmi:id="_sbmBbkMZEeuYLKJd8tcSjg" id="539" switch="_sbmBbUMZEeuYLKJd8tcSjg" position="LEFT"/>
+    <follows xmi:type="hu.bme.mit.trainbenchmark:SwitchPosition" xmi:id="_sbmocUMZEeuYLKJd8tcSjg" id="559" switch="_sbmocEMZEeuYLKJd8tcSjg"/>
+    <follows xmi:type="hu.bme.mit.trainbenchmark:SwitchPosition" xmi:id="_sbnPikMZEeuYLKJd8tcSjg" id="615" switch="_sbnPiUMZEeuYLKJd8tcSjg" position="STRAIGHT"/>
+    <follows xmi:type="hu.bme.mit.trainbenchmark:SwitchPosition" xmi:id="_sbn2rEMZEeuYLKJd8tcSjg" id="671" switch="_sbn2q0MZEeuYLKJd8tcSjg"/>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbkMMkMZEeuYLKJd8tcSjg" id="409">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkMM0MZEeuYLKJd8tcSjg" id="410" connectsTo="_sbkMNEMZEeuYLKJd8tcSjg" length="316"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkMNEMZEeuYLKJd8tcSjg" id="411" connectsTo="_sbkMNUMZEeuYLKJd8tcSjg" length="26"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkMNUMZEeuYLKJd8tcSjg" id="412" connectsTo="_sbkMNkMZEeuYLKJd8tcSjg" length="772"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkMNkMZEeuYLKJd8tcSjg" id="413" connectsTo="_sbkMN0MZEeuYLKJd8tcSjg" length="473"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkMN0MZEeuYLKJd8tcSjg" id="414" connectsTo="_sbkzVUMZEeuYLKJd8tcSjg" length="726"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Switch" xmi:id="_sbkMOEMZEeuYLKJd8tcSjg" id="408" connectsTo="_sbkMM0MZEeuYLKJd8tcSjg" currentPosition="RIGHT" positions="_sbkMOUMZEeuYLKJd8tcSjg"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbkMOkMZEeuYLKJd8tcSjg" id="417">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkMO0MZEeuYLKJd8tcSjg" id="418" connectsTo="_sbkMPEMZEeuYLKJd8tcSjg" length="960"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkMPEMZEeuYLKJd8tcSjg" id="419" connectsTo="_sbkMPUMZEeuYLKJd8tcSjg" length="833"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkMPUMZEeuYLKJd8tcSjg" id="420" connectsTo="_sbkMPkMZEeuYLKJd8tcSjg" length="318"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkMPkMZEeuYLKJd8tcSjg" id="421" connectsTo="_sbkMP0MZEeuYLKJd8tcSjg" length="531"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkMP0MZEeuYLKJd8tcSjg" id="422" connectsTo="_sbkMQUMZEeuYLKJd8tcSjg" length="36"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbkMQEMZEeuYLKJd8tcSjg" id="423">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkMQUMZEeuYLKJd8tcSjg" id="424" connectsTo="_sbkMQkMZEeuYLKJd8tcSjg" length="718"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkMQkMZEeuYLKJd8tcSjg" id="425" connectsTo="_sbkMQ0MZEeuYLKJd8tcSjg" length="544"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkMQ0MZEeuYLKJd8tcSjg" id="426" connectsTo="_sbkMREMZEeuYLKJd8tcSjg" length="287"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkMREMZEeuYLKJd8tcSjg" id="427" connectsTo="_sbkMRUMZEeuYLKJd8tcSjg" length="632"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkMRUMZEeuYLKJd8tcSjg" id="428" connectsTo="_sbkMR0MZEeuYLKJd8tcSjg" length="252"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbkMRkMZEeuYLKJd8tcSjg" id="429">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkMR0MZEeuYLKJd8tcSjg" id="430" connectsTo="_sbkMSEMZEeuYLKJd8tcSjg" length="468"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkMSEMZEeuYLKJd8tcSjg" id="431" connectsTo="_sbkzQEMZEeuYLKJd8tcSjg" length="218"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkzQEMZEeuYLKJd8tcSjg" id="432" connectsTo="_sbkzQUMZEeuYLKJd8tcSjg" length="719"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkzQUMZEeuYLKJd8tcSjg" id="433" connectsTo="_sbkzQkMZEeuYLKJd8tcSjg" length="118"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkzQkMZEeuYLKJd8tcSjg" id="434" connectsTo="_sbkzREMZEeuYLKJd8tcSjg" length="902"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbkzQ0MZEeuYLKJd8tcSjg" id="435">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkzREMZEeuYLKJd8tcSjg" id="436" connectsTo="_sbkzRUMZEeuYLKJd8tcSjg" length="132"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkzRUMZEeuYLKJd8tcSjg" id="437" connectsTo="_sbkzRkMZEeuYLKJd8tcSjg" length="51"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkzRkMZEeuYLKJd8tcSjg" id="438" connectsTo="_sbkzR0MZEeuYLKJd8tcSjg" length="181"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkzR0MZEeuYLKJd8tcSjg" id="439" connectsTo="_sbkzSEMZEeuYLKJd8tcSjg" length="724"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkzSEMZEeuYLKJd8tcSjg" id="440" connectsTo="_sbkzSkMZEeuYLKJd8tcSjg" length="455"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbkzSUMZEeuYLKJd8tcSjg" id="441">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkzSkMZEeuYLKJd8tcSjg" id="442" connectsTo="_sbkzS0MZEeuYLKJd8tcSjg" length="2"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkzS0MZEeuYLKJd8tcSjg" id="443" connectsTo="_sbkzTEMZEeuYLKJd8tcSjg" length="707"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkzTEMZEeuYLKJd8tcSjg" id="444" connectsTo="_sbkzTUMZEeuYLKJd8tcSjg" length="590"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkzTUMZEeuYLKJd8tcSjg" id="445" connectsTo="_sbkzTkMZEeuYLKJd8tcSjg" length="613"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkzTkMZEeuYLKJd8tcSjg" id="446" connectsTo="_sbkzUEMZEeuYLKJd8tcSjg" length="83"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbkzT0MZEeuYLKJd8tcSjg" id="447">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkzUEMZEeuYLKJd8tcSjg" id="448" connectsTo="_sbkzUUMZEeuYLKJd8tcSjg" length="220"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkzUUMZEeuYLKJd8tcSjg" id="449" connectsTo="_sbkzUkMZEeuYLKJd8tcSjg" length="793"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkzUkMZEeuYLKJd8tcSjg" id="450" connectsTo="_sbkzU0MZEeuYLKJd8tcSjg" length="452"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkzU0MZEeuYLKJd8tcSjg" id="451" connectsTo="_sbkzVEMZEeuYLKJd8tcSjg" length="856"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkzVEMZEeuYLKJd8tcSjg" id="452" connectsTo="_sbkzY0MZEeuYLKJd8tcSjg" length="187"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Switch" xmi:id="_sbkzVUMZEeuYLKJd8tcSjg" id="416" connectsTo="_sbkMO0MZEeuYLKJd8tcSjg" currentPosition="RIGHT" positions="_sbkzVkMZEeuYLKJd8tcSjg"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbkzV0MZEeuYLKJd8tcSjg" id="455">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkzWEMZEeuYLKJd8tcSjg" id="456" connectsTo="_sbkzWUMZEeuYLKJd8tcSjg" length="74"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkzWUMZEeuYLKJd8tcSjg" id="457" connectsTo="_sbkzWkMZEeuYLKJd8tcSjg" length="777"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkzWkMZEeuYLKJd8tcSjg" id="458" connectsTo="_sbkzW0MZEeuYLKJd8tcSjg" length="771"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkzW0MZEeuYLKJd8tcSjg" id="459" connectsTo="_sbkzXEMZEeuYLKJd8tcSjg" length="194"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkzXEMZEeuYLKJd8tcSjg" id="460" connectsTo="_sbkzXkMZEeuYLKJd8tcSjg" length="60"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbkzXUMZEeuYLKJd8tcSjg" id="461">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkzXkMZEeuYLKJd8tcSjg" id="462" connectsTo="_sbkzX0MZEeuYLKJd8tcSjg" length="722"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkzX0MZEeuYLKJd8tcSjg" id="463" connectsTo="_sbkzYEMZEeuYLKJd8tcSjg" length="262"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkzYEMZEeuYLKJd8tcSjg" id="464" connectsTo="_sbkzYUMZEeuYLKJd8tcSjg" length="610"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkzYUMZEeuYLKJd8tcSjg" id="465" connectsTo="_sbkzYkMZEeuYLKJd8tcSjg" length="301"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkzYkMZEeuYLKJd8tcSjg" id="466" connectsTo="_sblaW0MZEeuYLKJd8tcSjg" length="836"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Switch" xmi:id="_sbkzY0MZEeuYLKJd8tcSjg" id="454" connectsTo="_sbkzWEMZEeuYLKJd8tcSjg" currentPosition="LEFT" positions="_sbkzZEMZEeuYLKJd8tcSjg"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbkzZUMZEeuYLKJd8tcSjg" id="469">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkzZkMZEeuYLKJd8tcSjg" id="470" connectsTo="_sbkzZ0MZEeuYLKJd8tcSjg" length="696"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkzZ0MZEeuYLKJd8tcSjg" id="471" connectsTo="_sbkzaEMZEeuYLKJd8tcSjg" length="357"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkzaEMZEeuYLKJd8tcSjg" id="472" connectsTo="_sbkzaUMZEeuYLKJd8tcSjg" length="710"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkzaUMZEeuYLKJd8tcSjg" id="473" connectsTo="_sbkzakMZEeuYLKJd8tcSjg" length="576"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkzakMZEeuYLKJd8tcSjg" id="474" connectsTo="_sbkzbEMZEeuYLKJd8tcSjg" length="481"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbkza0MZEeuYLKJd8tcSjg" id="475">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkzbEMZEeuYLKJd8tcSjg" id="476" connectsTo="_sbkzbUMZEeuYLKJd8tcSjg" length="718"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkzbUMZEeuYLKJd8tcSjg" id="477" connectsTo="_sbkzbkMZEeuYLKJd8tcSjg" length="907"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkzbkMZEeuYLKJd8tcSjg" id="478" connectsTo="_sbkzb0MZEeuYLKJd8tcSjg" length="225"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkzb0MZEeuYLKJd8tcSjg" id="479" connectsTo="_sbkzcEMZEeuYLKJd8tcSjg" length="409"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbkzcEMZEeuYLKJd8tcSjg" id="480" connectsTo="_sblaUEMZEeuYLKJd8tcSjg" length="78"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbkzcUMZEeuYLKJd8tcSjg" id="481">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sblaUEMZEeuYLKJd8tcSjg" id="482" connectsTo="_sblaUUMZEeuYLKJd8tcSjg" length="307"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sblaUUMZEeuYLKJd8tcSjg" id="483" connectsTo="_sblaUkMZEeuYLKJd8tcSjg" length="842"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sblaUkMZEeuYLKJd8tcSjg" id="484" connectsTo="_sblaU0MZEeuYLKJd8tcSjg" length="664"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sblaU0MZEeuYLKJd8tcSjg" id="485" connectsTo="_sblaVEMZEeuYLKJd8tcSjg" length="807"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sblaVEMZEeuYLKJd8tcSjg" id="486" connectsTo="_sblaVkMZEeuYLKJd8tcSjg" length="851"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sblaVUMZEeuYLKJd8tcSjg" id="487">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sblaVkMZEeuYLKJd8tcSjg" id="488" connectsTo="_sblaV0MZEeuYLKJd8tcSjg" length="124"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sblaV0MZEeuYLKJd8tcSjg" id="489" connectsTo="_sblaWEMZEeuYLKJd8tcSjg" length="629"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sblaWEMZEeuYLKJd8tcSjg" id="490" connectsTo="_sblaWUMZEeuYLKJd8tcSjg" length="320"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sblaWUMZEeuYLKJd8tcSjg" id="491" connectsTo="_sblaWkMZEeuYLKJd8tcSjg" length="173"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sblaWkMZEeuYLKJd8tcSjg" id="492" connectsTo="_sblab0MZEeuYLKJd8tcSjg" length="587"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Switch" xmi:id="_sblaW0MZEeuYLKJd8tcSjg" id="468" connectsTo="_sbkzZkMZEeuYLKJd8tcSjg" currentPosition="STRAIGHT" positions="_sblaXEMZEeuYLKJd8tcSjg"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sblaXUMZEeuYLKJd8tcSjg" id="495">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sblaXkMZEeuYLKJd8tcSjg" id="496" connectsTo="_sblaX0MZEeuYLKJd8tcSjg" length="856"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sblaX0MZEeuYLKJd8tcSjg" id="497" connectsTo="_sblaYEMZEeuYLKJd8tcSjg" length="835"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sblaYEMZEeuYLKJd8tcSjg" id="498" connectsTo="_sblaYUMZEeuYLKJd8tcSjg" length="531"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sblaYUMZEeuYLKJd8tcSjg" id="499" connectsTo="_sblaYkMZEeuYLKJd8tcSjg" length="192"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sblaYkMZEeuYLKJd8tcSjg" id="500" connectsTo="_sblaZEMZEeuYLKJd8tcSjg" length="290"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sblaY0MZEeuYLKJd8tcSjg" id="501">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sblaZEMZEeuYLKJd8tcSjg" id="502" connectsTo="_sblaZUMZEeuYLKJd8tcSjg" length="149"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sblaZUMZEeuYLKJd8tcSjg" id="503" connectsTo="_sblaZkMZEeuYLKJd8tcSjg" length="359"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sblaZkMZEeuYLKJd8tcSjg" id="504" connectsTo="_sblaZ0MZEeuYLKJd8tcSjg" length="356"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sblaZ0MZEeuYLKJd8tcSjg" id="505" connectsTo="_sblaaEMZEeuYLKJd8tcSjg" length="210"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sblaaEMZEeuYLKJd8tcSjg" id="506" connectsTo="_sblaakMZEeuYLKJd8tcSjg" length="38"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sblaaUMZEeuYLKJd8tcSjg" id="507">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sblaakMZEeuYLKJd8tcSjg" id="508" connectsTo="_sblaa0MZEeuYLKJd8tcSjg" length="7"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sblaa0MZEeuYLKJd8tcSjg" id="509" connectsTo="_sblabEMZEeuYLKJd8tcSjg" length="887"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sblabEMZEeuYLKJd8tcSjg" id="510" connectsTo="_sblabUMZEeuYLKJd8tcSjg" length="78"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sblabUMZEeuYLKJd8tcSjg" id="511" connectsTo="_sblabkMZEeuYLKJd8tcSjg" length="30"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sblabkMZEeuYLKJd8tcSjg" id="512" connectsTo="_sbmBbUMZEeuYLKJd8tcSjg" length="217"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Switch" xmi:id="_sblab0MZEeuYLKJd8tcSjg" id="494" connectsTo="_sblaXkMZEeuYLKJd8tcSjg" positions="_sblacEMZEeuYLKJd8tcSjg"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sblacUMZEeuYLKJd8tcSjg" id="515">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sblackMZEeuYLKJd8tcSjg" id="516" connectsTo="_sblac0MZEeuYLKJd8tcSjg" length="486"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sblac0MZEeuYLKJd8tcSjg" id="517" connectsTo="_sbladEMZEeuYLKJd8tcSjg" length="942"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbladEMZEeuYLKJd8tcSjg" id="518" connectsTo="_sbladUMZEeuYLKJd8tcSjg" length="553"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbladUMZEeuYLKJd8tcSjg" id="519" connectsTo="_sbladkMZEeuYLKJd8tcSjg" length="393"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbladkMZEeuYLKJd8tcSjg" id="520" connectsTo="_sblaeEMZEeuYLKJd8tcSjg" length="233"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sblad0MZEeuYLKJd8tcSjg" id="521">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sblaeEMZEeuYLKJd8tcSjg" id="522" connectsTo="_sblaeUMZEeuYLKJd8tcSjg" length="843"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sblaeUMZEeuYLKJd8tcSjg" id="523" connectsTo="_sblaekMZEeuYLKJd8tcSjg" length="989"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sblaekMZEeuYLKJd8tcSjg" id="524" connectsTo="_sblae0MZEeuYLKJd8tcSjg" length="724"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sblae0MZEeuYLKJd8tcSjg" id="525" connectsTo="_sbmBYEMZEeuYLKJd8tcSjg" length="480"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmBYEMZEeuYLKJd8tcSjg" id="526" connectsTo="_sbmBYkMZEeuYLKJd8tcSjg" length="333"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbmBYUMZEeuYLKJd8tcSjg" id="527">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmBYkMZEeuYLKJd8tcSjg" id="528" connectsTo="_sbmBY0MZEeuYLKJd8tcSjg" length="74"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmBY0MZEeuYLKJd8tcSjg" id="529" connectsTo="_sbmBZEMZEeuYLKJd8tcSjg" length="952"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmBZEMZEeuYLKJd8tcSjg" id="530" connectsTo="_sbmBZUMZEeuYLKJd8tcSjg" length="524"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmBZUMZEeuYLKJd8tcSjg" id="531" connectsTo="_sbmBZkMZEeuYLKJd8tcSjg" length="5"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmBZkMZEeuYLKJd8tcSjg" id="532" connectsTo="_sbmBaEMZEeuYLKJd8tcSjg" length="133"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbmBZ0MZEeuYLKJd8tcSjg" id="533">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmBaEMZEeuYLKJd8tcSjg" id="534" connectsTo="_sbmBaUMZEeuYLKJd8tcSjg" length="558"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmBaUMZEeuYLKJd8tcSjg" id="535" connectsTo="_sbmBakMZEeuYLKJd8tcSjg" length="220"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmBakMZEeuYLKJd8tcSjg" id="536" connectsTo="_sbmBa0MZEeuYLKJd8tcSjg" length="508"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmBa0MZEeuYLKJd8tcSjg" id="537" connectsTo="_sbmBbEMZEeuYLKJd8tcSjg" length="268"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmBbEMZEeuYLKJd8tcSjg" id="538" connectsTo="_sbmocEMZEeuYLKJd8tcSjg" length="280"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Switch" xmi:id="_sbmBbUMZEeuYLKJd8tcSjg" id="514" connectsTo="_sblackMZEeuYLKJd8tcSjg" currentPosition="LEFT" positions="_sbmBbkMZEeuYLKJd8tcSjg"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbmBb0MZEeuYLKJd8tcSjg" id="541">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmBcEMZEeuYLKJd8tcSjg" id="542" connectsTo="_sbmBcUMZEeuYLKJd8tcSjg" length="768"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmBcUMZEeuYLKJd8tcSjg" id="543" connectsTo="_sbmBckMZEeuYLKJd8tcSjg" length="969"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmBckMZEeuYLKJd8tcSjg" id="544" connectsTo="_sbmBc0MZEeuYLKJd8tcSjg" length="316"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmBc0MZEeuYLKJd8tcSjg" id="545" connectsTo="_sbmBdEMZEeuYLKJd8tcSjg" length="9"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmBdEMZEeuYLKJd8tcSjg" id="546" connectsTo="_sbmBdkMZEeuYLKJd8tcSjg" length="941"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbmBdUMZEeuYLKJd8tcSjg" id="547">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmBdkMZEeuYLKJd8tcSjg" id="548" connectsTo="_sbmBd0MZEeuYLKJd8tcSjg" length="971"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmBd0MZEeuYLKJd8tcSjg" id="549" connectsTo="_sbmBeEMZEeuYLKJd8tcSjg" length="75"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmBeEMZEeuYLKJd8tcSjg" id="550" connectsTo="_sbmBeUMZEeuYLKJd8tcSjg" length="686"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmBeUMZEeuYLKJd8tcSjg" id="551" connectsTo="_sbmBekMZEeuYLKJd8tcSjg" length="759"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmBekMZEeuYLKJd8tcSjg" id="552" connectsTo="_sbmBfEMZEeuYLKJd8tcSjg" length="357"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbmBe0MZEeuYLKJd8tcSjg" id="553">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmBfEMZEeuYLKJd8tcSjg" id="554" connectsTo="_sbmBfUMZEeuYLKJd8tcSjg" length="672"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmBfUMZEeuYLKJd8tcSjg" id="555" connectsTo="_sbmBfkMZEeuYLKJd8tcSjg" length="316"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmBfkMZEeuYLKJd8tcSjg" id="556" connectsTo="_sbmBf0MZEeuYLKJd8tcSjg" length="915"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmBf0MZEeuYLKJd8tcSjg" id="557" connectsTo="_sbmBgEMZEeuYLKJd8tcSjg" length="831"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmBgEMZEeuYLKJd8tcSjg" id="558" connectsTo="_sbnPiUMZEeuYLKJd8tcSjg" length="573"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Switch" xmi:id="_sbmocEMZEeuYLKJd8tcSjg" id="540" connectsTo="_sbmBcEMZEeuYLKJd8tcSjg" positions="_sbmocUMZEeuYLKJd8tcSjg"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbmockMZEeuYLKJd8tcSjg" id="561">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmoc0MZEeuYLKJd8tcSjg" id="562" connectsTo="_sbmodEMZEeuYLKJd8tcSjg" length="386"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmodEMZEeuYLKJd8tcSjg" id="563" connectsTo="_sbmodUMZEeuYLKJd8tcSjg" length="340"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmodUMZEeuYLKJd8tcSjg" id="564" connectsTo="_sbmodkMZEeuYLKJd8tcSjg" length="597"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmodkMZEeuYLKJd8tcSjg" id="565" connectsTo="_sbmod0MZEeuYLKJd8tcSjg" length="995"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmod0MZEeuYLKJd8tcSjg" id="566" connectsTo="_sbmoeUMZEeuYLKJd8tcSjg" length="382"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbmoeEMZEeuYLKJd8tcSjg" id="567">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmoeUMZEeuYLKJd8tcSjg" id="568" connectsTo="_sbmoekMZEeuYLKJd8tcSjg" length="196"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmoekMZEeuYLKJd8tcSjg" id="569" connectsTo="_sbmoe0MZEeuYLKJd8tcSjg" length="953"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmoe0MZEeuYLKJd8tcSjg" id="570" connectsTo="_sbmofEMZEeuYLKJd8tcSjg" length="473"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmofEMZEeuYLKJd8tcSjg" id="571" connectsTo="_sbmofUMZEeuYLKJd8tcSjg" length="514"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmofUMZEeuYLKJd8tcSjg" id="572" connectsTo="_sbmof0MZEeuYLKJd8tcSjg" length="214"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbmofkMZEeuYLKJd8tcSjg" id="573">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmof0MZEeuYLKJd8tcSjg" id="574" connectsTo="_sbmogEMZEeuYLKJd8tcSjg" length="429"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmogEMZEeuYLKJd8tcSjg" id="575" connectsTo="_sbmogUMZEeuYLKJd8tcSjg" length="972"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmogUMZEeuYLKJd8tcSjg" id="576" connectsTo="_sbmogkMZEeuYLKJd8tcSjg" length="708"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmogkMZEeuYLKJd8tcSjg" id="577" connectsTo="_sbmog0MZEeuYLKJd8tcSjg" length="669"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmog0MZEeuYLKJd8tcSjg" id="578" connectsTo="_sbmohUMZEeuYLKJd8tcSjg" length="974"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbmohEMZEeuYLKJd8tcSjg" id="579">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmohUMZEeuYLKJd8tcSjg" id="580" connectsTo="_sbmohkMZEeuYLKJd8tcSjg" length="319"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmohkMZEeuYLKJd8tcSjg" id="581" connectsTo="_sbmoh0MZEeuYLKJd8tcSjg" length="706"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmoh0MZEeuYLKJd8tcSjg" id="582" connectsTo="_sbmoiEMZEeuYLKJd8tcSjg" length="35"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmoiEMZEeuYLKJd8tcSjg" id="583" connectsTo="_sbmoiUMZEeuYLKJd8tcSjg" length="383"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmoiUMZEeuYLKJd8tcSjg" id="584" connectsTo="_sbmoi0MZEeuYLKJd8tcSjg" length="902"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbmoikMZEeuYLKJd8tcSjg" id="585">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmoi0MZEeuYLKJd8tcSjg" id="586" connectsTo="_sbmojEMZEeuYLKJd8tcSjg" length="297"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmojEMZEeuYLKJd8tcSjg" id="587" connectsTo="_sbmojUMZEeuYLKJd8tcSjg" length="877"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmojUMZEeuYLKJd8tcSjg" id="588" connectsTo="_sbmojkMZEeuYLKJd8tcSjg" length="630"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmojkMZEeuYLKJd8tcSjg" id="589" connectsTo="_sbmoj0MZEeuYLKJd8tcSjg" length="154"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmoj0MZEeuYLKJd8tcSjg" id="590" connectsTo="_sbmokUMZEeuYLKJd8tcSjg" length="882"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbmokEMZEeuYLKJd8tcSjg" id="591">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmokUMZEeuYLKJd8tcSjg" id="592" connectsTo="_sbmokkMZEeuYLKJd8tcSjg" length="300"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmokkMZEeuYLKJd8tcSjg" id="593" connectsTo="_sbmok0MZEeuYLKJd8tcSjg" length="403"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmok0MZEeuYLKJd8tcSjg" id="594" connectsTo="_sbmolEMZEeuYLKJd8tcSjg" length="728"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmolEMZEeuYLKJd8tcSjg" id="595" connectsTo="_sbmolUMZEeuYLKJd8tcSjg" length="798"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmolUMZEeuYLKJd8tcSjg" id="596" connectsTo="_sbmol0MZEeuYLKJd8tcSjg" length="214"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbmolkMZEeuYLKJd8tcSjg" id="597">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmol0MZEeuYLKJd8tcSjg" id="598" connectsTo="_sbmomEMZEeuYLKJd8tcSjg" length="419"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmomEMZEeuYLKJd8tcSjg" id="599" connectsTo="_sbmomUMZEeuYLKJd8tcSjg" length="752"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmomUMZEeuYLKJd8tcSjg" id="600" connectsTo="_sbmomkMZEeuYLKJd8tcSjg" length="100"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmomkMZEeuYLKJd8tcSjg" id="601" connectsTo="_sbmom0MZEeuYLKJd8tcSjg" length="864"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmom0MZEeuYLKJd8tcSjg" id="602" connectsTo="_sbmonUMZEeuYLKJd8tcSjg" length="201"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbmonEMZEeuYLKJd8tcSjg" id="603">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmonUMZEeuYLKJd8tcSjg" id="604" connectsTo="_sbmonkMZEeuYLKJd8tcSjg" length="868"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbmonkMZEeuYLKJd8tcSjg" id="605" connectsTo="_sbnPgEMZEeuYLKJd8tcSjg" length="182"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbnPgEMZEeuYLKJd8tcSjg" id="606" connectsTo="_sbnPgUMZEeuYLKJd8tcSjg" length="241"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbnPgUMZEeuYLKJd8tcSjg" id="607" connectsTo="_sbnPgkMZEeuYLKJd8tcSjg" length="734"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbnPgkMZEeuYLKJd8tcSjg" id="608" connectsTo="_sbnPhEMZEeuYLKJd8tcSjg" length="70"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbnPg0MZEeuYLKJd8tcSjg" id="609">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbnPhEMZEeuYLKJd8tcSjg" id="610" connectsTo="_sbnPhUMZEeuYLKJd8tcSjg" length="735"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbnPhUMZEeuYLKJd8tcSjg" id="611" connectsTo="_sbnPhkMZEeuYLKJd8tcSjg" length="665"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbnPhkMZEeuYLKJd8tcSjg" id="612" connectsTo="_sbnPh0MZEeuYLKJd8tcSjg" length="860"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbnPh0MZEeuYLKJd8tcSjg" id="613" connectsTo="_sbnPiEMZEeuYLKJd8tcSjg" length="143"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbnPiEMZEeuYLKJd8tcSjg" id="614" connectsTo="_sbn2q0MZEeuYLKJd8tcSjg" length="962"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Switch" xmi:id="_sbnPiUMZEeuYLKJd8tcSjg" id="560" connectsTo="_sbmoc0MZEeuYLKJd8tcSjg" currentPosition="STRAIGHT" positions="_sbnPikMZEeuYLKJd8tcSjg"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbnPi0MZEeuYLKJd8tcSjg" id="617">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbnPjEMZEeuYLKJd8tcSjg" id="618" connectsTo="_sbnPjUMZEeuYLKJd8tcSjg" length="417"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbnPjUMZEeuYLKJd8tcSjg" id="619" connectsTo="_sbnPjkMZEeuYLKJd8tcSjg" length="630"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbnPjkMZEeuYLKJd8tcSjg" id="620" connectsTo="_sbnPj0MZEeuYLKJd8tcSjg" length="106"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbnPj0MZEeuYLKJd8tcSjg" id="621" connectsTo="_sbnPkEMZEeuYLKJd8tcSjg" length="482"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbnPkEMZEeuYLKJd8tcSjg" id="622" connectsTo="_sbnPkkMZEeuYLKJd8tcSjg" length="560"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbnPkUMZEeuYLKJd8tcSjg" id="623">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbnPkkMZEeuYLKJd8tcSjg" id="624" connectsTo="_sbnPk0MZEeuYLKJd8tcSjg" length="748"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbnPk0MZEeuYLKJd8tcSjg" id="625" connectsTo="_sbnPlEMZEeuYLKJd8tcSjg" length="135"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbnPlEMZEeuYLKJd8tcSjg" id="626" connectsTo="_sbnPlUMZEeuYLKJd8tcSjg" length="395"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbnPlUMZEeuYLKJd8tcSjg" id="627" connectsTo="_sbnPlkMZEeuYLKJd8tcSjg" length="950"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbnPlkMZEeuYLKJd8tcSjg" id="628" connectsTo="_sbnPmEMZEeuYLKJd8tcSjg" length="569"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbnPl0MZEeuYLKJd8tcSjg" id="629">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbnPmEMZEeuYLKJd8tcSjg" id="630" connectsTo="_sbnPmUMZEeuYLKJd8tcSjg" length="171"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbnPmUMZEeuYLKJd8tcSjg" id="631" connectsTo="_sbnPmkMZEeuYLKJd8tcSjg" length="83"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbnPmkMZEeuYLKJd8tcSjg" id="632" connectsTo="_sbnPm0MZEeuYLKJd8tcSjg" length="744"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbnPm0MZEeuYLKJd8tcSjg" id="633" connectsTo="_sbnPnEMZEeuYLKJd8tcSjg" length="702"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbnPnEMZEeuYLKJd8tcSjg" id="634" connectsTo="_sbnPnkMZEeuYLKJd8tcSjg" length="68"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbnPnUMZEeuYLKJd8tcSjg" id="635">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbnPnkMZEeuYLKJd8tcSjg" id="636" connectsTo="_sbnPn0MZEeuYLKJd8tcSjg" length="851"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbnPn0MZEeuYLKJd8tcSjg" id="637" connectsTo="_sbnPoEMZEeuYLKJd8tcSjg" length="38"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbnPoEMZEeuYLKJd8tcSjg" id="638" connectsTo="_sbnPoUMZEeuYLKJd8tcSjg" length="399"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbnPoUMZEeuYLKJd8tcSjg" id="639" connectsTo="_sbnPokMZEeuYLKJd8tcSjg" length="551"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbnPokMZEeuYLKJd8tcSjg" id="640" connectsTo="_sbnPpEMZEeuYLKJd8tcSjg" length="875"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbnPo0MZEeuYLKJd8tcSjg" id="641">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbnPpEMZEeuYLKJd8tcSjg" id="642" connectsTo="_sbnPpUMZEeuYLKJd8tcSjg" length="394"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbnPpUMZEeuYLKJd8tcSjg" id="643" connectsTo="_sbn2kEMZEeuYLKJd8tcSjg" length="904"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbn2kEMZEeuYLKJd8tcSjg" id="644" connectsTo="_sbn2kUMZEeuYLKJd8tcSjg" length="939"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbn2kUMZEeuYLKJd8tcSjg" id="645" connectsTo="_sbn2kkMZEeuYLKJd8tcSjg" length="303"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbn2kkMZEeuYLKJd8tcSjg" id="646" connectsTo="_sbn2lEMZEeuYLKJd8tcSjg" length="77"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbn2k0MZEeuYLKJd8tcSjg" id="647">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbn2lEMZEeuYLKJd8tcSjg" id="648" connectsTo="_sbn2lUMZEeuYLKJd8tcSjg" length="803"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbn2lUMZEeuYLKJd8tcSjg" id="649" connectsTo="_sbn2lkMZEeuYLKJd8tcSjg" length="780"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbn2lkMZEeuYLKJd8tcSjg" id="650" connectsTo="_sbn2l0MZEeuYLKJd8tcSjg" length="97"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbn2l0MZEeuYLKJd8tcSjg" id="651" connectsTo="_sbn2mEMZEeuYLKJd8tcSjg" length="157"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbn2mEMZEeuYLKJd8tcSjg" id="652" connectsTo="_sbn2mkMZEeuYLKJd8tcSjg" length="365"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbn2mUMZEeuYLKJd8tcSjg" id="653">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbn2mkMZEeuYLKJd8tcSjg" id="654" connectsTo="_sbn2m0MZEeuYLKJd8tcSjg" length="595"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbn2m0MZEeuYLKJd8tcSjg" id="655" connectsTo="_sbn2nEMZEeuYLKJd8tcSjg" length="714"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbn2nEMZEeuYLKJd8tcSjg" id="656" connectsTo="_sbn2nUMZEeuYLKJd8tcSjg" length="210"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbn2nUMZEeuYLKJd8tcSjg" id="657" connectsTo="_sbn2nkMZEeuYLKJd8tcSjg" length="630"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbn2nkMZEeuYLKJd8tcSjg" id="658" connectsTo="_sbn2oEMZEeuYLKJd8tcSjg" length="61"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbn2n0MZEeuYLKJd8tcSjg" id="659">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbn2oEMZEeuYLKJd8tcSjg" id="660" connectsTo="_sbn2oUMZEeuYLKJd8tcSjg" length="171"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbn2oUMZEeuYLKJd8tcSjg" id="661" connectsTo="_sbn2okMZEeuYLKJd8tcSjg" length="730"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbn2okMZEeuYLKJd8tcSjg" id="662" connectsTo="_sbn2o0MZEeuYLKJd8tcSjg" length="387"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbn2o0MZEeuYLKJd8tcSjg" id="663" connectsTo="_sbn2pEMZEeuYLKJd8tcSjg" length="864"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbn2pEMZEeuYLKJd8tcSjg" id="664" connectsTo="_sbn2pkMZEeuYLKJd8tcSjg" length="731"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbn2pUMZEeuYLKJd8tcSjg" id="665">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbn2pkMZEeuYLKJd8tcSjg" id="666" connectsTo="_sbn2p0MZEeuYLKJd8tcSjg" length="82"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbn2p0MZEeuYLKJd8tcSjg" id="667" connectsTo="_sbn2qEMZEeuYLKJd8tcSjg" length="963"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbn2qEMZEeuYLKJd8tcSjg" id="668" connectsTo="_sbn2qUMZEeuYLKJd8tcSjg" length="647"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbn2qUMZEeuYLKJd8tcSjg" id="669" connectsTo="_sbn2qkMZEeuYLKJd8tcSjg" length="666"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbn2qkMZEeuYLKJd8tcSjg" id="670" connectsTo="_sbodt0MZEeuYLKJd8tcSjg" length="464"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Switch" xmi:id="_sbn2q0MZEeuYLKJd8tcSjg" id="616" connectsTo="_sbnPjEMZEeuYLKJd8tcSjg" positions="_sbn2rEMZEeuYLKJd8tcSjg"/>
+    </definedBy>
+  </routes>
+  <routes xmi:type="hu.bme.mit.trainbenchmark:Route" xmi:id="_sbn2rkMZEeuYLKJd8tcSjg" id="673" entry="_sbkMMEMZEeuYLKJd8tcSjg" exit="_sbn2rUMZEeuYLKJd8tcSjg">
+    <follows xmi:type="hu.bme.mit.trainbenchmark:SwitchPosition" xmi:id="_sboduEMZEeuYLKJd8tcSjg" id="699" switch="_sbodt0MZEeuYLKJd8tcSjg" position="LEFT"/>
+    <follows xmi:type="hu.bme.mit.trainbenchmark:SwitchPosition" xmi:id="_sbodxkMZEeuYLKJd8tcSjg" id="713" switch="_sbodxUMZEeuYLKJd8tcSjg" position="LEFT"/>
+    <follows xmi:type="hu.bme.mit.trainbenchmark:SwitchPosition" xmi:id="_sbodzkMZEeuYLKJd8tcSjg" id="721" switch="_sbodzUMZEeuYLKJd8tcSjg"/>
+    <follows xmi:type="hu.bme.mit.trainbenchmark:SwitchPosition" xmi:id="_sbpE1UMZEeuYLKJd8tcSjg" id="777" switch="_sbpE1EMZEeuYLKJd8tcSjg" position="STRAIGHT"/>
+    <follows xmi:type="hu.bme.mit.trainbenchmark:SwitchPosition" xmi:id="_sbpr2UMZEeuYLKJd8tcSjg" id="821" switch="_sbpr2EMZEeuYLKJd8tcSjg"/>
+    <follows xmi:type="hu.bme.mit.trainbenchmark:SwitchPosition" xmi:id="_sbpr-UMZEeuYLKJd8tcSjg" id="853" switch="_sbpr-EMZEeuYLKJd8tcSjg" position="STRAIGHT"/>
+    <follows xmi:type="hu.bme.mit.trainbenchmark:SwitchPosition" xmi:id="_sbqS20MZEeuYLKJd8tcSjg" id="879" switch="_sbqS2kMZEeuYLKJd8tcSjg"/>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbn2r0MZEeuYLKJd8tcSjg" id="675">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbodoEMZEeuYLKJd8tcSjg" id="676" connectsTo="_sbodoUMZEeuYLKJd8tcSjg" length="284"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbodoUMZEeuYLKJd8tcSjg" id="677" connectsTo="_sbodokMZEeuYLKJd8tcSjg" length="236"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbodokMZEeuYLKJd8tcSjg" id="678" connectsTo="_sbodo0MZEeuYLKJd8tcSjg" length="420"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbodo0MZEeuYLKJd8tcSjg" id="679" connectsTo="_sbodpEMZEeuYLKJd8tcSjg" length="855"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbodpEMZEeuYLKJd8tcSjg" id="680" connectsTo="_sbodpkMZEeuYLKJd8tcSjg" length="856"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbodpUMZEeuYLKJd8tcSjg" id="681">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbodpkMZEeuYLKJd8tcSjg" id="682" connectsTo="_sbodp0MZEeuYLKJd8tcSjg" length="300"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbodp0MZEeuYLKJd8tcSjg" id="683" connectsTo="_sbodqEMZEeuYLKJd8tcSjg" length="212"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbodqEMZEeuYLKJd8tcSjg" id="684" connectsTo="_sbodqUMZEeuYLKJd8tcSjg" length="78"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbodqUMZEeuYLKJd8tcSjg" id="685" connectsTo="_sbodqkMZEeuYLKJd8tcSjg" length="58"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbodqkMZEeuYLKJd8tcSjg" id="686" connectsTo="_sbodrEMZEeuYLKJd8tcSjg" length="959"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbodq0MZEeuYLKJd8tcSjg" id="687">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbodrEMZEeuYLKJd8tcSjg" id="688" connectsTo="_sbodrUMZEeuYLKJd8tcSjg" length="477"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbodrUMZEeuYLKJd8tcSjg" id="689" connectsTo="_sbodrkMZEeuYLKJd8tcSjg" length="166"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbodrkMZEeuYLKJd8tcSjg" id="690" connectsTo="_sbodr0MZEeuYLKJd8tcSjg" length="379"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbodr0MZEeuYLKJd8tcSjg" id="691" connectsTo="_sbodsEMZEeuYLKJd8tcSjg" length="830"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbodsEMZEeuYLKJd8tcSjg" id="692" connectsTo="_sbodskMZEeuYLKJd8tcSjg" length="40"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbodsUMZEeuYLKJd8tcSjg" id="693">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbodskMZEeuYLKJd8tcSjg" id="694" connectsTo="_sbods0MZEeuYLKJd8tcSjg" length="653"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbods0MZEeuYLKJd8tcSjg" id="695" connectsTo="_sbodtEMZEeuYLKJd8tcSjg" length="319"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbodtEMZEeuYLKJd8tcSjg" id="696" connectsTo="_sbodtUMZEeuYLKJd8tcSjg" length="364"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbodtUMZEeuYLKJd8tcSjg" id="697" connectsTo="_sbodtkMZEeuYLKJd8tcSjg" length="923"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbodtkMZEeuYLKJd8tcSjg" id="698" connectsTo="_sbodxUMZEeuYLKJd8tcSjg" length="142"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Switch" xmi:id="_sbodt0MZEeuYLKJd8tcSjg" id="674" connectsTo="_sbodoEMZEeuYLKJd8tcSjg" currentPosition="LEFT" positions="_sboduEMZEeuYLKJd8tcSjg"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sboduUMZEeuYLKJd8tcSjg" id="701">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbodukMZEeuYLKJd8tcSjg" id="702" connectsTo="_sbodu0MZEeuYLKJd8tcSjg" length="667"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbodu0MZEeuYLKJd8tcSjg" id="703" connectsTo="_sbodvEMZEeuYLKJd8tcSjg" length="753"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbodvEMZEeuYLKJd8tcSjg" id="704" connectsTo="_sbodvUMZEeuYLKJd8tcSjg" length="745"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbodvUMZEeuYLKJd8tcSjg" id="705" connectsTo="_sbodvkMZEeuYLKJd8tcSjg" length="900"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbodvkMZEeuYLKJd8tcSjg" id="706" connectsTo="_sbodwEMZEeuYLKJd8tcSjg" length="482"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbodv0MZEeuYLKJd8tcSjg" id="707">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbodwEMZEeuYLKJd8tcSjg" id="708" connectsTo="_sbodwUMZEeuYLKJd8tcSjg" length="144"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbodwUMZEeuYLKJd8tcSjg" id="709" connectsTo="_sbodwkMZEeuYLKJd8tcSjg" length="770"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbodwkMZEeuYLKJd8tcSjg" id="710" connectsTo="_sbodw0MZEeuYLKJd8tcSjg" length="113"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbodw0MZEeuYLKJd8tcSjg" id="711" connectsTo="_sbodxEMZEeuYLKJd8tcSjg" length="575"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbodxEMZEeuYLKJd8tcSjg" id="712" connectsTo="_sbodzUMZEeuYLKJd8tcSjg" length="131"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Switch" xmi:id="_sbodxUMZEeuYLKJd8tcSjg" id="700" connectsTo="_sbodukMZEeuYLKJd8tcSjg" currentPosition="LEFT" positions="_sbodxkMZEeuYLKJd8tcSjg"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbodx0MZEeuYLKJd8tcSjg" id="715">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbodyEMZEeuYLKJd8tcSjg" id="716" connectsTo="_sbodyUMZEeuYLKJd8tcSjg" length="602"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbodyUMZEeuYLKJd8tcSjg" id="717" connectsTo="_sbodykMZEeuYLKJd8tcSjg" length="248"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbodykMZEeuYLKJd8tcSjg" id="718" connectsTo="_sbody0MZEeuYLKJd8tcSjg" length="351"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbody0MZEeuYLKJd8tcSjg" id="719" connectsTo="_sbodzEMZEeuYLKJd8tcSjg" length="95"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbodzEMZEeuYLKJd8tcSjg" id="720" connectsTo="_sbpE1EMZEeuYLKJd8tcSjg" length="912"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Switch" xmi:id="_sbodzUMZEeuYLKJd8tcSjg" id="714" connectsTo="_sbodyEMZEeuYLKJd8tcSjg" positions="_sbodzkMZEeuYLKJd8tcSjg"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbodz0MZEeuYLKJd8tcSjg" id="723">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbod0EMZEeuYLKJd8tcSjg" id="724" connectsTo="_sbod0UMZEeuYLKJd8tcSjg" length="504"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbod0UMZEeuYLKJd8tcSjg" id="725" connectsTo="_sbod0kMZEeuYLKJd8tcSjg" length="471"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbod0kMZEeuYLKJd8tcSjg" id="726" connectsTo="_sbod00MZEeuYLKJd8tcSjg" length="525"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbod00MZEeuYLKJd8tcSjg" id="727" connectsTo="_sbod1EMZEeuYLKJd8tcSjg" length="795"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbod1EMZEeuYLKJd8tcSjg" id="728" connectsTo="_sbod1kMZEeuYLKJd8tcSjg" length="636"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbod1UMZEeuYLKJd8tcSjg" id="729">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbod1kMZEeuYLKJd8tcSjg" id="730" connectsTo="_sbod10MZEeuYLKJd8tcSjg" length="566"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbod10MZEeuYLKJd8tcSjg" id="731" connectsTo="_sbod2EMZEeuYLKJd8tcSjg" length="367"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbod2EMZEeuYLKJd8tcSjg" id="732" connectsTo="_sbod2UMZEeuYLKJd8tcSjg" length="685"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbod2UMZEeuYLKJd8tcSjg" id="733" connectsTo="_sbod2kMZEeuYLKJd8tcSjg" length="148"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbod2kMZEeuYLKJd8tcSjg" id="734" connectsTo="_sbod3EMZEeuYLKJd8tcSjg" length="768"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbod20MZEeuYLKJd8tcSjg" id="735">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbod3EMZEeuYLKJd8tcSjg" id="736" connectsTo="_sbod3UMZEeuYLKJd8tcSjg" length="883"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbod3UMZEeuYLKJd8tcSjg" id="737" connectsTo="_sbod3kMZEeuYLKJd8tcSjg" length="255"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbod3kMZEeuYLKJd8tcSjg" id="738" connectsTo="_sbod30MZEeuYLKJd8tcSjg" length="265"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbod30MZEeuYLKJd8tcSjg" id="739" connectsTo="_sbod4EMZEeuYLKJd8tcSjg" length="926"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbod4EMZEeuYLKJd8tcSjg" id="740" connectsTo="_sbpEsUMZEeuYLKJd8tcSjg" length="672"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbpEsEMZEeuYLKJd8tcSjg" id="741">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpEsUMZEeuYLKJd8tcSjg" id="742" connectsTo="_sbpEskMZEeuYLKJd8tcSjg" length="608"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpEskMZEeuYLKJd8tcSjg" id="743" connectsTo="_sbpEs0MZEeuYLKJd8tcSjg" length="104"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpEs0MZEeuYLKJd8tcSjg" id="744" connectsTo="_sbpEtEMZEeuYLKJd8tcSjg" length="763"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpEtEMZEeuYLKJd8tcSjg" id="745" connectsTo="_sbpEtUMZEeuYLKJd8tcSjg" length="99"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpEtUMZEeuYLKJd8tcSjg" id="746" connectsTo="_sbpEt0MZEeuYLKJd8tcSjg" length="929"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbpEtkMZEeuYLKJd8tcSjg" id="747">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpEt0MZEeuYLKJd8tcSjg" id="748" connectsTo="_sbpEuEMZEeuYLKJd8tcSjg" length="387"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpEuEMZEeuYLKJd8tcSjg" id="749" connectsTo="_sbpEuUMZEeuYLKJd8tcSjg" length="55"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpEuUMZEeuYLKJd8tcSjg" id="750" connectsTo="_sbpEukMZEeuYLKJd8tcSjg" length="317"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpEukMZEeuYLKJd8tcSjg" id="751" connectsTo="_sbpEu0MZEeuYLKJd8tcSjg" length="813"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpEu0MZEeuYLKJd8tcSjg" id="752" connectsTo="_sbpEvUMZEeuYLKJd8tcSjg" length="914"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbpEvEMZEeuYLKJd8tcSjg" id="753">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpEvUMZEeuYLKJd8tcSjg" id="754" connectsTo="_sbpEvkMZEeuYLKJd8tcSjg" length="271"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpEvkMZEeuYLKJd8tcSjg" id="755" connectsTo="_sbpEv0MZEeuYLKJd8tcSjg" length="432"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpEv0MZEeuYLKJd8tcSjg" id="756" connectsTo="_sbpEwEMZEeuYLKJd8tcSjg" length="232"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpEwEMZEeuYLKJd8tcSjg" id="757" connectsTo="_sbpEwUMZEeuYLKJd8tcSjg" length="404"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpEwUMZEeuYLKJd8tcSjg" id="758" connectsTo="_sbpEw0MZEeuYLKJd8tcSjg" length="280"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbpEwkMZEeuYLKJd8tcSjg" id="759">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpEw0MZEeuYLKJd8tcSjg" id="760" connectsTo="_sbpExEMZEeuYLKJd8tcSjg" length="444"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpExEMZEeuYLKJd8tcSjg" id="761" connectsTo="_sbpExUMZEeuYLKJd8tcSjg" length="576"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpExUMZEeuYLKJd8tcSjg" id="762" connectsTo="_sbpExkMZEeuYLKJd8tcSjg" length="11"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpExkMZEeuYLKJd8tcSjg" id="763" connectsTo="_sbpEx0MZEeuYLKJd8tcSjg" length="324"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpEx0MZEeuYLKJd8tcSjg" id="764" connectsTo="_sbpEyUMZEeuYLKJd8tcSjg" length="15"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbpEyEMZEeuYLKJd8tcSjg" id="765">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpEyUMZEeuYLKJd8tcSjg" id="766" connectsTo="_sbpEykMZEeuYLKJd8tcSjg" length="541"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpEykMZEeuYLKJd8tcSjg" id="767" connectsTo="_sbpEy0MZEeuYLKJd8tcSjg" length="924"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpEy0MZEeuYLKJd8tcSjg" id="768" connectsTo="_sbpEzEMZEeuYLKJd8tcSjg" length="801"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpEzEMZEeuYLKJd8tcSjg" id="769" connectsTo="_sbpEzUMZEeuYLKJd8tcSjg" length="887"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpEzUMZEeuYLKJd8tcSjg" id="770" connectsTo="_sbpEz0MZEeuYLKJd8tcSjg" length="838"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbpEzkMZEeuYLKJd8tcSjg" id="771">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpEz0MZEeuYLKJd8tcSjg" id="772" connectsTo="_sbpE0EMZEeuYLKJd8tcSjg" length="66"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpE0EMZEeuYLKJd8tcSjg" id="773" connectsTo="_sbpE0UMZEeuYLKJd8tcSjg" length="898"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpE0UMZEeuYLKJd8tcSjg" id="774" connectsTo="_sbpE0kMZEeuYLKJd8tcSjg" length="660"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpE0kMZEeuYLKJd8tcSjg" id="775" connectsTo="_sbpE00MZEeuYLKJd8tcSjg" length="555"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpE00MZEeuYLKJd8tcSjg" id="776" connectsTo="_sbpr2EMZEeuYLKJd8tcSjg" length="559"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Switch" xmi:id="_sbpE1EMZEeuYLKJd8tcSjg" id="722" connectsTo="_sbod0EMZEeuYLKJd8tcSjg" currentPosition="STRAIGHT" positions="_sbpE1UMZEeuYLKJd8tcSjg"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbpE1kMZEeuYLKJd8tcSjg" id="779">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpE10MZEeuYLKJd8tcSjg" id="780" connectsTo="_sbpE2EMZEeuYLKJd8tcSjg" length="562"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpE2EMZEeuYLKJd8tcSjg" id="781" connectsTo="_sbpE2UMZEeuYLKJd8tcSjg" length="488"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpE2UMZEeuYLKJd8tcSjg" id="782" connectsTo="_sbpE2kMZEeuYLKJd8tcSjg" length="152"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpE2kMZEeuYLKJd8tcSjg" id="783" connectsTo="_sbpE20MZEeuYLKJd8tcSjg" length="438"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpE20MZEeuYLKJd8tcSjg" id="784" connectsTo="_sbpE3UMZEeuYLKJd8tcSjg" length="362"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbpE3EMZEeuYLKJd8tcSjg" id="785">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpE3UMZEeuYLKJd8tcSjg" id="786" connectsTo="_sbpE3kMZEeuYLKJd8tcSjg" length="127"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpE3kMZEeuYLKJd8tcSjg" id="787" connectsTo="_sbpE30MZEeuYLKJd8tcSjg" length="970"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpE30MZEeuYLKJd8tcSjg" id="788" connectsTo="_sbpE4EMZEeuYLKJd8tcSjg" length="389"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpE4EMZEeuYLKJd8tcSjg" id="789" connectsTo="_sbpE4UMZEeuYLKJd8tcSjg" length="237"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpE4UMZEeuYLKJd8tcSjg" id="790" connectsTo="_sbpE40MZEeuYLKJd8tcSjg" length="170"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbpE4kMZEeuYLKJd8tcSjg" id="791">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpE40MZEeuYLKJd8tcSjg" id="792" connectsTo="_sbpE5EMZEeuYLKJd8tcSjg" length="563"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpE5EMZEeuYLKJd8tcSjg" id="793" connectsTo="_sbpE5UMZEeuYLKJd8tcSjg" length="162"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpE5UMZEeuYLKJd8tcSjg" id="794" connectsTo="_sbpE5kMZEeuYLKJd8tcSjg" length="704"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpE5kMZEeuYLKJd8tcSjg" id="795" connectsTo="_sbpE50MZEeuYLKJd8tcSjg" length="123"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpE50MZEeuYLKJd8tcSjg" id="796" connectsTo="_sbprwUMZEeuYLKJd8tcSjg" length="460"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbprwEMZEeuYLKJd8tcSjg" id="797">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbprwUMZEeuYLKJd8tcSjg" id="798" connectsTo="_sbprwkMZEeuYLKJd8tcSjg" length="843"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbprwkMZEeuYLKJd8tcSjg" id="799" connectsTo="_sbprw0MZEeuYLKJd8tcSjg" length="943"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbprw0MZEeuYLKJd8tcSjg" id="800" connectsTo="_sbprxEMZEeuYLKJd8tcSjg" length="593"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbprxEMZEeuYLKJd8tcSjg" id="801" connectsTo="_sbprxUMZEeuYLKJd8tcSjg" length="371"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbprxUMZEeuYLKJd8tcSjg" id="802" connectsTo="_sbprx0MZEeuYLKJd8tcSjg" length="831"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbprxkMZEeuYLKJd8tcSjg" id="803">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbprx0MZEeuYLKJd8tcSjg" id="804" connectsTo="_sbpryEMZEeuYLKJd8tcSjg" length="272"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpryEMZEeuYLKJd8tcSjg" id="805" connectsTo="_sbpryUMZEeuYLKJd8tcSjg" length="655"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpryUMZEeuYLKJd8tcSjg" id="806" connectsTo="_sbprykMZEeuYLKJd8tcSjg" length="411"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbprykMZEeuYLKJd8tcSjg" id="807" connectsTo="_sbpry0MZEeuYLKJd8tcSjg" length="793"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpry0MZEeuYLKJd8tcSjg" id="808" connectsTo="_sbprzUMZEeuYLKJd8tcSjg" length="286"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbprzEMZEeuYLKJd8tcSjg" id="809">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbprzUMZEeuYLKJd8tcSjg" id="810" connectsTo="_sbprzkMZEeuYLKJd8tcSjg" length="212"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbprzkMZEeuYLKJd8tcSjg" id="811" connectsTo="_sbprz0MZEeuYLKJd8tcSjg" length="546"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbprz0MZEeuYLKJd8tcSjg" id="812" connectsTo="_sbpr0EMZEeuYLKJd8tcSjg" length="570"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpr0EMZEeuYLKJd8tcSjg" id="813" connectsTo="_sbpr0UMZEeuYLKJd8tcSjg" length="399"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpr0UMZEeuYLKJd8tcSjg" id="814" connectsTo="_sbpr00MZEeuYLKJd8tcSjg" length="248"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbpr0kMZEeuYLKJd8tcSjg" id="815">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpr00MZEeuYLKJd8tcSjg" id="816" connectsTo="_sbpr1EMZEeuYLKJd8tcSjg" length="645"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpr1EMZEeuYLKJd8tcSjg" id="817" connectsTo="_sbpr1UMZEeuYLKJd8tcSjg" length="250"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpr1UMZEeuYLKJd8tcSjg" id="818" connectsTo="_sbpr1kMZEeuYLKJd8tcSjg" length="344"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpr1kMZEeuYLKJd8tcSjg" id="819" connectsTo="_sbpr10MZEeuYLKJd8tcSjg" length="553"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpr10MZEeuYLKJd8tcSjg" id="820" connectsTo="_sbpr-EMZEeuYLKJd8tcSjg" length="17"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Switch" xmi:id="_sbpr2EMZEeuYLKJd8tcSjg" id="778" connectsTo="_sbpE10MZEeuYLKJd8tcSjg" positions="_sbpr2UMZEeuYLKJd8tcSjg"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbpr2kMZEeuYLKJd8tcSjg" id="823">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpr20MZEeuYLKJd8tcSjg" id="824" connectsTo="_sbpr3EMZEeuYLKJd8tcSjg" length="572"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpr3EMZEeuYLKJd8tcSjg" id="825" connectsTo="_sbpr3UMZEeuYLKJd8tcSjg" length="458"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpr3UMZEeuYLKJd8tcSjg" id="826" connectsTo="_sbpr3kMZEeuYLKJd8tcSjg" length="261"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpr3kMZEeuYLKJd8tcSjg" id="827" connectsTo="_sbpr30MZEeuYLKJd8tcSjg" length="319"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpr30MZEeuYLKJd8tcSjg" id="828" connectsTo="_sbpr4UMZEeuYLKJd8tcSjg" length="543"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbpr4EMZEeuYLKJd8tcSjg" id="829">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpr4UMZEeuYLKJd8tcSjg" id="830" connectsTo="_sbpr4kMZEeuYLKJd8tcSjg" length="263"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpr4kMZEeuYLKJd8tcSjg" id="831" connectsTo="_sbpr40MZEeuYLKJd8tcSjg" length="445"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpr40MZEeuYLKJd8tcSjg" id="832" connectsTo="_sbpr5EMZEeuYLKJd8tcSjg" length="633"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpr5EMZEeuYLKJd8tcSjg" id="833" connectsTo="_sbpr5UMZEeuYLKJd8tcSjg" length="310"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpr5UMZEeuYLKJd8tcSjg" id="834" connectsTo="_sbpr50MZEeuYLKJd8tcSjg" length="704"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbpr5kMZEeuYLKJd8tcSjg" id="835">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpr50MZEeuYLKJd8tcSjg" id="836" connectsTo="_sbpr6EMZEeuYLKJd8tcSjg" length="514"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpr6EMZEeuYLKJd8tcSjg" id="837" connectsTo="_sbpr6UMZEeuYLKJd8tcSjg" length="938"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpr6UMZEeuYLKJd8tcSjg" id="838" connectsTo="_sbpr6kMZEeuYLKJd8tcSjg" length="507"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpr6kMZEeuYLKJd8tcSjg" id="839" connectsTo="_sbpr60MZEeuYLKJd8tcSjg" length="39"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpr60MZEeuYLKJd8tcSjg" id="840" connectsTo="_sbpr7UMZEeuYLKJd8tcSjg" length="232"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbpr7EMZEeuYLKJd8tcSjg" id="841">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpr7UMZEeuYLKJd8tcSjg" id="842" connectsTo="_sbpr7kMZEeuYLKJd8tcSjg" length="103"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpr7kMZEeuYLKJd8tcSjg" id="843" connectsTo="_sbpr70MZEeuYLKJd8tcSjg" length="623"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpr70MZEeuYLKJd8tcSjg" id="844" connectsTo="_sbpr8EMZEeuYLKJd8tcSjg" length="711"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpr8EMZEeuYLKJd8tcSjg" id="845" connectsTo="_sbpr8UMZEeuYLKJd8tcSjg" length="689"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpr8UMZEeuYLKJd8tcSjg" id="846" connectsTo="_sbpr80MZEeuYLKJd8tcSjg" length="56"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbpr8kMZEeuYLKJd8tcSjg" id="847">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpr80MZEeuYLKJd8tcSjg" id="848" connectsTo="_sbpr9EMZEeuYLKJd8tcSjg" length="53"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpr9EMZEeuYLKJd8tcSjg" id="849" connectsTo="_sbpr9UMZEeuYLKJd8tcSjg" length="915"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpr9UMZEeuYLKJd8tcSjg" id="850" connectsTo="_sbpr9kMZEeuYLKJd8tcSjg" length="302"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpr9kMZEeuYLKJd8tcSjg" id="851" connectsTo="_sbpr90MZEeuYLKJd8tcSjg" length="386"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpr90MZEeuYLKJd8tcSjg" id="852" connectsTo="_sbqS2kMZEeuYLKJd8tcSjg" length="514"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Switch" xmi:id="_sbpr-EMZEeuYLKJd8tcSjg" id="822" connectsTo="_sbpr20MZEeuYLKJd8tcSjg" currentPosition="STRAIGHT" positions="_sbpr-UMZEeuYLKJd8tcSjg"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbpr-kMZEeuYLKJd8tcSjg" id="855">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpr-0MZEeuYLKJd8tcSjg" id="856" connectsTo="_sbpr_EMZEeuYLKJd8tcSjg" length="653"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpr_EMZEeuYLKJd8tcSjg" id="857" connectsTo="_sbpr_UMZEeuYLKJd8tcSjg" length="123"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpr_UMZEeuYLKJd8tcSjg" id="858" connectsTo="_sbpr_kMZEeuYLKJd8tcSjg" length="131"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpr_kMZEeuYLKJd8tcSjg" id="859" connectsTo="_sbpr_0MZEeuYLKJd8tcSjg" length="329"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpr_0MZEeuYLKJd8tcSjg" id="860" connectsTo="_sbpsAUMZEeuYLKJd8tcSjg" length="959"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbpsAEMZEeuYLKJd8tcSjg" id="861">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpsAUMZEeuYLKJd8tcSjg" id="862" connectsTo="_sbpsAkMZEeuYLKJd8tcSjg" length="236"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpsAkMZEeuYLKJd8tcSjg" id="863" connectsTo="_sbpsA0MZEeuYLKJd8tcSjg" length="572"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpsA0MZEeuYLKJd8tcSjg" id="864" connectsTo="_sbpsBEMZEeuYLKJd8tcSjg" length="647"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpsBEMZEeuYLKJd8tcSjg" id="865" connectsTo="_sbpsBUMZEeuYLKJd8tcSjg" length="164"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpsBUMZEeuYLKJd8tcSjg" id="866" connectsTo="_sbpsB0MZEeuYLKJd8tcSjg" length="220"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbpsBkMZEeuYLKJd8tcSjg" id="867">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbpsB0MZEeuYLKJd8tcSjg" id="868" connectsTo="_sbqS0EMZEeuYLKJd8tcSjg" length="63"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbqS0EMZEeuYLKJd8tcSjg" id="869" connectsTo="_sbqS0UMZEeuYLKJd8tcSjg" length="948"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbqS0UMZEeuYLKJd8tcSjg" id="870" connectsTo="_sbqS0kMZEeuYLKJd8tcSjg" length="373"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbqS0kMZEeuYLKJd8tcSjg" id="871" connectsTo="_sbqS00MZEeuYLKJd8tcSjg" length="794"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbqS00MZEeuYLKJd8tcSjg" id="872" connectsTo="_sbqS1UMZEeuYLKJd8tcSjg" length="327"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbqS1EMZEeuYLKJd8tcSjg" id="873">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbqS1UMZEeuYLKJd8tcSjg" id="874" connectsTo="_sbqS1kMZEeuYLKJd8tcSjg" length="439"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbqS1kMZEeuYLKJd8tcSjg" id="875" connectsTo="_sbqS10MZEeuYLKJd8tcSjg" length="739"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbqS10MZEeuYLKJd8tcSjg" id="876" connectsTo="_sbqS2EMZEeuYLKJd8tcSjg" length="507"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbqS2EMZEeuYLKJd8tcSjg" id="877" connectsTo="_sbqS2UMZEeuYLKJd8tcSjg" length="620"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbqS2UMZEeuYLKJd8tcSjg" id="878" connectsTo="_sbqS9kMZEeuYLKJd8tcSjg" length="456"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Switch" xmi:id="_sbqS2kMZEeuYLKJd8tcSjg" id="854" connectsTo="_sbpr-0MZEeuYLKJd8tcSjg" positions="_sbqS20MZEeuYLKJd8tcSjg"/>
+    </definedBy>
+  </routes>
+  <routes xmi:type="hu.bme.mit.trainbenchmark:Route" xmi:id="_sbqS3UMZEeuYLKJd8tcSjg" id="881" entry="_sbn2rUMZEeuYLKJd8tcSjg" exit="_sbqS3EMZEeuYLKJd8tcSjg">
+    <follows xmi:type="hu.bme.mit.trainbenchmark:SwitchPosition" xmi:id="_sbqS90MZEeuYLKJd8tcSjg" id="907" switch="_sbqS9kMZEeuYLKJd8tcSjg" position="RIGHT"/>
+    <follows xmi:type="hu.bme.mit.trainbenchmark:SwitchPosition" xmi:id="_sbq6BkMZEeuYLKJd8tcSjg" id="963" switch="_sbq6BUMZEeuYLKJd8tcSjg" position="LEFT"/>
+    <follows xmi:type="hu.bme.mit.trainbenchmark:SwitchPosition" xmi:id="_sbrhAUMZEeuYLKJd8tcSjg" id="1019" switch="_sbrhAEMZEeuYLKJd8tcSjg" position="RIGHT"/>
+    <follows xmi:type="hu.bme.mit.trainbenchmark:SwitchPosition" xmi:id="_sbrhIUMZEeuYLKJd8tcSjg" id="1051" switch="_sbrhIEMZEeuYLKJd8tcSjg" position="STRAIGHT"/>
+    <follows xmi:type="hu.bme.mit.trainbenchmark:SwitchPosition" xmi:id="_sbsIC0MZEeuYLKJd8tcSjg" id="1101" switch="_sbsICkMZEeuYLKJd8tcSjg" position="RIGHT"/>
+    <follows xmi:type="hu.bme.mit.trainbenchmark:SwitchPosition" xmi:id="_sbsIQ0MZEeuYLKJd8tcSjg" id="1157" switch="_sbsIQkMZEeuYLKJd8tcSjg"/>
+    <follows xmi:type="hu.bme.mit.trainbenchmark:SwitchPosition" xmi:id="_sbsIXUMZEeuYLKJd8tcSjg" id="1183" switch="_sbsIXEMZEeuYLKJd8tcSjg"/>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbqS3kMZEeuYLKJd8tcSjg" id="883">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbqS30MZEeuYLKJd8tcSjg" id="884" connectsTo="_sbqS4EMZEeuYLKJd8tcSjg" length="581"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbqS4EMZEeuYLKJd8tcSjg" id="885" connectsTo="_sbqS4UMZEeuYLKJd8tcSjg" length="322"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbqS4UMZEeuYLKJd8tcSjg" id="886" connectsTo="_sbqS4kMZEeuYLKJd8tcSjg" length="56"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbqS4kMZEeuYLKJd8tcSjg" id="887" connectsTo="_sbqS40MZEeuYLKJd8tcSjg" length="585"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbqS40MZEeuYLKJd8tcSjg" id="888" connectsTo="_sbqS5UMZEeuYLKJd8tcSjg" length="433"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbqS5EMZEeuYLKJd8tcSjg" id="889">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbqS5UMZEeuYLKJd8tcSjg" id="890" connectsTo="_sbqS5kMZEeuYLKJd8tcSjg" length="977"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbqS5kMZEeuYLKJd8tcSjg" id="891" connectsTo="_sbqS50MZEeuYLKJd8tcSjg" length="772"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbqS50MZEeuYLKJd8tcSjg" id="892" connectsTo="_sbqS6EMZEeuYLKJd8tcSjg" length="904"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbqS6EMZEeuYLKJd8tcSjg" id="893" connectsTo="_sbqS6UMZEeuYLKJd8tcSjg" length="136"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbqS6UMZEeuYLKJd8tcSjg" id="894" connectsTo="_sbqS60MZEeuYLKJd8tcSjg" length="634"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbqS6kMZEeuYLKJd8tcSjg" id="895">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbqS60MZEeuYLKJd8tcSjg" id="896" connectsTo="_sbqS7EMZEeuYLKJd8tcSjg" length="726"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbqS7EMZEeuYLKJd8tcSjg" id="897" connectsTo="_sbqS7UMZEeuYLKJd8tcSjg" length="733"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbqS7UMZEeuYLKJd8tcSjg" id="898" connectsTo="_sbqS7kMZEeuYLKJd8tcSjg" length="563"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbqS7kMZEeuYLKJd8tcSjg" id="899" connectsTo="_sbqS70MZEeuYLKJd8tcSjg" length="355"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbqS70MZEeuYLKJd8tcSjg" id="900" connectsTo="_sbqS8UMZEeuYLKJd8tcSjg" length="735"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbqS8EMZEeuYLKJd8tcSjg" id="901">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbqS8UMZEeuYLKJd8tcSjg" id="902" connectsTo="_sbqS8kMZEeuYLKJd8tcSjg" length="991"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbqS8kMZEeuYLKJd8tcSjg" id="903" connectsTo="_sbqS80MZEeuYLKJd8tcSjg" length="715"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbqS80MZEeuYLKJd8tcSjg" id="904" connectsTo="_sbqS9EMZEeuYLKJd8tcSjg" length="341"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbqS9EMZEeuYLKJd8tcSjg" id="905" connectsTo="_sbqS9UMZEeuYLKJd8tcSjg" length="185"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbqS9UMZEeuYLKJd8tcSjg" id="906" connectsTo="_sbq6BUMZEeuYLKJd8tcSjg" length="155"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Switch" xmi:id="_sbqS9kMZEeuYLKJd8tcSjg" id="882" connectsTo="_sbqS30MZEeuYLKJd8tcSjg" currentPosition="RIGHT" positions="_sbqS90MZEeuYLKJd8tcSjg"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbqS-EMZEeuYLKJd8tcSjg" id="909">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbqS-UMZEeuYLKJd8tcSjg" id="910" connectsTo="_sbqS-kMZEeuYLKJd8tcSjg" length="391"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbqS-kMZEeuYLKJd8tcSjg" id="911" connectsTo="_sbqS-0MZEeuYLKJd8tcSjg" length="140"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbqS-0MZEeuYLKJd8tcSjg" id="912" connectsTo="_sbqS_EMZEeuYLKJd8tcSjg" length="428"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbqS_EMZEeuYLKJd8tcSjg" id="913" connectsTo="_sbqS_UMZEeuYLKJd8tcSjg" length="662"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbqS_UMZEeuYLKJd8tcSjg" id="914" connectsTo="_sbqS_0MZEeuYLKJd8tcSjg" length="219"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbqS_kMZEeuYLKJd8tcSjg" id="915">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbqS_0MZEeuYLKJd8tcSjg" id="916" connectsTo="_sbqTAEMZEeuYLKJd8tcSjg" length="940"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbqTAEMZEeuYLKJd8tcSjg" id="917" connectsTo="_sbqTAUMZEeuYLKJd8tcSjg" length="255"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbqTAUMZEeuYLKJd8tcSjg" id="918" connectsTo="_sbqTAkMZEeuYLKJd8tcSjg" length="283"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbqTAkMZEeuYLKJd8tcSjg" id="919" connectsTo="_sbqTA0MZEeuYLKJd8tcSjg" length="387"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbqTA0MZEeuYLKJd8tcSjg" id="920" connectsTo="_sbqTBUMZEeuYLKJd8tcSjg" length="782"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbqTBEMZEeuYLKJd8tcSjg" id="921">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbqTBUMZEeuYLKJd8tcSjg" id="922" connectsTo="_sbqTBkMZEeuYLKJd8tcSjg" length="742"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbqTBkMZEeuYLKJd8tcSjg" id="923" connectsTo="_sbqTB0MZEeuYLKJd8tcSjg" length="962"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbqTB0MZEeuYLKJd8tcSjg" id="924" connectsTo="_sbqTCEMZEeuYLKJd8tcSjg" length="666"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbqTCEMZEeuYLKJd8tcSjg" id="925" connectsTo="_sbq54EMZEeuYLKJd8tcSjg" length="791"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq54EMZEeuYLKJd8tcSjg" id="926" connectsTo="_sbq54kMZEeuYLKJd8tcSjg" length="935"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbq54UMZEeuYLKJd8tcSjg" id="927">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq54kMZEeuYLKJd8tcSjg" id="928" connectsTo="_sbq540MZEeuYLKJd8tcSjg" length="319"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq540MZEeuYLKJd8tcSjg" id="929" connectsTo="_sbq55EMZEeuYLKJd8tcSjg" length="89"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq55EMZEeuYLKJd8tcSjg" id="930" connectsTo="_sbq55UMZEeuYLKJd8tcSjg" length="979"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq55UMZEeuYLKJd8tcSjg" id="931" connectsTo="_sbq55kMZEeuYLKJd8tcSjg" length="391"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq55kMZEeuYLKJd8tcSjg" id="932" connectsTo="_sbq56EMZEeuYLKJd8tcSjg" length="858"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbq550MZEeuYLKJd8tcSjg" id="933">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq56EMZEeuYLKJd8tcSjg" id="934" connectsTo="_sbq56UMZEeuYLKJd8tcSjg" length="26"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq56UMZEeuYLKJd8tcSjg" id="935" connectsTo="_sbq56kMZEeuYLKJd8tcSjg" length="779"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq56kMZEeuYLKJd8tcSjg" id="936" connectsTo="_sbq560MZEeuYLKJd8tcSjg" length="876"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq560MZEeuYLKJd8tcSjg" id="937" connectsTo="_sbq57EMZEeuYLKJd8tcSjg" length="322"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq57EMZEeuYLKJd8tcSjg" id="938" connectsTo="_sbq57kMZEeuYLKJd8tcSjg" length="42"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbq57UMZEeuYLKJd8tcSjg" id="939">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq57kMZEeuYLKJd8tcSjg" id="940" connectsTo="_sbq570MZEeuYLKJd8tcSjg" length="557"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq570MZEeuYLKJd8tcSjg" id="941" connectsTo="_sbq58EMZEeuYLKJd8tcSjg" length="199"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq58EMZEeuYLKJd8tcSjg" id="942" connectsTo="_sbq58UMZEeuYLKJd8tcSjg" length="788"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq58UMZEeuYLKJd8tcSjg" id="943" connectsTo="_sbq58kMZEeuYLKJd8tcSjg" length="437"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq58kMZEeuYLKJd8tcSjg" id="944" connectsTo="_sbq59EMZEeuYLKJd8tcSjg" length="552"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbq580MZEeuYLKJd8tcSjg" id="945">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq59EMZEeuYLKJd8tcSjg" id="946" connectsTo="_sbq59UMZEeuYLKJd8tcSjg" length="830"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq59UMZEeuYLKJd8tcSjg" id="947" connectsTo="_sbq59kMZEeuYLKJd8tcSjg" length="179"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq59kMZEeuYLKJd8tcSjg" id="948" connectsTo="_sbq590MZEeuYLKJd8tcSjg" length="555"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq590MZEeuYLKJd8tcSjg" id="949" connectsTo="_sbq5-EMZEeuYLKJd8tcSjg" length="608"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq5-EMZEeuYLKJd8tcSjg" id="950" connectsTo="_sbq5-kMZEeuYLKJd8tcSjg" length="689"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbq5-UMZEeuYLKJd8tcSjg" id="951">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq5-kMZEeuYLKJd8tcSjg" id="952" connectsTo="_sbq5-0MZEeuYLKJd8tcSjg" length="557"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq5-0MZEeuYLKJd8tcSjg" id="953" connectsTo="_sbq5_EMZEeuYLKJd8tcSjg" length="540"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq5_EMZEeuYLKJd8tcSjg" id="954" connectsTo="_sbq5_UMZEeuYLKJd8tcSjg" length="775"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq5_UMZEeuYLKJd8tcSjg" id="955" connectsTo="_sbq5_kMZEeuYLKJd8tcSjg" length="430"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq5_kMZEeuYLKJd8tcSjg" id="956" connectsTo="_sbq6AEMZEeuYLKJd8tcSjg" length="995"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbq5_0MZEeuYLKJd8tcSjg" id="957">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq6AEMZEeuYLKJd8tcSjg" id="958" connectsTo="_sbq6AUMZEeuYLKJd8tcSjg" length="554"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq6AUMZEeuYLKJd8tcSjg" id="959" connectsTo="_sbq6AkMZEeuYLKJd8tcSjg" length="900"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq6AkMZEeuYLKJd8tcSjg" id="960" connectsTo="_sbq6A0MZEeuYLKJd8tcSjg" length="277"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq6A0MZEeuYLKJd8tcSjg" id="961" connectsTo="_sbq6BEMZEeuYLKJd8tcSjg" length="384"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq6BEMZEeuYLKJd8tcSjg" id="962" connectsTo="_sbrhAEMZEeuYLKJd8tcSjg" length="200"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Switch" xmi:id="_sbq6BUMZEeuYLKJd8tcSjg" id="908" connectsTo="_sbqS-UMZEeuYLKJd8tcSjg" currentPosition="LEFT" positions="_sbq6BkMZEeuYLKJd8tcSjg"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbq6B0MZEeuYLKJd8tcSjg" id="965">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq6CEMZEeuYLKJd8tcSjg" id="966" connectsTo="_sbq6CUMZEeuYLKJd8tcSjg" length="132"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq6CUMZEeuYLKJd8tcSjg" id="967" connectsTo="_sbq6CkMZEeuYLKJd8tcSjg" length="180"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq6CkMZEeuYLKJd8tcSjg" id="968" connectsTo="_sbq6C0MZEeuYLKJd8tcSjg" length="756"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq6C0MZEeuYLKJd8tcSjg" id="969" connectsTo="_sbq6DEMZEeuYLKJd8tcSjg" length="53"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq6DEMZEeuYLKJd8tcSjg" id="970" connectsTo="_sbq6DkMZEeuYLKJd8tcSjg" length="208"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbq6DUMZEeuYLKJd8tcSjg" id="971">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq6DkMZEeuYLKJd8tcSjg" id="972" connectsTo="_sbq6D0MZEeuYLKJd8tcSjg" length="222"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq6D0MZEeuYLKJd8tcSjg" id="973" connectsTo="_sbq6EEMZEeuYLKJd8tcSjg" length="629"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq6EEMZEeuYLKJd8tcSjg" id="974" connectsTo="_sbq6EUMZEeuYLKJd8tcSjg" length="941"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq6EUMZEeuYLKJd8tcSjg" id="975" connectsTo="_sbq6EkMZEeuYLKJd8tcSjg" length="954"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq6EkMZEeuYLKJd8tcSjg" id="976" connectsTo="_sbq6FEMZEeuYLKJd8tcSjg" length="470"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbq6E0MZEeuYLKJd8tcSjg" id="977">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq6FEMZEeuYLKJd8tcSjg" id="978" connectsTo="_sbq6FUMZEeuYLKJd8tcSjg" length="909"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq6FUMZEeuYLKJd8tcSjg" id="979" connectsTo="_sbq6FkMZEeuYLKJd8tcSjg" length="946"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq6FkMZEeuYLKJd8tcSjg" id="980" connectsTo="_sbq6F0MZEeuYLKJd8tcSjg" length="565"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq6F0MZEeuYLKJd8tcSjg" id="981" connectsTo="_sbq6GEMZEeuYLKJd8tcSjg" length="92"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq6GEMZEeuYLKJd8tcSjg" id="982" connectsTo="_sbq6GkMZEeuYLKJd8tcSjg" length="11"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbq6GUMZEeuYLKJd8tcSjg" id="983">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq6GkMZEeuYLKJd8tcSjg" id="984" connectsTo="_sbq6G0MZEeuYLKJd8tcSjg" length="276"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq6G0MZEeuYLKJd8tcSjg" id="985" connectsTo="_sbq6HEMZEeuYLKJd8tcSjg" length="394"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq6HEMZEeuYLKJd8tcSjg" id="986" connectsTo="_sbq6HUMZEeuYLKJd8tcSjg" length="436"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq6HUMZEeuYLKJd8tcSjg" id="987" connectsTo="_sbq6HkMZEeuYLKJd8tcSjg" length="193"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq6HkMZEeuYLKJd8tcSjg" id="988" connectsTo="_sbq6IEMZEeuYLKJd8tcSjg" length="421"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbq6H0MZEeuYLKJd8tcSjg" id="989">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq6IEMZEeuYLKJd8tcSjg" id="990" connectsTo="_sbq6IUMZEeuYLKJd8tcSjg" length="31"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq6IUMZEeuYLKJd8tcSjg" id="991" connectsTo="_sbq6IkMZEeuYLKJd8tcSjg" length="131"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq6IkMZEeuYLKJd8tcSjg" id="992" connectsTo="_sbq6I0MZEeuYLKJd8tcSjg" length="163"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq6I0MZEeuYLKJd8tcSjg" id="993" connectsTo="_sbq6JEMZEeuYLKJd8tcSjg" length="266"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq6JEMZEeuYLKJd8tcSjg" id="994" connectsTo="_sbq6JkMZEeuYLKJd8tcSjg" length="46"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbq6JUMZEeuYLKJd8tcSjg" id="995">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq6JkMZEeuYLKJd8tcSjg" id="996" connectsTo="_sbq6J0MZEeuYLKJd8tcSjg" length="484"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq6J0MZEeuYLKJd8tcSjg" id="997" connectsTo="_sbq6KEMZEeuYLKJd8tcSjg" length="208"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq6KEMZEeuYLKJd8tcSjg" id="998" connectsTo="_sbq6KUMZEeuYLKJd8tcSjg" length="34"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq6KUMZEeuYLKJd8tcSjg" id="999" connectsTo="_sbq6KkMZEeuYLKJd8tcSjg" length="181"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq6KkMZEeuYLKJd8tcSjg" id="1000" connectsTo="_sbq6LEMZEeuYLKJd8tcSjg" length="356"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbq6K0MZEeuYLKJd8tcSjg" id="1001">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbq6LEMZEeuYLKJd8tcSjg" id="1002" connectsTo="_sbrg8EMZEeuYLKJd8tcSjg" length="781"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrg8EMZEeuYLKJd8tcSjg" id="1003" connectsTo="_sbrg8UMZEeuYLKJd8tcSjg" length="850"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrg8UMZEeuYLKJd8tcSjg" id="1004" connectsTo="_sbrg8kMZEeuYLKJd8tcSjg" length="849"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrg8kMZEeuYLKJd8tcSjg" id="1005" connectsTo="_sbrg80MZEeuYLKJd8tcSjg" length="70"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrg80MZEeuYLKJd8tcSjg" id="1006" connectsTo="_sbrg9UMZEeuYLKJd8tcSjg" length="950"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbrg9EMZEeuYLKJd8tcSjg" id="1007">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrg9UMZEeuYLKJd8tcSjg" id="1008" connectsTo="_sbrg9kMZEeuYLKJd8tcSjg" length="268"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrg9kMZEeuYLKJd8tcSjg" id="1009" connectsTo="_sbrg90MZEeuYLKJd8tcSjg" length="499"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrg90MZEeuYLKJd8tcSjg" id="1010" connectsTo="_sbrg-EMZEeuYLKJd8tcSjg" length="165"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrg-EMZEeuYLKJd8tcSjg" id="1011" connectsTo="_sbrg-UMZEeuYLKJd8tcSjg" length="369"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrg-UMZEeuYLKJd8tcSjg" id="1012" connectsTo="_sbrg-0MZEeuYLKJd8tcSjg" length="260"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbrg-kMZEeuYLKJd8tcSjg" id="1013">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrg-0MZEeuYLKJd8tcSjg" id="1014" connectsTo="_sbrg_EMZEeuYLKJd8tcSjg" length="954"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrg_EMZEeuYLKJd8tcSjg" id="1015" connectsTo="_sbrg_UMZEeuYLKJd8tcSjg" length="196"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrg_UMZEeuYLKJd8tcSjg" id="1016" connectsTo="_sbrg_kMZEeuYLKJd8tcSjg" length="704"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrg_kMZEeuYLKJd8tcSjg" id="1017" connectsTo="_sbrg_0MZEeuYLKJd8tcSjg" length="496"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrg_0MZEeuYLKJd8tcSjg" id="1018" connectsTo="_sbrhIEMZEeuYLKJd8tcSjg" length="115"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Switch" xmi:id="_sbrhAEMZEeuYLKJd8tcSjg" id="964" connectsTo="_sbq6CEMZEeuYLKJd8tcSjg" currentPosition="RIGHT" positions="_sbrhAUMZEeuYLKJd8tcSjg"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbrhAkMZEeuYLKJd8tcSjg" id="1021">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhA0MZEeuYLKJd8tcSjg" id="1022" connectsTo="_sbrhBEMZEeuYLKJd8tcSjg" length="484"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhBEMZEeuYLKJd8tcSjg" id="1023" connectsTo="_sbrhBUMZEeuYLKJd8tcSjg" length="18"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhBUMZEeuYLKJd8tcSjg" id="1024" connectsTo="_sbrhBkMZEeuYLKJd8tcSjg" length="19"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhBkMZEeuYLKJd8tcSjg" id="1025" connectsTo="_sbrhB0MZEeuYLKJd8tcSjg" length="304"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhB0MZEeuYLKJd8tcSjg" id="1026" connectsTo="_sbrhCUMZEeuYLKJd8tcSjg" length="542"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbrhCEMZEeuYLKJd8tcSjg" id="1027">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhCUMZEeuYLKJd8tcSjg" id="1028" connectsTo="_sbrhCkMZEeuYLKJd8tcSjg" length="251"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhCkMZEeuYLKJd8tcSjg" id="1029" connectsTo="_sbrhC0MZEeuYLKJd8tcSjg" length="224"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhC0MZEeuYLKJd8tcSjg" id="1030" connectsTo="_sbrhDEMZEeuYLKJd8tcSjg" length="301"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhDEMZEeuYLKJd8tcSjg" id="1031" connectsTo="_sbrhDUMZEeuYLKJd8tcSjg" length="743"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhDUMZEeuYLKJd8tcSjg" id="1032" connectsTo="_sbrhD0MZEeuYLKJd8tcSjg" length="239"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbrhDkMZEeuYLKJd8tcSjg" id="1033">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhD0MZEeuYLKJd8tcSjg" id="1034" connectsTo="_sbrhEEMZEeuYLKJd8tcSjg" length="66"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhEEMZEeuYLKJd8tcSjg" id="1035" connectsTo="_sbrhEUMZEeuYLKJd8tcSjg" length="782"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhEUMZEeuYLKJd8tcSjg" id="1036" connectsTo="_sbrhEkMZEeuYLKJd8tcSjg" length="968"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhEkMZEeuYLKJd8tcSjg" id="1037" connectsTo="_sbrhE0MZEeuYLKJd8tcSjg" length="687"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhE0MZEeuYLKJd8tcSjg" id="1038" connectsTo="_sbrhFUMZEeuYLKJd8tcSjg" length="633"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbrhFEMZEeuYLKJd8tcSjg" id="1039">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhFUMZEeuYLKJd8tcSjg" id="1040" connectsTo="_sbrhFkMZEeuYLKJd8tcSjg" length="41"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhFkMZEeuYLKJd8tcSjg" id="1041" connectsTo="_sbrhF0MZEeuYLKJd8tcSjg" length="134"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhF0MZEeuYLKJd8tcSjg" id="1042" connectsTo="_sbrhGEMZEeuYLKJd8tcSjg" length="821"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhGEMZEeuYLKJd8tcSjg" id="1043" connectsTo="_sbrhGUMZEeuYLKJd8tcSjg" length="44"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhGUMZEeuYLKJd8tcSjg" id="1044" connectsTo="_sbrhG0MZEeuYLKJd8tcSjg" length="327"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbrhGkMZEeuYLKJd8tcSjg" id="1045">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhG0MZEeuYLKJd8tcSjg" id="1046" connectsTo="_sbrhHEMZEeuYLKJd8tcSjg" length="268"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhHEMZEeuYLKJd8tcSjg" id="1047" connectsTo="_sbrhHUMZEeuYLKJd8tcSjg" length="934"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhHUMZEeuYLKJd8tcSjg" id="1048" connectsTo="_sbrhHkMZEeuYLKJd8tcSjg" length="842"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhHkMZEeuYLKJd8tcSjg" id="1049" connectsTo="_sbrhH0MZEeuYLKJd8tcSjg" length="3"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhH0MZEeuYLKJd8tcSjg" id="1050" connectsTo="_sbsICkMZEeuYLKJd8tcSjg" length="471"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Switch" xmi:id="_sbrhIEMZEeuYLKJd8tcSjg" id="1020" connectsTo="_sbrhA0MZEeuYLKJd8tcSjg" currentPosition="STRAIGHT" positions="_sbrhIUMZEeuYLKJd8tcSjg"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbrhIkMZEeuYLKJd8tcSjg" id="1053">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhI0MZEeuYLKJd8tcSjg" id="1054" connectsTo="_sbrhJEMZEeuYLKJd8tcSjg" length="161"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhJEMZEeuYLKJd8tcSjg" id="1055" connectsTo="_sbrhJUMZEeuYLKJd8tcSjg" length="234"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhJUMZEeuYLKJd8tcSjg" id="1056" connectsTo="_sbrhJkMZEeuYLKJd8tcSjg" length="951"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhJkMZEeuYLKJd8tcSjg" id="1057" connectsTo="_sbrhJ0MZEeuYLKJd8tcSjg" length="553"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhJ0MZEeuYLKJd8tcSjg" id="1058" connectsTo="_sbrhKUMZEeuYLKJd8tcSjg" length="303"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbrhKEMZEeuYLKJd8tcSjg" id="1059">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhKUMZEeuYLKJd8tcSjg" id="1060" connectsTo="_sbrhKkMZEeuYLKJd8tcSjg" length="805"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhKkMZEeuYLKJd8tcSjg" id="1061" connectsTo="_sbrhK0MZEeuYLKJd8tcSjg" length="326"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhK0MZEeuYLKJd8tcSjg" id="1062" connectsTo="_sbrhLEMZEeuYLKJd8tcSjg" length="832"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhLEMZEeuYLKJd8tcSjg" id="1063" connectsTo="_sbrhLUMZEeuYLKJd8tcSjg" length="669"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhLUMZEeuYLKJd8tcSjg" id="1064" connectsTo="_sbrhL0MZEeuYLKJd8tcSjg" length="678"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbrhLkMZEeuYLKJd8tcSjg" id="1065">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhL0MZEeuYLKJd8tcSjg" id="1066" connectsTo="_sbrhMEMZEeuYLKJd8tcSjg" length="833"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhMEMZEeuYLKJd8tcSjg" id="1067" connectsTo="_sbrhMUMZEeuYLKJd8tcSjg" length="475"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhMUMZEeuYLKJd8tcSjg" id="1068" connectsTo="_sbrhMkMZEeuYLKJd8tcSjg" length="871"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhMkMZEeuYLKJd8tcSjg" id="1069" connectsTo="_sbrhM0MZEeuYLKJd8tcSjg" length="878"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhM0MZEeuYLKJd8tcSjg" id="1070" connectsTo="_sbrhNUMZEeuYLKJd8tcSjg" length="535"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbrhNEMZEeuYLKJd8tcSjg" id="1071">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhNUMZEeuYLKJd8tcSjg" id="1072" connectsTo="_sbrhNkMZEeuYLKJd8tcSjg" length="246"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhNkMZEeuYLKJd8tcSjg" id="1073" connectsTo="_sbrhN0MZEeuYLKJd8tcSjg" length="175"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhN0MZEeuYLKJd8tcSjg" id="1074" connectsTo="_sbrhOEMZEeuYLKJd8tcSjg" length="446"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhOEMZEeuYLKJd8tcSjg" id="1075" connectsTo="_sbrhOUMZEeuYLKJd8tcSjg" length="214"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhOUMZEeuYLKJd8tcSjg" id="1076" connectsTo="_sbrhO0MZEeuYLKJd8tcSjg" length="518"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbrhOkMZEeuYLKJd8tcSjg" id="1077">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhO0MZEeuYLKJd8tcSjg" id="1078" connectsTo="_sbrhPEMZEeuYLKJd8tcSjg" length="941"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhPEMZEeuYLKJd8tcSjg" id="1079" connectsTo="_sbrhPUMZEeuYLKJd8tcSjg" length="60"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhPUMZEeuYLKJd8tcSjg" id="1080" connectsTo="_sbrhPkMZEeuYLKJd8tcSjg" length="381"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhPkMZEeuYLKJd8tcSjg" id="1081" connectsTo="_sbrhP0MZEeuYLKJd8tcSjg" length="667"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhP0MZEeuYLKJd8tcSjg" id="1082" connectsTo="_sbrhQUMZEeuYLKJd8tcSjg" length="589"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbrhQEMZEeuYLKJd8tcSjg" id="1083">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhQUMZEeuYLKJd8tcSjg" id="1084" connectsTo="_sbrhQkMZEeuYLKJd8tcSjg" length="192"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhQkMZEeuYLKJd8tcSjg" id="1085" connectsTo="_sbrhQ0MZEeuYLKJd8tcSjg" length="563"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhQ0MZEeuYLKJd8tcSjg" id="1086" connectsTo="_sbrhREMZEeuYLKJd8tcSjg" length="815"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhREMZEeuYLKJd8tcSjg" id="1087" connectsTo="_sbrhRUMZEeuYLKJd8tcSjg" length="547"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhRUMZEeuYLKJd8tcSjg" id="1088" connectsTo="_sbrhR0MZEeuYLKJd8tcSjg" length="616"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbrhRkMZEeuYLKJd8tcSjg" id="1089">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbrhR0MZEeuYLKJd8tcSjg" id="1090" connectsTo="_sbsIAEMZEeuYLKJd8tcSjg" length="230"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIAEMZEeuYLKJd8tcSjg" id="1091" connectsTo="_sbsIAUMZEeuYLKJd8tcSjg" length="2"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIAUMZEeuYLKJd8tcSjg" id="1092" connectsTo="_sbsIAkMZEeuYLKJd8tcSjg" length="186"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIAkMZEeuYLKJd8tcSjg" id="1093" connectsTo="_sbsIA0MZEeuYLKJd8tcSjg" length="560"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIA0MZEeuYLKJd8tcSjg" id="1094" connectsTo="_sbsIBUMZEeuYLKJd8tcSjg" length="801"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbsIBEMZEeuYLKJd8tcSjg" id="1095">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIBUMZEeuYLKJd8tcSjg" id="1096" connectsTo="_sbsIBkMZEeuYLKJd8tcSjg" length="84"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIBkMZEeuYLKJd8tcSjg" id="1097" connectsTo="_sbsIB0MZEeuYLKJd8tcSjg" length="814"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIB0MZEeuYLKJd8tcSjg" id="1098" connectsTo="_sbsICEMZEeuYLKJd8tcSjg" length="257"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsICEMZEeuYLKJd8tcSjg" id="1099" connectsTo="_sbsICUMZEeuYLKJd8tcSjg" length="26"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsICUMZEeuYLKJd8tcSjg" id="1100" connectsTo="_sbsIQkMZEeuYLKJd8tcSjg" length="343"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Switch" xmi:id="_sbsICkMZEeuYLKJd8tcSjg" id="1052" connectsTo="_sbrhI0MZEeuYLKJd8tcSjg" currentPosition="RIGHT" positions="_sbsIC0MZEeuYLKJd8tcSjg"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbsIDEMZEeuYLKJd8tcSjg" id="1103">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIDUMZEeuYLKJd8tcSjg" id="1104" connectsTo="_sbsIDkMZEeuYLKJd8tcSjg" length="63"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIDkMZEeuYLKJd8tcSjg" id="1105" connectsTo="_sbsID0MZEeuYLKJd8tcSjg" length="653"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsID0MZEeuYLKJd8tcSjg" id="1106" connectsTo="_sbsIEEMZEeuYLKJd8tcSjg" length="323"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIEEMZEeuYLKJd8tcSjg" id="1107" connectsTo="_sbsIEUMZEeuYLKJd8tcSjg" length="172"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIEUMZEeuYLKJd8tcSjg" id="1108" connectsTo="_sbsIE0MZEeuYLKJd8tcSjg" length="756"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbsIEkMZEeuYLKJd8tcSjg" id="1109">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIE0MZEeuYLKJd8tcSjg" id="1110" connectsTo="_sbsIFEMZEeuYLKJd8tcSjg" length="388"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIFEMZEeuYLKJd8tcSjg" id="1111" connectsTo="_sbsIFUMZEeuYLKJd8tcSjg" length="37"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIFUMZEeuYLKJd8tcSjg" id="1112" connectsTo="_sbsIFkMZEeuYLKJd8tcSjg" length="597"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIFkMZEeuYLKJd8tcSjg" id="1113" connectsTo="_sbsIF0MZEeuYLKJd8tcSjg" length="869"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIF0MZEeuYLKJd8tcSjg" id="1114" connectsTo="_sbsIGUMZEeuYLKJd8tcSjg" length="13"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbsIGEMZEeuYLKJd8tcSjg" id="1115">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIGUMZEeuYLKJd8tcSjg" id="1116" connectsTo="_sbsIGkMZEeuYLKJd8tcSjg" length="711"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIGkMZEeuYLKJd8tcSjg" id="1117" connectsTo="_sbsIG0MZEeuYLKJd8tcSjg" length="649"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIG0MZEeuYLKJd8tcSjg" id="1118" connectsTo="_sbsIHEMZEeuYLKJd8tcSjg" length="135"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIHEMZEeuYLKJd8tcSjg" id="1119" connectsTo="_sbsIHUMZEeuYLKJd8tcSjg" length="267"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIHUMZEeuYLKJd8tcSjg" id="1120" connectsTo="_sbsIH0MZEeuYLKJd8tcSjg" length="771"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbsIHkMZEeuYLKJd8tcSjg" id="1121">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIH0MZEeuYLKJd8tcSjg" id="1122" connectsTo="_sbsIIEMZEeuYLKJd8tcSjg" length="145"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIIEMZEeuYLKJd8tcSjg" id="1123" connectsTo="_sbsIIUMZEeuYLKJd8tcSjg" length="211"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIIUMZEeuYLKJd8tcSjg" id="1124" connectsTo="_sbsIIkMZEeuYLKJd8tcSjg" length="85"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIIkMZEeuYLKJd8tcSjg" id="1125" connectsTo="_sbsII0MZEeuYLKJd8tcSjg" length="874"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsII0MZEeuYLKJd8tcSjg" id="1126" connectsTo="_sbsIJUMZEeuYLKJd8tcSjg" length="748"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbsIJEMZEeuYLKJd8tcSjg" id="1127">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIJUMZEeuYLKJd8tcSjg" id="1128" connectsTo="_sbsIJkMZEeuYLKJd8tcSjg" length="525"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIJkMZEeuYLKJd8tcSjg" id="1129" connectsTo="_sbsIJ0MZEeuYLKJd8tcSjg" length="674"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIJ0MZEeuYLKJd8tcSjg" id="1130" connectsTo="_sbsIKEMZEeuYLKJd8tcSjg" length="478"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIKEMZEeuYLKJd8tcSjg" id="1131" connectsTo="_sbsIKUMZEeuYLKJd8tcSjg" length="86"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIKUMZEeuYLKJd8tcSjg" id="1132" connectsTo="_sbsIK0MZEeuYLKJd8tcSjg" length="898"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbsIKkMZEeuYLKJd8tcSjg" id="1133">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIK0MZEeuYLKJd8tcSjg" id="1134" connectsTo="_sbsILEMZEeuYLKJd8tcSjg" length="263"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsILEMZEeuYLKJd8tcSjg" id="1135" connectsTo="_sbsILUMZEeuYLKJd8tcSjg" length="301"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsILUMZEeuYLKJd8tcSjg" id="1136" connectsTo="_sbsILkMZEeuYLKJd8tcSjg" length="608"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsILkMZEeuYLKJd8tcSjg" id="1137" connectsTo="_sbsIL0MZEeuYLKJd8tcSjg" length="123"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIL0MZEeuYLKJd8tcSjg" id="1138" connectsTo="_sbsIMUMZEeuYLKJd8tcSjg" length="251"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbsIMEMZEeuYLKJd8tcSjg" id="1139">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIMUMZEeuYLKJd8tcSjg" id="1140" connectsTo="_sbsIMkMZEeuYLKJd8tcSjg" length="980"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIMkMZEeuYLKJd8tcSjg" id="1141" connectsTo="_sbsIM0MZEeuYLKJd8tcSjg" length="913"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIM0MZEeuYLKJd8tcSjg" id="1142" connectsTo="_sbsINEMZEeuYLKJd8tcSjg" length="282"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsINEMZEeuYLKJd8tcSjg" id="1143" connectsTo="_sbsINUMZEeuYLKJd8tcSjg" length="548"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsINUMZEeuYLKJd8tcSjg" id="1144" connectsTo="_sbsIN0MZEeuYLKJd8tcSjg" length="129"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbsINkMZEeuYLKJd8tcSjg" id="1145">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIN0MZEeuYLKJd8tcSjg" id="1146" connectsTo="_sbsIOEMZEeuYLKJd8tcSjg" length="288"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIOEMZEeuYLKJd8tcSjg" id="1147" connectsTo="_sbsIOUMZEeuYLKJd8tcSjg" length="596"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIOUMZEeuYLKJd8tcSjg" id="1148" connectsTo="_sbsIOkMZEeuYLKJd8tcSjg" length="637"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIOkMZEeuYLKJd8tcSjg" id="1149" connectsTo="_sbsIO0MZEeuYLKJd8tcSjg" length="647"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIO0MZEeuYLKJd8tcSjg" id="1150" connectsTo="_sbsIPUMZEeuYLKJd8tcSjg" length="681"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbsIPEMZEeuYLKJd8tcSjg" id="1151">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIPUMZEeuYLKJd8tcSjg" id="1152" connectsTo="_sbsIPkMZEeuYLKJd8tcSjg" length="111"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIPkMZEeuYLKJd8tcSjg" id="1153" connectsTo="_sbsIP0MZEeuYLKJd8tcSjg" length="704"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIP0MZEeuYLKJd8tcSjg" id="1154" connectsTo="_sbsIQEMZEeuYLKJd8tcSjg" length="423"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIQEMZEeuYLKJd8tcSjg" id="1155" connectsTo="_sbsIQUMZEeuYLKJd8tcSjg" length="463"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIQUMZEeuYLKJd8tcSjg" id="1156" connectsTo="_sbsIXEMZEeuYLKJd8tcSjg" length="734"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Switch" xmi:id="_sbsIQkMZEeuYLKJd8tcSjg" id="1102" connectsTo="_sbsIDUMZEeuYLKJd8tcSjg" positions="_sbsIQ0MZEeuYLKJd8tcSjg"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbsIREMZEeuYLKJd8tcSjg" id="1159">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIRUMZEeuYLKJd8tcSjg" id="1160" connectsTo="_sbsIRkMZEeuYLKJd8tcSjg" length="704"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIRkMZEeuYLKJd8tcSjg" id="1161" connectsTo="_sbsIR0MZEeuYLKJd8tcSjg" length="209"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIR0MZEeuYLKJd8tcSjg" id="1162" connectsTo="_sbsISEMZEeuYLKJd8tcSjg" length="240"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsISEMZEeuYLKJd8tcSjg" id="1163" connectsTo="_sbsISUMZEeuYLKJd8tcSjg" length="589"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsISUMZEeuYLKJd8tcSjg" id="1164" connectsTo="_sbsIS0MZEeuYLKJd8tcSjg" length="963"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbsISkMZEeuYLKJd8tcSjg" id="1165">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIS0MZEeuYLKJd8tcSjg" id="1166" connectsTo="_sbsITEMZEeuYLKJd8tcSjg" length="640"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsITEMZEeuYLKJd8tcSjg" id="1167" connectsTo="_sbsITUMZEeuYLKJd8tcSjg" length="760"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsITUMZEeuYLKJd8tcSjg" id="1168" connectsTo="_sbsITkMZEeuYLKJd8tcSjg" length="488"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsITkMZEeuYLKJd8tcSjg" id="1169" connectsTo="_sbsIT0MZEeuYLKJd8tcSjg" length="912"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIT0MZEeuYLKJd8tcSjg" id="1170" connectsTo="_sbsIUUMZEeuYLKJd8tcSjg" length="945"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbsIUEMZEeuYLKJd8tcSjg" id="1171">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIUUMZEeuYLKJd8tcSjg" id="1172" connectsTo="_sbsIUkMZEeuYLKJd8tcSjg" length="587"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIUkMZEeuYLKJd8tcSjg" id="1173" connectsTo="_sbsIU0MZEeuYLKJd8tcSjg" length="222"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIU0MZEeuYLKJd8tcSjg" id="1174" connectsTo="_sbsIVEMZEeuYLKJd8tcSjg" length="263"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIVEMZEeuYLKJd8tcSjg" id="1175" connectsTo="_sbsIVUMZEeuYLKJd8tcSjg" length="389"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIVUMZEeuYLKJd8tcSjg" id="1176" connectsTo="_sbsIV0MZEeuYLKJd8tcSjg" length="694"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbsIVkMZEeuYLKJd8tcSjg" id="1177">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIV0MZEeuYLKJd8tcSjg" id="1178" connectsTo="_sbsIWEMZEeuYLKJd8tcSjg" length="350"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIWEMZEeuYLKJd8tcSjg" id="1179" connectsTo="_sbsIWUMZEeuYLKJd8tcSjg" length="605"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIWUMZEeuYLKJd8tcSjg" id="1180" connectsTo="_sbsIWkMZEeuYLKJd8tcSjg" length="7"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIWkMZEeuYLKJd8tcSjg" id="1181" connectsTo="_sbsIW0MZEeuYLKJd8tcSjg" length="536"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsIW0MZEeuYLKJd8tcSjg" id="1182" connectsTo="_sbsvHUMZEeuYLKJd8tcSjg" length="502"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Switch" xmi:id="_sbsIXEMZEeuYLKJd8tcSjg" id="1158" connectsTo="_sbsIRUMZEeuYLKJd8tcSjg" positions="_sbsIXUMZEeuYLKJd8tcSjg"/>
+    </definedBy>
+  </routes>
+  <routes xmi:type="hu.bme.mit.trainbenchmark:Route" xmi:id="_sbsvEEMZEeuYLKJd8tcSjg" id="1184" entry="_sbqS3EMZEeuYLKJd8tcSjg" exit="_sbXX4EMZEeuYLKJd8tcSjg">
+    <follows xmi:type="hu.bme.mit.trainbenchmark:SwitchPosition" xmi:id="_sbsvHkMZEeuYLKJd8tcSjg" id="1198" switch="_sbsvHUMZEeuYLKJd8tcSjg" position="RIGHT"/>
+    <follows xmi:type="hu.bme.mit.trainbenchmark:SwitchPosition" xmi:id="_sbsvJkMZEeuYLKJd8tcSjg" id="1206" switch="_sbsvJUMZEeuYLKJd8tcSjg"/>
+    <follows xmi:type="hu.bme.mit.trainbenchmark:SwitchPosition" xmi:id="_sbsvLkMZEeuYLKJd8tcSjg" id="1214" switch="_sbsvLUMZEeuYLKJd8tcSjg" position="STRAIGHT"/>
+    <follows xmi:type="hu.bme.mit.trainbenchmark:SwitchPosition" xmi:id="_sbsvNkMZEeuYLKJd8tcSjg" id="1222" switch="_sbsvNUMZEeuYLKJd8tcSjg" position="RIGHT"/>
+    <follows xmi:type="hu.bme.mit.trainbenchmark:SwitchPosition" xmi:id="_sbtWP0MZEeuYLKJd8tcSjg" id="1266" switch="_sbtWPkMZEeuYLKJd8tcSjg" position="LEFT"/>
+    <follows xmi:type="hu.bme.mit.trainbenchmark:SwitchPosition" xmi:id="_sbtWa0MZEeuYLKJd8tcSjg" id="1310" switch="_sbtWakMZEeuYLKJd8tcSjg" position="STRAIGHT"/>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbsvEUMZEeuYLKJd8tcSjg" id="1186">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsvEkMZEeuYLKJd8tcSjg" id="1187" connectsTo="_sbsvE0MZEeuYLKJd8tcSjg" length="371"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsvE0MZEeuYLKJd8tcSjg" id="1188" connectsTo="_sbsvFEMZEeuYLKJd8tcSjg" length="344"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsvFEMZEeuYLKJd8tcSjg" id="1189" connectsTo="_sbsvFUMZEeuYLKJd8tcSjg" length="787"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsvFUMZEeuYLKJd8tcSjg" id="1190" connectsTo="_sbsvFkMZEeuYLKJd8tcSjg" length="33"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsvFkMZEeuYLKJd8tcSjg" id="1191" connectsTo="_sbsvGEMZEeuYLKJd8tcSjg" length="874"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbsvF0MZEeuYLKJd8tcSjg" id="1192">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsvGEMZEeuYLKJd8tcSjg" id="1193" connectsTo="_sbsvGUMZEeuYLKJd8tcSjg" length="127"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsvGUMZEeuYLKJd8tcSjg" id="1194" connectsTo="_sbsvGkMZEeuYLKJd8tcSjg" length="547"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsvGkMZEeuYLKJd8tcSjg" id="1195" connectsTo="_sbsvG0MZEeuYLKJd8tcSjg" length="857"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsvG0MZEeuYLKJd8tcSjg" id="1196" connectsTo="_sbsvHEMZEeuYLKJd8tcSjg" length="393"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsvHEMZEeuYLKJd8tcSjg" id="1197" connectsTo="_sbsvJUMZEeuYLKJd8tcSjg" length="862"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Switch" xmi:id="_sbsvHUMZEeuYLKJd8tcSjg" id="1185" connectsTo="_sbsvEkMZEeuYLKJd8tcSjg" currentPosition="RIGHT" positions="_sbsvHkMZEeuYLKJd8tcSjg"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbsvH0MZEeuYLKJd8tcSjg" id="1200">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsvIEMZEeuYLKJd8tcSjg" id="1201" connectsTo="_sbsvIUMZEeuYLKJd8tcSjg" length="879"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsvIUMZEeuYLKJd8tcSjg" id="1202" connectsTo="_sbsvIkMZEeuYLKJd8tcSjg" length="9"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsvIkMZEeuYLKJd8tcSjg" id="1203" connectsTo="_sbsvI0MZEeuYLKJd8tcSjg" length="279"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsvI0MZEeuYLKJd8tcSjg" id="1204" connectsTo="_sbsvJEMZEeuYLKJd8tcSjg" length="801"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsvJEMZEeuYLKJd8tcSjg" id="1205" connectsTo="_sbsvLUMZEeuYLKJd8tcSjg" length="210"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Switch" xmi:id="_sbsvJUMZEeuYLKJd8tcSjg" id="1199" connectsTo="_sbsvIEMZEeuYLKJd8tcSjg" positions="_sbsvJkMZEeuYLKJd8tcSjg"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbsvJ0MZEeuYLKJd8tcSjg" id="1208">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsvKEMZEeuYLKJd8tcSjg" id="1209" connectsTo="_sbsvKUMZEeuYLKJd8tcSjg" length="618"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsvKUMZEeuYLKJd8tcSjg" id="1210" connectsTo="_sbsvKkMZEeuYLKJd8tcSjg" length="961"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsvKkMZEeuYLKJd8tcSjg" id="1211" connectsTo="_sbsvK0MZEeuYLKJd8tcSjg" length="731"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsvK0MZEeuYLKJd8tcSjg" id="1212" connectsTo="_sbsvLEMZEeuYLKJd8tcSjg" length="601"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsvLEMZEeuYLKJd8tcSjg" id="1213" connectsTo="_sbsvNUMZEeuYLKJd8tcSjg" length="807"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Switch" xmi:id="_sbsvLUMZEeuYLKJd8tcSjg" id="1207" connectsTo="_sbsvKEMZEeuYLKJd8tcSjg" currentPosition="STRAIGHT" positions="_sbsvLkMZEeuYLKJd8tcSjg"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbsvL0MZEeuYLKJd8tcSjg" id="1216">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsvMEMZEeuYLKJd8tcSjg" id="1217" connectsTo="_sbsvMUMZEeuYLKJd8tcSjg" length="922"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsvMUMZEeuYLKJd8tcSjg" id="1218" connectsTo="_sbsvMkMZEeuYLKJd8tcSjg" length="250"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsvMkMZEeuYLKJd8tcSjg" id="1219" connectsTo="_sbsvM0MZEeuYLKJd8tcSjg" length="518"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsvM0MZEeuYLKJd8tcSjg" id="1220" connectsTo="_sbsvNEMZEeuYLKJd8tcSjg" length="205"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsvNEMZEeuYLKJd8tcSjg" id="1221" connectsTo="_sbtWPkMZEeuYLKJd8tcSjg" length="508"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Switch" xmi:id="_sbsvNUMZEeuYLKJd8tcSjg" id="1215" connectsTo="_sbsvMEMZEeuYLKJd8tcSjg" currentPosition="RIGHT" positions="_sbsvNkMZEeuYLKJd8tcSjg"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbsvN0MZEeuYLKJd8tcSjg" id="1224">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsvOEMZEeuYLKJd8tcSjg" id="1225" connectsTo="_sbsvOUMZEeuYLKJd8tcSjg" length="152"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsvOUMZEeuYLKJd8tcSjg" id="1226" connectsTo="_sbsvOkMZEeuYLKJd8tcSjg" length="656"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsvOkMZEeuYLKJd8tcSjg" id="1227" connectsTo="_sbsvO0MZEeuYLKJd8tcSjg" length="431"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsvO0MZEeuYLKJd8tcSjg" id="1228" connectsTo="_sbsvPEMZEeuYLKJd8tcSjg" length="304"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsvPEMZEeuYLKJd8tcSjg" id="1229" connectsTo="_sbsvPkMZEeuYLKJd8tcSjg" length="481"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbsvPUMZEeuYLKJd8tcSjg" id="1230">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsvPkMZEeuYLKJd8tcSjg" id="1231" connectsTo="_sbsvP0MZEeuYLKJd8tcSjg" length="241"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsvP0MZEeuYLKJd8tcSjg" id="1232" connectsTo="_sbsvQEMZEeuYLKJd8tcSjg" length="927"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsvQEMZEeuYLKJd8tcSjg" id="1233" connectsTo="_sbsvQUMZEeuYLKJd8tcSjg" length="542"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsvQUMZEeuYLKJd8tcSjg" id="1234" connectsTo="_sbsvQkMZEeuYLKJd8tcSjg" length="992"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbsvQkMZEeuYLKJd8tcSjg" id="1235" connectsTo="_sbtWIUMZEeuYLKJd8tcSjg" length="892"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbtWIEMZEeuYLKJd8tcSjg" id="1236">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWIUMZEeuYLKJd8tcSjg" id="1237" connectsTo="_sbtWIkMZEeuYLKJd8tcSjg" length="849"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWIkMZEeuYLKJd8tcSjg" id="1238" connectsTo="_sbtWI0MZEeuYLKJd8tcSjg" length="568"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWI0MZEeuYLKJd8tcSjg" id="1239" connectsTo="_sbtWJEMZEeuYLKJd8tcSjg" length="867"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWJEMZEeuYLKJd8tcSjg" id="1240" connectsTo="_sbtWJUMZEeuYLKJd8tcSjg" length="620"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWJUMZEeuYLKJd8tcSjg" id="1241" connectsTo="_sbtWJ0MZEeuYLKJd8tcSjg" length="303"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbtWJkMZEeuYLKJd8tcSjg" id="1242">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWJ0MZEeuYLKJd8tcSjg" id="1243" connectsTo="_sbtWKEMZEeuYLKJd8tcSjg" length="604"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWKEMZEeuYLKJd8tcSjg" id="1244" connectsTo="_sbtWKUMZEeuYLKJd8tcSjg" length="33"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWKUMZEeuYLKJd8tcSjg" id="1245" connectsTo="_sbtWKkMZEeuYLKJd8tcSjg" length="649"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWKkMZEeuYLKJd8tcSjg" id="1246" connectsTo="_sbtWK0MZEeuYLKJd8tcSjg" length="667"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWK0MZEeuYLKJd8tcSjg" id="1247" connectsTo="_sbtWLUMZEeuYLKJd8tcSjg" length="998"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbtWLEMZEeuYLKJd8tcSjg" id="1248">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWLUMZEeuYLKJd8tcSjg" id="1249" connectsTo="_sbtWLkMZEeuYLKJd8tcSjg" length="234"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWLkMZEeuYLKJd8tcSjg" id="1250" connectsTo="_sbtWL0MZEeuYLKJd8tcSjg" length="627"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWL0MZEeuYLKJd8tcSjg" id="1251" connectsTo="_sbtWMEMZEeuYLKJd8tcSjg" length="94"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWMEMZEeuYLKJd8tcSjg" id="1252" connectsTo="_sbtWMUMZEeuYLKJd8tcSjg" length="180"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWMUMZEeuYLKJd8tcSjg" id="1253" connectsTo="_sbtWM0MZEeuYLKJd8tcSjg" length="848"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbtWMkMZEeuYLKJd8tcSjg" id="1254">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWM0MZEeuYLKJd8tcSjg" id="1255" connectsTo="_sbtWNEMZEeuYLKJd8tcSjg" length="488"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWNEMZEeuYLKJd8tcSjg" id="1256" connectsTo="_sbtWNUMZEeuYLKJd8tcSjg" length="583"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWNUMZEeuYLKJd8tcSjg" id="1257" connectsTo="_sbtWNkMZEeuYLKJd8tcSjg" length="972"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWNkMZEeuYLKJd8tcSjg" id="1258" connectsTo="_sbtWN0MZEeuYLKJd8tcSjg" length="533"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWN0MZEeuYLKJd8tcSjg" id="1259" connectsTo="_sbtWOUMZEeuYLKJd8tcSjg" length="895"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbtWOEMZEeuYLKJd8tcSjg" id="1260">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWOUMZEeuYLKJd8tcSjg" id="1261" connectsTo="_sbtWOkMZEeuYLKJd8tcSjg" length="75"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWOkMZEeuYLKJd8tcSjg" id="1262" connectsTo="_sbtWO0MZEeuYLKJd8tcSjg" length="533"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWO0MZEeuYLKJd8tcSjg" id="1263" connectsTo="_sbtWPEMZEeuYLKJd8tcSjg" length="688"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWPEMZEeuYLKJd8tcSjg" id="1264" connectsTo="_sbtWPUMZEeuYLKJd8tcSjg" length="953"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWPUMZEeuYLKJd8tcSjg" id="1265" connectsTo="_sbtWakMZEeuYLKJd8tcSjg" length="322"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Switch" xmi:id="_sbtWPkMZEeuYLKJd8tcSjg" id="1223" connectsTo="_sbsvOEMZEeuYLKJd8tcSjg" currentPosition="LEFT" positions="_sbtWP0MZEeuYLKJd8tcSjg"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbtWQEMZEeuYLKJd8tcSjg" id="1268">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWQUMZEeuYLKJd8tcSjg" id="1269" connectsTo="_sbtWQkMZEeuYLKJd8tcSjg" length="320"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWQkMZEeuYLKJd8tcSjg" id="1270" connectsTo="_sbtWQ0MZEeuYLKJd8tcSjg" length="793"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWQ0MZEeuYLKJd8tcSjg" id="1271" connectsTo="_sbtWREMZEeuYLKJd8tcSjg" length="991"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWREMZEeuYLKJd8tcSjg" id="1272" connectsTo="_sbtWRUMZEeuYLKJd8tcSjg" length="845"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWRUMZEeuYLKJd8tcSjg" id="1273" connectsTo="_sbtWR0MZEeuYLKJd8tcSjg" length="792"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbtWRkMZEeuYLKJd8tcSjg" id="1274">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWR0MZEeuYLKJd8tcSjg" id="1275" connectsTo="_sbtWSEMZEeuYLKJd8tcSjg" length="843"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWSEMZEeuYLKJd8tcSjg" id="1276" connectsTo="_sbtWSUMZEeuYLKJd8tcSjg" length="304"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWSUMZEeuYLKJd8tcSjg" id="1277" connectsTo="_sbtWSkMZEeuYLKJd8tcSjg" length="780"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWSkMZEeuYLKJd8tcSjg" id="1278" connectsTo="_sbtWS0MZEeuYLKJd8tcSjg" length="911"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWS0MZEeuYLKJd8tcSjg" id="1279" connectsTo="_sbtWTUMZEeuYLKJd8tcSjg" length="774"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbtWTEMZEeuYLKJd8tcSjg" id="1280">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWTUMZEeuYLKJd8tcSjg" id="1281" connectsTo="_sbtWTkMZEeuYLKJd8tcSjg" length="938"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWTkMZEeuYLKJd8tcSjg" id="1282" connectsTo="_sbtWT0MZEeuYLKJd8tcSjg" length="76"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWT0MZEeuYLKJd8tcSjg" id="1283" connectsTo="_sbtWUEMZEeuYLKJd8tcSjg" length="942"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWUEMZEeuYLKJd8tcSjg" id="1284" connectsTo="_sbtWUUMZEeuYLKJd8tcSjg" length="995"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWUUMZEeuYLKJd8tcSjg" id="1285" connectsTo="_sbtWU0MZEeuYLKJd8tcSjg" length="501"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbtWUkMZEeuYLKJd8tcSjg" id="1286">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWU0MZEeuYLKJd8tcSjg" id="1287" connectsTo="_sbtWVEMZEeuYLKJd8tcSjg" length="461"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWVEMZEeuYLKJd8tcSjg" id="1288" connectsTo="_sbtWVUMZEeuYLKJd8tcSjg" length="547"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWVUMZEeuYLKJd8tcSjg" id="1289" connectsTo="_sbtWVkMZEeuYLKJd8tcSjg" length="202"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWVkMZEeuYLKJd8tcSjg" id="1290" connectsTo="_sbtWV0MZEeuYLKJd8tcSjg" length="274"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWV0MZEeuYLKJd8tcSjg" id="1291" connectsTo="_sbtWWUMZEeuYLKJd8tcSjg" length="743"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbtWWEMZEeuYLKJd8tcSjg" id="1292">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWWUMZEeuYLKJd8tcSjg" id="1293" connectsTo="_sbtWWkMZEeuYLKJd8tcSjg" length="357"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWWkMZEeuYLKJd8tcSjg" id="1294" connectsTo="_sbtWW0MZEeuYLKJd8tcSjg" length="766"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWW0MZEeuYLKJd8tcSjg" id="1295" connectsTo="_sbtWXEMZEeuYLKJd8tcSjg" length="29"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWXEMZEeuYLKJd8tcSjg" id="1296" connectsTo="_sbtWXUMZEeuYLKJd8tcSjg" length="174"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWXUMZEeuYLKJd8tcSjg" id="1297" connectsTo="_sbtWX0MZEeuYLKJd8tcSjg" length="369"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbtWXkMZEeuYLKJd8tcSjg" id="1298">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWX0MZEeuYLKJd8tcSjg" id="1299" connectsTo="_sbtWYEMZEeuYLKJd8tcSjg" length="171"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWYEMZEeuYLKJd8tcSjg" id="1300" connectsTo="_sbtWYUMZEeuYLKJd8tcSjg" length="880"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWYUMZEeuYLKJd8tcSjg" id="1301" connectsTo="_sbtWYkMZEeuYLKJd8tcSjg" length="512"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWYkMZEeuYLKJd8tcSjg" id="1302" connectsTo="_sbtWY0MZEeuYLKJd8tcSjg" length="216"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWY0MZEeuYLKJd8tcSjg" id="1303" connectsTo="_sbtWZUMZEeuYLKJd8tcSjg" length="225"/>
+    </definedBy>
+    <definedBy xmi:type="hu.bme.mit.trainbenchmark:Sensor" xmi:id="_sbtWZEMZEeuYLKJd8tcSjg" id="1304">
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWZUMZEeuYLKJd8tcSjg" id="1305" connectsTo="_sbtWZkMZEeuYLKJd8tcSjg" length="781"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWZkMZEeuYLKJd8tcSjg" id="1306" connectsTo="_sbtWZ0MZEeuYLKJd8tcSjg" length="831"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWZ0MZEeuYLKJd8tcSjg" id="1307" connectsTo="_sbtWaEMZEeuYLKJd8tcSjg" length="731"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWaEMZEeuYLKJd8tcSjg" id="1308" connectsTo="_sbtWaUMZEeuYLKJd8tcSjg" length="11"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Segment" xmi:id="_sbtWaUMZEeuYLKJd8tcSjg" id="1309" connectsTo="_sbabNUMZEeuYLKJd8tcSjg" length="899"/>
+      <elements xmi:type="hu.bme.mit.trainbenchmark:Switch" xmi:id="_sbtWakMZEeuYLKJd8tcSjg" id="1267" connectsTo="_sbtWQUMZEeuYLKJd8tcSjg" currentPosition="STRAIGHT" positions="_sbtWa0MZEeuYLKJd8tcSjg"/>
+    </definedBy>
+  </routes>
+</hu.bme.mit.trainbenchmark:RailwayContainer>

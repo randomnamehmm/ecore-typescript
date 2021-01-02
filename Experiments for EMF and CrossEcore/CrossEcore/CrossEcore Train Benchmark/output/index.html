@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CrossEcore Trainbenchmark</title>
+	</head>
+	
+	<body>
+		<script type='text/javascript' src='require.js'></script>
+		<script type='text/javascript' src='app.js'></script>
+		<input type="file" id="file-selector" multiple>
+		<script>
+			const fileSelector = document.getElementById('file-selector');
+			fileSelector.addEventListener('change', (event) => {
+				const fileList = event.target.files;
+				for (let file of fileList) {
+					const reader = new FileReader();
+					reader.readAsBinaryString(file);
+					reader.onload = function() {
+						lib.main(reader.result, file.name);
+					};
+				}
+			});
+		</script>
+	</body>
+
+</html>
