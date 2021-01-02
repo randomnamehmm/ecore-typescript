@@ -1,5 +1,4 @@
 import {OrderedSet} from "./OrderedSet";
-import {EClass} from "./EClass";
 import {EAttribute} from "./EAttribute";
 import {EStructuralFeature} from "./EStructuralFeature";
 import {EClassifier} from "./EClassifier";
@@ -51,4 +50,3 @@ extends EClassifier
 	getEOperation(operationID:number): EOperation ;
 
 }
-
