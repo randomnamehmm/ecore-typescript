@@ -360,7 +360,6 @@ export class XmiResource{
         let parser = this.domParser;
         let xmlDoc = parser.parseFromString(xml,"text/xml");
 
-        // ab hier BA Teil
         if (xmlDoc.getElementsByTagName("parsererror").length > 0) {        
             console.error("Error while parsing Ecore instance document!");
             return null;
