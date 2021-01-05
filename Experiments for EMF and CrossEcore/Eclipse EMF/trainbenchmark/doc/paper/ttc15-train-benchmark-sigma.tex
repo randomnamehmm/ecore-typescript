@@ -1,0 +1,96 @@
+%\documentclass[submission]{eptcs}
+\documentclass[submission]{eptcs}
+\providecommand{\event}{TTC 2015}
+
+\usepackage[usenames,dvipsnames,table]{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{paralist}
+\usepackage{graphicx}
+\usepackage[cache]{minted}
+\usepackage{url}
+\usepackage[utf8]{inputenc}
+\usepackage{paralist}
+\usepackage{amstext}
+\usepackage{amsfonts}
+\usepackage{xspace}
+\usepackage{todonotes}
+\usepackage{hyperref}
+
+\usepackage[skip=0pt]{caption}
+\usepackage{setspace}
+\setstretch{0.96}
+
+\hypersetup{
+  colorlinks, 
+  breaklinks, 
+  bookmarksnumbered=true,
+  pdftitle={Solving the TTC'15 Train Benchmark Case Study with SIGMA},
+  pdfauthor={Filip Křikava}, 
+  linkcolor=Blue, 
+  citecolor=BrickRed, 
+  filecolor=Blue, 
+  urlcolor=Blue
+  }
+
+\renewcommand{\ttdefault}{pcr}
+
+\newcommand{\SIGMA}{\textsc{Sigma}\xspace}
+\newcommand{\FIXML}{FIXML\xspace}
+\newcommand{\TTC}{TTC'15\xspace}
+\newcommand{\Ie}{\emph{i.e.}\xspace}
+\newcommand{\Eg}{\emph{e.g.}\xspace}
+\newcommand{\Etal}{\emph{et al.}\xspace}
+\newcommand{\Cf}{\emph{cf.}\xspace}
+
+\newcommand{\Todo}[1]{\todo[inline]{#1}}
+\renewcommand{\Todo}[1]{}
+
+\newminted{scala}{fontsize=\fontsize{8}{8},linenos,numbersep=5pt,frame=lines,framesep=2mm}
+\newminted{bash}{fontsize=\fontsize{8}{8},linenos,numbersep=5pt,frame=lines,framesep=2mm}
+
+\newcommand{\Scala}[1]{\mintinline{scala}{#1}}
+
+\title{Solving the \TTC Train Benchmark Case Study with SIGMA}
+
+\author{
+  Filip Křikava
+  \institute{University Lille 1 - LIFL, France}
+  \institute{INRIA Lille, Nord Europe}
+  \email{\href{mailto:filip.krikava@inria.fr}{filip.krikava@inria.fr}}
+% \and
+%   Philippe Collet
+%   \institute{Université Nice - Sophia Antipolis, France}
+%   \institute{CNRS, I3S, UMR 7271}
+%   \email{\quad \href{mailto:philippe.collet@unice.fr}{philippe.collet@unice.fr}}
+}
+
+\def\titlerunning{Solving the \TTC Train Benchmark Case Study with SIGMA}
+\def\authorrunning{F. Křikava}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+In this paper we describe a solution for the \emph{Transformation Tool Contest 2015} (\TTC) Train Benchmark case study using \SIGMA, a family of Scala internal \emph{Domain-Specific Languages} (DSLs) that provides an expressive and efficient API for model consistency checking and model transformations.
+We solve both the core and the extension tasks.
+\end{abstract}
+
+\input{Introduction.tex}
+\input{SolutionDescription.tex}
+\input{Evaluation.tex}
+\input{Conclusion.tex}
+
+% \vspace*{-3mm}
+\paragraph{Acknowledgments}
+This work is partially supported by the Datalyse project (\href{http://www.datalyse.fr/}{\Scala|www.datalyse.fr|}).
+% \vspace*{-3mm}
+
+\bibliographystyle{eptcs}
+\bibliography{references.bib}	
+
+\appendix
+
+\input{Install.tex}
+
+\end{document}

@@ -1,0 +1,23 @@
+%!TEX root = ttc15-train-benchmark-sigma.tex
+
+% \enlargethispage{10mm}
+
+\section{Introduction}
+\label{sec:Introduction}
+
+%% Overview
+In this paper we describe our solution for the \TTC Train Benchmark case study~\cite{Szarnyas2015} using the \SIGMA~\cite{Krikava2014}.
+%% Scala
+\SIGMA is a family of Scala\footnote{\url{http://scala-lang.org}} internal DSLs for model manipulation tasks such as model validation, model to model (M2M), and model to text (M2T) transformations.
+Scala is a statically typed production-ready \emph{General-Purpose Language} (GPL) that supports both object-oriented and functional styles of programming.
+It uses type inference to combine static type safety with a \emph{``look and feel''} close to dynamically typed languages.
+Furthermore, it is supported by the major integrated development environments bringing EMF modeling to other IDEs than traditionally Eclipse (the solution was developed in IntelliJ IDEA\footnote{\url{https://www.jetbrains.com/idea/}}).
+
+%% SIGMA
+\SIGMA DSLs are embedded in Scala as a library allowing one to manipulate models using high-level constructs similar to the ones found in the external model manipulation DSLs.
+The intent is to provide an approach that developers can use to implement many of the practical model manipulations within a familiar environment, with a reduced learning overhead as well as improved usability and performance.
+The solution is based on the \emph{Eclipse Modeling Framework} (EMF)~\cite{EMF}, which is a popular meta-modeling framework widely used in both academia and industry, and which is directly supported by \SIGMA.
+
+%% Organization
+The complete source code is available on Github\footnote{\url{https://github.com/fikovnik/trainbenchmark-ttc}} in the fork of the original case study repository.
+In the Appendix~\ref{sec:Install} we provide a steps how to install it locally.
