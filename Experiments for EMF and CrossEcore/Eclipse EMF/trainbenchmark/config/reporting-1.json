@@ -1,0 +1,24 @@
+{
+  "Dimensions": {
+    "X_Dimensions": {
+      "Size": true,
+      "Iteration": false
+    },
+    "Groups": {
+      "Query": false,
+      "Tool": true
+    }
+  },
+  "Summarize_Functions": [
+    {
+      "Name": "total-validation",
+      "Phases": [
+        "read",
+        "check",
+        "repair",
+        "recheck"
+      ]
+    }
+  ],
+  "Extension": ["png"]
+}

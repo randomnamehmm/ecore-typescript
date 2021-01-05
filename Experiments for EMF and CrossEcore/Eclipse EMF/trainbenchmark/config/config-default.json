@@ -1,0 +1,40 @@
+{
+  "MinSize": 1,
+  "MaxSize": 2,
+  "Queries": [
+    "PosLength"
+  ],
+  "_TempQueriesComment": "The _TempQueries field is not used by the framework.",
+  "_TempQueries": [
+    "RouteSensor",
+    "SemaphoreNeighbor",
+    "SwitchSensor",
+    "SwitchSet"
+  ],
+  "_TempToolsComment": "The _TempTools field is not used by the framework.",
+  "_TempTools": [
+  ],
+  "Tools": [
+    "hu.bme.mit.trainbenchmark.ttc.benchmark.atl",
+    "hu.bme.mit.trainbenchmark.ttc.benchmark.emfincquery",
+    "hu.bme.mit.trainbenchmark.ttc.benchmark.funnyqtglue",
+    "hu.bme.mit.trainbenchmark.ttc.benchmark.java",
+    "hu.bme.mit.trainbenchmark.ttc.benchmark.sigma",
+    "hu.bme.mit.trainbenchmark.ttc.benchmark.viatra"
+  ],
+  "ChangeSets":[
+    "fixed"
+  ],
+  "_TempChangeSetsComment": "The _TempChangeSets field is not used by the framework.",
+  "_TempChangeSets": [
+    "proportional"
+  ],
+  "Runs": 5,
+  "IterationCount": 10,
+  "JVM": {
+    "vmargs": ["-Dorg.eclipse.emf.common.util.ReferenceClearingQueue=false"],
+    "Xmx": "512m"
+  },
+  "OptionalArguments": [[]],
+  "Timeout": 600
+}
