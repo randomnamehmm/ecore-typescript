@@ -1,0 +1,66 @@
+  ChangeSet     Query                    Tool SumOfScores
+1     fixed PosLength                     ATL   0.8519044
+2     fixed PosLength EMFIncQuery-Incremental   0.8870976
+3     fixed PosLength                 FunnyQT   0.5665084
+4     fixed PosLength                     NMF   0.2127305
+5     fixed PosLength                   Sigma   0.9657740
+     ChangeSet     Query                    Tool SumOfScores
+1 proportional PosLength                     ATL   0.7253574
+2 proportional PosLength EMFIncQuery-Incremental   0.8848710
+3 proportional PosLength                 FunnyQT   0.5725358
+4 proportional PosLength                     NMF   0.2151542
+5 proportional PosLength                   Sigma   0.9819480
+  ChangeSet       Query                    Tool SumOfScores
+1     fixed RouteSensor                     ATL   0.9966743
+2     fixed RouteSensor EMFIncQuery-Incremental   0.5604734
+3     fixed RouteSensor                 FunnyQT   0.5571464
+4     fixed RouteSensor                     NMF   0.3137023
+5     fixed RouteSensor                   Sigma   0.8820998
+     ChangeSet       Query                    Tool SumOfScores
+1 proportional RouteSensor                     ATL   0.9911869
+2 proportional RouteSensor EMFIncQuery-Incremental   0.5915195
+3 proportional RouteSensor                 FunnyQT   0.5998437
+4 proportional RouteSensor                     NMF   0.2686798
+5 proportional RouteSensor                   Sigma   0.9361925
+  ChangeSet             Query                    Tool SumOfScores
+1     fixed SemaphoreNeighbor                     ATL  0.71907259
+2     fixed SemaphoreNeighbor EMFIncQuery-Incremental  0.59234395
+3     fixed SemaphoreNeighbor                 FunnyQT  0.62583081
+4     fixed SemaphoreNeighbor                     NMF  0.01652862
+5     fixed SemaphoreNeighbor                   Sigma  1.00000000
+     ChangeSet             Query                    Tool SumOfScores
+1 proportional SemaphoreNeighbor                     ATL  0.73709499
+2 proportional SemaphoreNeighbor EMFIncQuery-Incremental  0.57663102
+3 proportional SemaphoreNeighbor                 FunnyQT  0.62879152
+4 proportional SemaphoreNeighbor                     NMF  0.01644922
+5 proportional SemaphoreNeighbor                   Sigma  1.00000000
+  ChangeSet        Query                    Tool SumOfScores
+1     fixed SwitchSensor                     ATL   1.0000000
+2     fixed SwitchSensor EMFIncQuery-Incremental   0.7004899
+3     fixed SwitchSensor                 FunnyQT   0.5571198
+4     fixed SwitchSensor                     NMF   0.2311368
+5     fixed SwitchSensor                   Sigma   0.8384115
+     ChangeSet        Query                    Tool SumOfScores
+1 proportional SwitchSensor                     ATL   1.0000000
+2 proportional SwitchSensor EMFIncQuery-Incremental   0.6900092
+3 proportional SwitchSensor                 FunnyQT   0.5319361
+4 proportional SwitchSensor                     NMF   0.2198623
+5 proportional SwitchSensor                   Sigma   0.8236778
+  ChangeSet     Query                    Tool SumOfScores
+1     fixed SwitchSet                     ATL   0.9944538
+2     fixed SwitchSet EMFIncQuery-Incremental   0.7896630
+3     fixed SwitchSet                 FunnyQT   0.5550507
+4     fixed SwitchSet                     NMF   0.3109641
+5     fixed SwitchSet                   Sigma   0.8362354
+     ChangeSet     Query                    Tool SumOfScores
+1 proportional SwitchSet                     ATL   0.9899110
+2 proportional SwitchSet EMFIncQuery-Incremental   0.7979697
+3 proportional SwitchSet                 FunnyQT   0.5520658
+4 proportional SwitchSet                     NMF   0.3119639
+5 proportional SwitchSet                   Sigma   0.8392326
+                     Tool FinalScore
+1                     ATL   9.005655
+2 EMFIncQuery-Incremental   7.071068
+3                 FunnyQT   5.746829
+4                     NMF   2.117172
+5                   Sigma   9.103572
