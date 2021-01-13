@@ -1,1 +1,1 @@
-python C:\Users\Zeus.000\eclipse-workspace\trainbenchmark\scripts\run.py -g
+python C:\Users\{user_name}\eclipse-workspace\trainbenchmark\scripts\run.py -g

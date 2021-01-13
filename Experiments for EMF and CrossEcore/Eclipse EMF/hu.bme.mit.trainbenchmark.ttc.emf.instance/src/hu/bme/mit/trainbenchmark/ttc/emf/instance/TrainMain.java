@@ -44,8 +44,8 @@ public class TrainMain {
     	
     	
     	
-    	String seed = "19871053l";
-    	String size = "16";
+    	String seed = "58617367495977272l";
+    	String size = "4";
     	
     	List<EObject> instance = loadFromXMIFile("instances/" + seed + "/" + seed + "_" + size + "/" + "generated_train_benchmark.xmi");
     	List<EObject> instance2 = loadFromXMIFile("instances/" + seed + "/" + seed + "_" + size + "/" + "crossecore_serialized_train_benchmark.xmi");
@@ -56,9 +56,11 @@ public class TrainMain {
     	List<Diff> diff = compare(instance, instance2);
     	System.out.println("Experiment 1");
     	System.out.println("Unterschiede TrainBenchmark und CrossEcore: " + diff.size());
+    	/*
     	for (int i = 0; i < diff.size(); i++) {
     		System.out.println(diff.get(i));
     	}
+    	*/
     	
     	System.out.println("\nExperiment 2");
     	List<EObject> instance3 = loadFromXMIFile("instances/" + seed + "/" + seed + "_" + size + "/" + "emf_serialized_train_benchmark.xmi");
@@ -66,34 +68,43 @@ public class TrainMain {
 
     	List<Diff> diff2 = compare(instance2, instance3);
     	System.out.println("Unterschiede CrossEcore und EMF: " + diff2.size());
+    	/*
     	for (int i = 0; i < diff2.size(); i++) {
     		System.out.println(diff2.get(i));
     	}
+    	*/
     	
     	List<Diff> diff3 = compare(instance, instance3);
     	System.out.println("Unterschiede Trainbenchmark und EMF: " + diff3.size());
+    	/*
     	for (int i = 0; i < diff3.size(); i++) {
     		System.out.println(diff3.get(i));
     	}
+    	*/
     	
     	List<Diff> diff4 = compare(instance3, instance4);
     	System.out.println("Unterschiede EMF und CrossEcore2: " + diff4.size());
+    	/*
     	for (int i = 0; i < diff4.size(); i++) {
     		System.out.println(diff4.get(i));
     	}
+    	*/
     	
     	List<Diff> diff5 = compare(instance2, instance4);
     	System.out.println("Unterschiede CrossEcore und CrossEcore2: " + diff5.size());
+    	/*
     	for (int i = 0; i < diff5.size(); i++) {
     		System.out.println(diff5.get(i));
     	}
+    	*/
     	
     	List<Diff> diff6 = compare(instance, instance4);
     	System.out.println("Unterschiede Trainbenchmark und CrossEcore2: " + diff6.size());
+    	/*
     	for (int i = 0; i < diff6.size(); i++) {
     		System.out.println(diff6.get(i));
     	}
-    	
+    	*/
     	
     	System.out.println("");
     	Counter counter = countEObjectsAndReferences(instance);
