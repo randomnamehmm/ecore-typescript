@@ -1,5 +1,6 @@
 import { EObject } from "crossecore/src/EObject";
 import { XmiResource } from "ecore/XmiResource";
+import { waitForDebugger } from "inspector";
 import { RailwayFactory } from "railway/RailwayFactory";
 import { RailwayFactoryImpl } from "railway/RailwayFactoryImpl";
 import { RailwayPackage } from "railway/RailwayPackage";
@@ -23,7 +24,7 @@ export function main(xmi_sample:string, file_name:string) {
     console.log(file_name);
     // console.log(xmi_sample);
     var train_loaded = loadFromXMI(xmi_sample);
-    // console.log(train_loaded);
+    console.log(train_loaded);
     let counted = countEObjectsAndReferences(train_loaded);
     console.log("Anzahl Objekte: " + counted.no_eobj + "    Anzahl Referenzen oder Kompositionen: " + counted.no_ref);
     console.log(saveToXMI(train_loaded));
@@ -31,20 +32,22 @@ export function main(xmi_sample:string, file_name:string) {
 }
 
 function saveToXMI(ecore_instance_to_serialize: Array<EObject> /*, URL: string*/):string {
-    let t1 = performance.now();
+    let start = performance.now();
     xmiResource = new XmiResource(railway, factory, new DOMParser());
     let ret_save = xmiResource.save(ecore_instance_to_serialize);
-    let t2 = performance.now();
-    console.log("Time to save: " + (t2 - t1)/1000.0 + "s");
+    let end = performance.now();
+    let time_needed = end - start;
+    console.log("Time to save: " + time_needed.toFixed(4));
     return ret_save;
 }
 
 function loadFromXMI(xmi: string /*URL: string*/): EObject[] {
-    let t1 = performance.now();
+    let start = performance.now();
     xmiResource = new XmiResource(railway, factory, new DOMParser());
     let ret_load = xmiResource.load(xmi);
-    let t2 = performance.now();
-    console.log("Time to load: " + (t2 - t1)/1000.0 + "s");
+    let end = performance.now();
+    let time_needed = end - start;
+    console.log("Time to load: " + time_needed.toFixed(4));
     return ret_load;
 };
 
