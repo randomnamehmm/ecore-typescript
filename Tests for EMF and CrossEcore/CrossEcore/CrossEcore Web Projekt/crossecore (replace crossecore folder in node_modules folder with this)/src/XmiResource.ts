@@ -35,6 +35,7 @@ import { EList } from "./EList";
 import { stringify } from "querystring";
 import { formatWithOptions } from "util";
 import { OnReadOpts } from "net";
+import { time } from "console";
 
 var format = require('xml-formatter');
 
@@ -129,10 +130,11 @@ export class XmiResource{
 
         xmlStr = '<?xml version="1.0" encoding="ASCII"?>'.concat(xmlStr);
         xmlStr = xmlStr.trim();
+/*
         xmlStr = format(xmlStr, {
             collapseContent: true
           });
-
+*/
         // für Kompatibilität mit EMF
         let re = new RegExp(this.epackage.name, 'g');
         xmlStr = xmlStr.replace(re, this.epackage.nsPrefix);
