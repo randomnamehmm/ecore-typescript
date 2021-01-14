@@ -37,7 +37,7 @@ function saveToXMI(ecore_instance_to_serialize: Array<EObject> /*, URL: string*/
     let ret_save = xmiResource.save(ecore_instance_to_serialize);
     let end = performance.now();
     let time_needed = end - start;
-    console.log("Time to save: " + time_needed.toFixed(4));
+    console.log("Time to save: " + time_needed.toFixed(4) + "ms");
     return ret_save;
 }
 
@@ -47,7 +47,7 @@ function loadFromXMI(xmi: string /*URL: string*/): EObject[] {
     let ret_load = xmiResource.load(xmi);
     let end = performance.now();
     let time_needed = end - start;
-    console.log("Time to load: " + time_needed.toFixed(4));
+    console.log("Time to load: " + time_needed.toFixed(4) + "ms");
     return ret_load;
 };
 
