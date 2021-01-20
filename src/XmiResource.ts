@@ -79,15 +79,15 @@ export class XmiResource{
         this.eobjectRegistry = {};
     }
 
-    // für BA erstellt
-    // HOW TO USE: übergebe alle relevanten EObjects als Array in die Funktion save -> wird zu einem XMI String serialisiert
+    // created by Peter Digas
+    // HOW TO USE: pass all relevant EObjects as an array
     public save = (eobjects: Array<EObject>):string =>{
         if (null == eobjects) {
             console.error("Error: no eobjects passed!");
             return "";
         }
 
-        // Duplikate rausfiltern
+        // remove duplicate EObjects
         eobjects = this.filterDuplicates(eobjects);
         if(!this.validateMulitiplicities(eobjects)) {
             return "";
@@ -95,7 +95,7 @@ export class XmiResource{
 
         this.doc = document.implementation.createDocument("", "", null);
 
-        // wenn es nur ein EObject gibt, braucht man kein äußeres xmi:XMI
+        // if there is only one EObject, no outer xmi:XMI is needed
         if (eobjects.length > 1) {
             let outer = this.doc.createElement("xmi:XMI");
             outer.setAttribute("xmi:version", "2.0");
@@ -130,12 +130,8 @@ export class XmiResource{
 
         xmlStr = '<?xml version="1.0" encoding="ASCII"?>'.concat(xmlStr);
         xmlStr = xmlStr.trim();
-/*
-        xmlStr = format(xmlStr, {
-            collapseContent: true
-          });
-*/
-        // für Kompatibilität mit EMF
+
+        // for compatibility with EMF
         let re = new RegExp(this.epackage.name, 'g');
         xmlStr = xmlStr.replace(re, this.epackage.nsPrefix);
 
@@ -147,13 +143,12 @@ export class XmiResource{
             (d) => {return (d as BasicEObjectImpl)._uuid === (a as BasicEObjectImpl)._uuid}) === b);
     }
 
-    // für BA erstellt
-    // damit nur Referenzen zu EObjects serialisiert werden, die auch selbst serialisiert werden
+    // created by Peter Digas
+    // only references to EObjects that are themselves serialized are also serialized
     private collectReferencesToSerialize = (eobjects: Array<EObject>): boolean =>{
         let ret:boolean = true;
         for (let eobject of eobjects) {
-            // wenn dassele EObject mehrfach serialisiert werden soll oder auch nochmal in anderen
-            // containments liegt, gebe falsch zurück
+            // if the same EObject is contained several times, return false
             let registered_eobject = this.eobjectRegistry[(eobject as BasicEObjectImpl)._uuid];
             if (registered_eobject !== undefined && registered_eobject != null) {
                 console.error("ERROR: TRYING TO SERIALIZE SAME EOBJECT MULTIPLE TIMES");
@@ -183,7 +178,7 @@ export class XmiResource{
         return ret;
     }
 
-    // für BA erstellt
+    // created by Peter Digas
     private process_eobject = (eobject:EObject, only_one_eobject_to_serialize:boolean = false) =>{
         let eclass = eobject.eClass();
         let name = this.epackage.name + ':' + eclass.name;
@@ -217,7 +212,7 @@ export class XmiResource{
         }
     }
 
-        // für BA erstellt
+        // created by Peter Digas
         private process_containments = (parent_eobject:EObject, reference:EReference, element:HTMLElement, name:string) =>{
             let child_eobjects = parent_eobject.eGet(reference);
     
@@ -247,7 +242,7 @@ export class XmiResource{
     
                 element.appendChild(containment_element);
     
-                // für jedes Containment, rufe rekursiv die Funktion auf
+                // recursively resolve containments
                 for (let ct of containments) {
                     if (ct.containment) {
                         this.process_containments(eobject, ct, containment_element, ct.name);
@@ -257,8 +252,8 @@ export class XmiResource{
             }
         }
 
-    // für BA erstellt
-    // fügt beim Serialisieren non-Containment Referenzen hinzu
+    // created by Peter Digas
+    // adds non-containment references while serializing
     private addReferences = (eobject:EObject, crossrefs:EReference[], element:HTMLElement) => {
         for(let cf of crossrefs) {
             let ecf = eobject.eGet(cf);
@@ -270,18 +265,20 @@ export class XmiResource{
                     for (let r of references) {
                         if (null == r) {
                             this.error_occured = true;
+                            console.error("ERROR: EMPTY REFERENCE!");
                             continue;
                         }
 
-                        // wenn EObject nicht serialisiert wird, auch Referenz nicht serialisieren
+                        // if the EObject is not being serialized, don't serialize the reference to it either
                         let registered_eobject = this.eobjectRegistry[(r as BasicEObjectImpl)._uuid];
                         if (undefined === registered_eobject || null == registered_eobject) {
                             this.error_occured = true;
+                            console.error("ERROR: REFERENCED OBJECT IS NOT BEING SERIALIZED!");
                             continue;
                         }
 
-                        // Referenzen werden nicht mehrfach serialisiert
-                        // und es werden auch keine Rückreferenzen an Kompositionen serialisiert
+                        // don't serialize the same reference multiple times
+                        // and no back references to parents in containment relationships
                         let container = (eobject as any)._eContainer;
                         if (allref.includes((r as BasicEObjectImpl)._uuid + "")
                         || (container != null && (container as BasicEObjectImpl)._uuid === (r as BasicEObjectImpl)._uuid)) {
@@ -298,17 +295,17 @@ export class XmiResource{
                 } else {
                     if (null == ecf) {
                         this.error_occured = true;
+                        console.error("ERROR: EMPTY REFERENCE!");
                         continue;
                     }
 
-                    // wenn EObject nicht serialisiert wird, auch Referenz nicht serialisieren
                     let registered_eobject = this.eobjectRegistry[(ecf as BasicEObjectImpl)._uuid];
                     if (undefined === registered_eobject || null == registered_eobject) {
                         this.error_occured = true;
+                        console.error("ERROR: MISSING OBJECT BEING REFERENCED!");
                         continue;
                     }
 
-                    // Keine Rückreferenzen auf Kompositionen serialisieren
                     let container = (eobject as any)._eContainer;
                     if (container != null && (container as BasicEObjectImpl)._uuid === (ecf as BasicEObjectImpl)._uuid) {
                         continue;
@@ -320,11 +317,11 @@ export class XmiResource{
         }
     }
 
-    // für BA erstellt
+    // created by Peter Digas
     private addAttributes = (eobject:EObject, attributes:EAttribute[], element:HTMLElement) => {
         for (let attribute of attributes) {
             let eattr = eobject.eGet(attribute);
-            // Attributwert nicht Standardwert, da sonst unnötige Information serialisiert werden
+            // don't serialize unnecessary standard values
             if (attribute != null && !attribute.derived && !attribute.transient 
                 && eattr != null && eattr != attribute.defaultValueLiteral) {
                 if (attribute.many) {
@@ -348,16 +345,16 @@ export class XmiResource{
         }
     }
 
-    // modifiziert für BA
-    // HOW TO USE: übergebe eine XMI und erhalte alle darin enthaltenen EObjects als Array zurück
+    // modified for BA
+    // HOW TO USE: pass a XMI (must use UUID for references) and get an array of EObjects
     public load = (xml:string):Array<EObject> =>{
-        // BA Teil: Deserialisieren einer Ecore Modellinstanz
+        // start: created by Peter Digas
         if ("" == xml) {
             console.error("ERROR: empty instance document")
             return null;
         }
 
-        // beim parsen störenden Teil der XMI entfernen
+        // remove annoying part when parsing the xmi
         xml = xml.replace('<?xml version="1.0" encoding="ASCII"?>', '');
         let parser = this.domParser;
         let xmlDoc = parser.parseFromString(xml,"text/xml");
@@ -369,7 +366,6 @@ export class XmiResource{
 
         var eobjects = new Array<EObject>();
 
-        // wenn es nur ein EObject gibt, dann gibt es kein äußeres xmi:XMI
         if (0 == xmlDoc.getElementsByTagName("xmi:XMI").length) {
             this.rootnode(xmlDoc.childNodes[0] as Element);
             eobjects.push(this.root);
@@ -384,14 +380,9 @@ export class XmiResource{
             }
         }
 
-        // lateResolve aus der for Schleife entfernt, damit es nur einmal am Schluss ausgeführt wird und die verbleibenden Referenzen hinzufügt
-        // damit haben auch Verschiebungen der Reihenfolge in der XMI keine Auswirkungen mehr
         if(!this.lateResolve()) {
             return null;
         }
-    
-        // this.recAllEObjectsCheck(eobjects);
-        // eobjects = this.checkAllBidirectionalReferences(eobjects);
     
         if(!this.validateMulitiplicities(eobjects)) {
             return null;
@@ -402,11 +393,11 @@ export class XmiResource{
         }
     
         return this.filterDuplicates(eobjects);
-        // Ende BA Teil
+        // end: created by Peter Digas
     }
 
 
-    // modifiziert für BA
+    // modified by Peter Digas
     public rootnode = (node:Element) => {
 
 
@@ -419,37 +410,11 @@ export class XmiResource{
 
             this.root = this.factory.create(eclass);
 
-            this.addEStructuralFeatures(this.root, node)
-
-            // this.lateResolve(); für BA entfernt, damit nur einmal zum Schluss alle Referenzen aufgelöst werden müssen
+            this.addEStructuralFeatures(this.root, node);
         }
     }
 
-
-    // Entfernt für BA, da nicht notwendig
-    /*
-    protected resolveEList = (specification:string)=>{
-        let result = new Array<EObject>();
-        let supertypes = specification.split(' ');
-
-        if (supertypes != null)
-        {
-            for(let i=0;i<supertypes.length;i++){
-                //for (string s in supertypes)
-
-                let s = supertypes[i];
-
-                let supertype = this.resolveEObject(s) as EClass;
-
-                //TODO assure it is eclass
-                result.push(supertype);
-            }
-        }
-        return result;
-    }
-    */
-
-    // modifiziert für BA
+    // modified by Peter Digas
     protected resolveEObject = (specification:string) => {
         if(specification===null){
             return null;
@@ -489,20 +454,20 @@ export class XmiResource{
           return this.resolveRecurr(queue, EcorePackageImpl.eINSTANCE);
 
         } 
-        // BA Teil: Auflösen eines EObjects mittels UUID Referenz
+        // start: created by Peter Digas
         else {
-            // gebe registriertes Objekt für die UUID zurück
+            // return registered EObject
             let eobj_from_registry = this.eobjectRegistry[specification];
 
             if (eobj_from_registry == null) {
-                // wird bei lateResolve eine Referenz nicht aufgelöst, wird eine Fehlermeldung ausgegeben
+                // if reference is not resolve during lateResolve, return error
                 console.error("ERROR: REFERENCE " + specification +  " CANNOT BE RESOLVED!");
                 return null;
             }
 
             return this.eobjectRegistry[specification];
         }
-        // Ende BA Teil
+        // end: created by Peter Digas
     }
 
     private resolveRecurr = (path:Array<string>, current:EObject )=>{
@@ -534,17 +499,17 @@ export class XmiResource{
 
     }
 
-    // modifiziert für BA
+    // modified by Peter Digas
     public addEStructuralFeatures = (eobject:EObject, node:Element)=>{
 
-        // BA Teil
+        // start: created by Peter Digas
         for (let i = 0; i < node.attributes.length; i++) {
             let attribute = node.attributes[i];
             let name = attribute.name;
             let value = attribute.value;
             this.addEStructuralFeaturesHelper(eobject, name, value);
         }
-        // Ende BA Teil
+        // end: created by Peter Digas
 
         for (let i = 0; i < node.childNodes.length; i++) {
             let child = node.childNodes[i];
@@ -553,7 +518,7 @@ export class XmiResource{
 
                 let element = child as Element;
 
-                // BA Teil: Verarbeiten von Attributen mit many Eigenschaft
+                // start: created by Peter Digas
                 if (0 == element.attributes.length && element.innerHTML != "") {
                     this.addEStructuralFeaturesHelper(eobject, element.tagName, element.innerHTML, true);
                     continue;
@@ -563,10 +528,10 @@ export class XmiResource{
 
                 let containment = eobject.eClass().getEStructuralFeature(containment_name);
                 if (undefined === containment || null == containment) {
-                    console.error("ERROR: UNKNOWN CONTAINMENT NAME!");
                     this.error_occured = true;
+                    console.error("ERROR: UNKNOWN CONTAINMENT NAME!");
                 }
-                // Ende BA Teil
+                // end: created by Peter Digas
 
                 if(containment instanceof EReferenceImpl){
                     
@@ -578,6 +543,7 @@ export class XmiResource{
                         let classifierId2 = containment.eType.name;
 
                         for(let i=0; i< element.attributes.length;i++){
+                            // DO NOT USE xsi:type BUT xmi:type IN EMF!!!
                             if(element.attributes[i].name==='xmi:type'){
                                 classifierId2 = element.attributes[i].value.split(':')[1];
                                 break;
@@ -627,13 +593,13 @@ export class XmiResource{
         }
     }
 
-    // modifiziert für BA
+    // modified by Peter Digas
     private addEStructuralFeaturesHelper(eobject:EObject, attr_name:string, attr_value, attribute_has_multiple_values=false) {
 
-        // BA Teil: UUID registrieren
+        // start: created by Peter Digas
         if (attr_name === 'xmi:id') {
-            // UUID-Object Paar registrieren, damit später die Referenzen aufgelöst werden können.
-            // falls es mehrere Objekte mit derselben UUID gibt, gebe eine Fehlermeldung aus.
+            // register UUID for EObject to resolve it later on
+            // if multiple EObjects have the same UUID, return an error
             if (this.eobjectRegistry[attr_value] !== undefined && this.eobjectRegistry[attr_value] != null) {
                 (eobject as BasicEObjectImpl)._uuid = "";
                 console.error("ERROR: THE SAME UUID IS USED FOR DIFFERENT EOBJECTS!");
@@ -645,7 +611,7 @@ export class XmiResource{
         } else if (attr_name.includes("xmlns") || attr_name === "xmi:version" || attr_name === "xmi:type") {
             return;
         }
-        // Ende BA Teil
+        // end: created by Peter Digas
 
             let estructuralfeature = eobject.eClass().getEStructuralFeature(attr_name);
 
@@ -664,7 +630,7 @@ export class XmiResource{
                     {
                         throw new Error('not implemented');
                     }
-                    // BA Teil: Typisierung angepasst für many
+                    // start: modified by Peter Digas
                     else if (etype.name == "EBoolean")
                     {
                         if (attribute_has_multiple_values && (estructuralfeature as EAttributeImpl).many) {
@@ -790,7 +756,7 @@ export class XmiResource{
                             eobject.eSet(estructuralfeature, value);
                         }
                     }
-                    // Ende BA Teil
+                    // end: modified by Peter Digas
 
 
                     //ETreeIterator
@@ -799,7 +765,7 @@ export class XmiResource{
 
 
                 }
-                // z.B. für enums
+                // e.g. for enums
                 else if(etype instanceof EDataTypeImpl){
 
                     //TODO use namespace-factory map
@@ -814,50 +780,34 @@ export class XmiResource{
                 }
 
             } 
-            // BA Teil: Fehlererkennung
+            // start: created by Peter Digas
             else {
-                console.error("ERROR: NON-EXISTENT ATTRIBUTE OR REFERENCE NAME!");
                 this.error_occured = true;
+                console.error("ERROR: NON-EXISTENT ATTRIBUTE OR REFERENCE NAME!");
             }
-            // Ende BA Teil
+            // end: created by Peter Digas
     }
 
-    // modifiziert für BA
+    // modified by Peter Digas
     private resolve(eobject:EObject, estructuralfeature:EStructuralFeature, value:string){
-        // BA Teil: alle Referenzen für ein späteres Verarbeiten speichern
+        // start: created by Peter Digas
+        // register all references to resolve them at the end (which resolves issues of order)
         let all_ids = value.split(" ");
 
         for (let i = 0; i < all_ids.length; i++) {
             let id = all_ids[i];
-            /*
-            if(false && this.eobjectRegistry[id]!==undefined && this.eobjectRegistry[id] != null) {
-
-                if(estructuralfeature.many){
-                    //TODO eGet is call by reference
-                    (eobject.eGet(estructuralfeature) as AbstractCollection<EObject>).add(this.eobjectRegistry[id]);
-                }
-                else{
-                    eobject.eSet(estructuralfeature, this.eobjectRegistry[id]);
-                }
+            let resolveJob: ResolveJob = {
+                "eObject": eobject,
+                "eStructuralFeature": estructuralfeature,
+                "value": id
+            };
     
-    
-            }
-            else{
-            */
-                // durch spätes auflösen aller Referenzen erspart man sich Probleme mit Ordnungen
-                let resolveJob: ResolveJob = {
-                    "eObject": eobject,
-                    "eStructuralFeature": estructuralfeature,
-                    "value": id
-                };
-    
-                this.resolveJobs.push(resolveJob);
-            // }
+            this.resolveJobs.push(resolveJob);
         }
-        // Ende BA Teil
+        // end: created by Peter Digas
     }
 
-    // modifiziert für BA
+    // modified by Peter Digas
     public lateResolve = () =>
     {
         for (let job of this.resolveJobs)
@@ -866,16 +816,16 @@ export class XmiResource{
             var feature = job.eStructuralFeature;
             var path = job.value;
 
-            // BA Teil: Referenzen auflösen und Korrektheit prüfen
+            // start: created by Peter Digas
+            // resolve References and check correctness
             if (!feature.many)
             {
                 let eobj_to_add = this.resolveEObject(path);
-                // bei unaufgelösbaren Referenzen
                 if (null == eobj_to_add) {
                     console.error("ERROR: REFERENCE " + path +  " CANNOT BE RESOLVED!");
                     return false;
                 }
-                // Prüfen ob Referenz den richtigen Datentyp hat
+                // check reference data type
                 if (feature.eType.instanceClass.name === eobj_to_add.constructor.name
                     || eobj_to_add instanceof feature.eType.instanceClass) {
                     eobject.eSet(feature, eobj_to_add);
@@ -893,23 +843,9 @@ export class XmiResource{
                     return false;
                 }
 
-                /*
-                // für bidirektionale Anpassungen mit ordered Eigenschaft
-                let temp_array = (eobject.eGet(feature) as AbstractCollection<EObject>);
-                if (temp_array.some(e => this.equal_uuid(e as BasicEObjectImpl, eobj_to_add))) {
-                    // temp_array.remove(eobj_to_add);
-                    temp_array.splice(temp_array.findIndex(
-                        e => this.equal_uuid(e as BasicEObjectImpl, eobj_to_add)), 1);
-                }
-                */
-
-                // Prüfen ob Referenz den richtigen Datentyp hat
                 if (feature.eType.instanceClass.name === eobj_to_add.constructor.name
                     || eobj_to_add instanceof feature.eType.instanceClass) {
-                    // push statt add verwenden, um keine automatische bidirektionale Anpassung zu triggern!!!
-                    // eobject.eGet(feature).push(eobj_to_add);
                     eobject.eGet(feature).add(eobj_to_add);
-                    // eobject.eSet(feature, this.resolveEList(path));
                 } else {
                     console.error("ERROR: WRONG REFERENCE DATA TYPE!");
                     return false;
@@ -917,10 +853,10 @@ export class XmiResource{
             }
         }
         return true;
-        // Ende BA Teil
+        // end: created by Peter Digas
     }
 
-    // für BA erstellt
+    // created by Peter Digas
     private validateMulitiplicities = (eobjects:EObject[]):boolean => {
         for (let eobject of eobjects) {
             let eclass = eobject.eClass();
@@ -943,7 +879,7 @@ export class XmiResource{
                     }
                 }
             }
-            // hier werden sowohl normale Referenzen als auch Containments aus Einhaltung der Multiplizitäten geprüft
+            // check references and containments for multiplicities
             for (let reference of eclass.eAllReferences) {
                 if(reference.many) {
                     let eref = eobject.eGet(reference);
