@@ -3,7 +3,7 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "ecore/*": ["node_modules/crossecore/src/*"],
+      "ecore/*": ["crossecore/src/*"],
       "railway/*": ["src/railway/*"],
     },    
     "outDir": "./dist/",
@@ -25,5 +25,6 @@
   },
   "exclude": [
     "node_modules",
+    "crossecore",
   ]
 }
