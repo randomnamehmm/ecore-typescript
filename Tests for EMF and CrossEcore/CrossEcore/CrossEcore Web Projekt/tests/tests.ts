@@ -1755,6 +1755,41 @@ describe('XmiResource', function() {
             assert.isTrue(test);
         });
 
+        it('Can save/load and compare a special ordering of references', function() {
+            eobjects = [];
+            let person = factory.createPerson();
+            let person2 = factory.createPerson();
+            let person3 = factory.createPerson();
+            person.age = 1;
+            person2.age = 2;
+            person3.age = 3;
+            let article = factory.createArticle();
+            let picture = factory.createPicture();
+            article.picture = picture;
+            article.authors.add(person);
+            article.authors.add(person2);
+            article.authors.add(person3);
+    
+            person.articles.add(article);
+            person2.articles.add(article);
+            person3.articles.add(article);
+            
+            eobjects.push(person3);
+            eobjects.push(person);
+            eobjects.push(person2);
+            eobjects.push(article);
+            eobjects.push(picture);
+            let xmi45 = saveToXMI(eobjects);
+            console.log(xmi45);
+            let instance = loadFromXMI(xmi45);
+            
+            let test = instance[3] instanceof ArticleImpl
+                    && (instance[3] as Article).authors[0].age === 1
+                    && (instance[3] as Article).authors[1].age === 2
+                    && (instance[3] as Article).authors[2].age === 3;
+            assert.isTrue(test);
+        });
+
     });
 
 

@@ -1646,6 +1646,41 @@ public class Tests {
 		Assert.assertTrue(test);
 	}
 	
+	@Test
+	public void testSpecialOrderedReferenceSaveLoadComparison() {
+		Person person = factory.createPerson();
+		Person person2 = factory.createPerson();
+		Person person3 = factory.createPerson();
+		person.setAge((short)1);
+		person2.setAge((short)2);
+		person3.setAge((short)3);
+		Article article = factory.createArticle();
+		Picture picture = factory.createPicture();
+		article.setPicture(picture);
+		article.getAuthors().add(person);
+		article.getAuthors().add(person2);
+		article.getAuthors().add(person3);
+
+		person.getArticles().add(article);
+		person2.getArticles().add(article);
+		person3.getArticles().add(article);
+		
+		eobjects.add(person3);
+		eobjects.add(person);
+		eobjects.add(person2);
+		eobjects.add(article);
+		eobjects.add(picture);
+		String xmi45 = CreateSaveTester.saveToXMI(eobjects);
+		System.out.println(xmi45);
+		List<EObject> instance = CreateSaveTester.loadFromXMI(xmi45);
+		
+		boolean test = instance.get(3) instanceof Article
+				&& ((Article)instance.get(3)).getAuthors().get(0).getAge() == 1
+				&& ((Article)instance.get(3)).getAuthors().get(1).getAge() == 2
+			    && ((Article)instance.get(3)).getAuthors().get(2).getAge() == 3;
+		Assert.assertTrue(test);
+	}
+	
 	
 	
 	
@@ -2199,7 +2234,7 @@ public class Tests {
 				&& ((Website)instance.get(0)).getPictures().get(2).getName().equals("c");
 		Assert.assertTrue(test);
 	}
-	
+
 	
 	
 	
