@@ -43,9 +43,57 @@ public class TrainMain {
     	Logger.getRootLogger().setLevel(Level.WARN);  	
     	
     	
+  /*  	
+    	String seed = "19871053l";
+    	String size = "128";
     	
-    	String seed = "58617367495977272l";
-    	String size = "4";
+    	System.out.println("warmup");
+    	List<EObject> instancio = loadFromXMIFile("instances/" + seed + "/" + seed + "_" + size + "/" + "generated_train_benchmark.xmi");
+    	// List<EObject> instancio2 = loadFromXMIFile("instances/" + seed + "/" + seed + "_" + size + "/" + "generated_train_benchmark.xmi");
+    	saveToXMIFile(instancio, "instances/" + seed + "/" + seed + "_" + size + "/" + "emf_serialized_train_benchmark.xmi");
+    	saveToXMIFile(instancio, "instances/" + seed + "/" + seed + "_" + size + "/" + "emf_serialized_train_benchmark.xmi");
+    	System.out.println("");
+    	
+    	System.out.println(seed);
+    	instancio = loadFromXMIFile("instances/" + seed + "/" + seed + "_" + size + "/" + "generated_train_benchmark.xmi");
+    	// instancio2 = loadFromXMIFile("instances/" + seed + "/" + seed + "_" + size + "/" + "generated_train_benchmark.xmi");
+    	saveToXMIFile(instancio, "instances/" + seed + "/" + seed + "_" + size + "/" + "emf_serialized_train_benchmark.xmi");
+    	saveToXMIFile(instancio, "instances/" + seed + "/" + seed + "_" + size + "/" + "emf_serialized_train_benchmark.xmi");
+    	System.out.println("");
+    	seed = "133829747l";
+    	System.out.println(seed);
+    	instancio = loadFromXMIFile("instances/" + seed + "/" + seed + "_" + size + "/" + "generated_train_benchmark.xmi");
+    	// instancio2 = loadFromXMIFile("instances/" + seed + "/" + seed + "_" + size + "/" + "generated_train_benchmark.xmi");
+    	saveToXMIFile(instancio, "instances/" + seed + "/" + seed + "_" + size + "/" + "emf_serialized_train_benchmark.xmi");
+    	saveToXMIFile(instancio, "instances/" + seed + "/" + seed + "_" + size + "/" + "emf_serialized_train_benchmark.xmi");
+    	System.out.println("");
+    	seed = "3067645436262l";
+    	System.out.println(seed);
+    	instancio = loadFromXMIFile("instances/" + seed + "/" + seed + "_" + size + "/" + "generated_train_benchmark.xmi");
+    	// instancio2 = loadFromXMIFile("instances/" + seed + "/" + seed + "_" + size + "/" + "generated_train_benchmark.xmi");
+    	saveToXMIFile(instancio, "instances/" + seed + "/" + seed + "_" + size + "/" + "emf_serialized_train_benchmark.xmi");
+    	saveToXMIFile(instancio, "instances/" + seed + "/" + seed + "_" + size + "/" + "emf_serialized_train_benchmark.xmi");
+    	System.out.println("");
+    	seed = "537388259l";
+    	System.out.println(seed);
+    	instancio = loadFromXMIFile("instances/" + seed + "/" + seed + "_" + size + "/" + "generated_train_benchmark.xmi");
+    	// instancio2 = loadFromXMIFile("instances/" + seed + "/" + seed + "_" + size + "/" + "generated_train_benchmark.xmi");
+    	saveToXMIFile(instancio, "instances/" + seed + "/" + seed + "_" + size + "/" + "emf_serialized_train_benchmark.xmi");
+    	saveToXMIFile(instancio, "instances/" + seed + "/" + seed + "_" + size + "/" + "emf_serialized_train_benchmark.xmi");
+    	System.out.println("");
+    	seed = "58617367495977272l";
+    	System.out.println(seed);
+    	instancio = loadFromXMIFile("instances/" + seed + "/" + seed + "_" + size + "/" + "generated_train_benchmark.xmi");
+    	// instancio2 = loadFromXMIFile("instances/" + seed + "/" + seed + "_" + size + "/" + "generated_train_benchmark.xmi");
+    	saveToXMIFile(instancio, "instances/" + seed + "/" + seed + "_" + size + "/" + "emf_serialized_train_benchmark.xmi");
+    	saveToXMIFile(instancio, "instances/" + seed + "/" + seed + "_" + size + "/" + "emf_serialized_train_benchmark.xmi");
+    	
+    	System.exit(0);
+    */
+    	
+    	String seed = "133829747l";
+    	String size = "8";
+    	
     	
     	List<EObject> instance = loadFromXMIFile("instances/" + seed + "/" + seed + "_" + size + "/" + "generated_train_benchmark.xmi");
     	List<EObject> instance2 = loadFromXMIFile("instances/" + seed + "/" + seed + "_" + size + "/" + "crossecore_serialized_train_benchmark.xmi");
@@ -56,11 +104,11 @@ public class TrainMain {
     	List<Diff> diff = compare(instance, instance2);
     	System.out.println("Experiment 1");
     	System.out.println("Unterschiede TrainBenchmark und CrossEcore: " + diff.size());
-    	/*
-    	for (int i = 0; i < diff.size(); i++) {
-    		System.out.println(diff.get(i));
-    	}
-    	*/
+    	
+    	// for (int i = 0; i < diff.size(); i++) {
+    	// 	System.out.println(diff.get(i));
+    	// }
+    	
     	
     	System.out.println("\nExperiment 2");
     	List<EObject> instance3 = loadFromXMIFile("instances/" + seed + "/" + seed + "_" + size + "/" + "emf_serialized_train_benchmark.xmi");
@@ -68,43 +116,44 @@ public class TrainMain {
 
     	List<Diff> diff2 = compare(instance2, instance3);
     	System.out.println("Unterschiede CrossEcore und EMF: " + diff2.size());
-    	/*
-    	for (int i = 0; i < diff2.size(); i++) {
-    		System.out.println(diff2.get(i));
-    	}
-    	*/
+    	
+    	// for (int i = 0; i < diff2.size(); i++) {
+    	// 	System.out.println(diff2.get(i));
+    	// }
+    	
     	
     	List<Diff> diff3 = compare(instance, instance3);
     	System.out.println("Unterschiede Trainbenchmark und EMF: " + diff3.size());
-    	/*
-    	for (int i = 0; i < diff3.size(); i++) {
-    		System.out.println(diff3.get(i));
-    	}
-    	*/
+    	
+    	// for (int i = 0; i < diff3.size(); i++) {
+    	// 	System.out.println(diff3.get(i));
+    	// }
+    	
     	
     	List<Diff> diff4 = compare(instance3, instance4);
     	System.out.println("Unterschiede EMF und CrossEcore2: " + diff4.size());
-    	/*
-    	for (int i = 0; i < diff4.size(); i++) {
-    		System.out.println(diff4.get(i));
-    	}
-    	*/
+    	
+    	// for (int i = 0; i < diff4.size(); i++) {
+    	// 	System.out.println(diff4.get(i));
+    	// }
+    	
     	
     	List<Diff> diff5 = compare(instance2, instance4);
     	System.out.println("Unterschiede CrossEcore und CrossEcore2: " + diff5.size());
-    	/*
-    	for (int i = 0; i < diff5.size(); i++) {
-    		System.out.println(diff5.get(i));
-    	}
-    	*/
+    	
+    	// for (int i = 0; i < diff5.size(); i++) {
+    	// 	System.out.println(diff5.get(i));
+    	// }
+    	
     	
     	List<Diff> diff6 = compare(instance, instance4);
     	System.out.println("Unterschiede Trainbenchmark und CrossEcore2: " + diff6.size());
-    	/*
-    	for (int i = 0; i < diff6.size(); i++) {
-    		System.out.println(diff6.get(i));
-    	}
-    	*/
+    	
+    	// for (int i = 0; i < diff6.size(); i++) {
+    	//	System.out.println(diff6.get(i));
+    	// }
+    	
+    	
     	
     	System.out.println("");
     	Counter counter = countEObjectsAndReferences(instance);
@@ -120,8 +169,6 @@ public class TrainMain {
     
 	
     private static List<Diff> compare(List<EObject> instance1, List<EObject> instance2 /*, String instance1, String instance2*/) {
-    	// URI uri1 = URI.createFileURI(instance1);
-    	// URI uri2 = URI.createFileURI(instance2);
     	ResourceSet rs1 = new ResourceSetImpl();
     	ResourceSet rs2 = new ResourceSetImpl();
     	
@@ -130,8 +177,6 @@ public class TrainMain {
         rs2.getResourceFactoryRegistry().getExtensionToFactoryMap().put(
             	Resource.Factory.Registry.DEFAULT_EXTENSION, new XMIResourceFactoryImpl());
     	
-    	// rs1.getResource(uri1, true);
-    	// rs2.getResource(uri2, true);
         Resource resource1 = rs1.createResource(URI.createURI(""));
         Resource resource2 = rs2.createResource(URI.createURI(""));
         for (EObject element1 : instance1) {
@@ -145,7 +190,6 @@ public class TrainMain {
     	IMatchEngine.Factory factory = new MatchEngineFactoryImpl(UseIdentifiers.NEVER);
     	IMatchEngine.Factory.Registry registry = new MatchEngineFactoryRegistryImpl();
     	registry.add(factory);
-    	// IComparisonScope scope = new DefaultComparisonScope(rs1, rs2, null);
     	IComparisonScope scope = new DefaultComparisonScope(resource1, resource2, null);
     	Comparison comparison = EMFCompare.builder().setMatchEngineFactoryRegistry(registry)
     			.build().compare(scope);
@@ -156,7 +200,7 @@ public class TrainMain {
     public static List<EObject> loadFromXMI(String xmi /*, String URL*/) {
     	
     	long start = System.nanoTime();
-    	
+
     	if (xmi.equals("")) {
     		return null;
     	}
@@ -188,13 +232,13 @@ public class TrainMain {
     	for (EObject element : resource.getContents()) {
     		instance.add(element);
     	}
-    	
+
     	if (!validate_correctness(instance)) {
     		return null;
     	}
-    	
+
     	long end = System.nanoTime();
-    	// System.out.println("Ladezeit: " + ((end - start)/1000000000.0));
+    	// System.out.println("Ladezeit: " + (double)Math.round(((end - start)/1000000.0) * 10000) / 10000 + "ms");
     	
     	return instance;
     }
@@ -233,13 +277,13 @@ public class TrainMain {
     	for (EObject element : resource.getContents()) {
     		instance.add(element);
     	}
-    	
+
     	if (!validate_correctness(instance)) {
     		return null;
     	}
-    	
+ 	
     	long end = System.nanoTime();
-    	// System.out.println("Ladezeit: " + ((end - start)/1000000000.0));
+    	// System.out.println("Ladezeit: " + (double)Math.round(((end - start)/1000000.0) * 10000) / 10000 + "ms");
     	
     	return instance;
     }
@@ -284,10 +328,9 @@ public class TrainMain {
             options.put(XMIResource.OPTION_USE_XMI_TYPE, Boolean.TRUE);
     		options.put(XMIResource.OPTION_SAVE_TYPE_INFORMATION, Boolean.TRUE);
 			resource.save(output, options);
-			
+			System.out.println(output);
 			long end = System.nanoTime();
-	    	// System.out.println("Speicherzeit: " + ((end - start)/1000000000.0));
-			
+	    	// System.out.println("Speicherzeit: " + (double)Math.round(((end - start)/1000000.0) * 10000) / 10000 + "ms");
 			return output.toString();
 		} catch (IOException e) {
 			System.out.println(e.getMessage());
@@ -338,7 +381,7 @@ public class TrainMain {
             resource.save(options);
             
             long end = System.nanoTime();
-	    	// System.out.println("Speicherzeit: " + ((end - start)/1000000000.0));
+            // System.out.println("Speicherzeit: " + (double)Math.round(((end - start)/1000000.0) * 10000) / 10000 + "ms");
             
             return true;
         } catch (IOException e) {
